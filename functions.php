@@ -255,7 +255,7 @@ genesis_register_sidebar( array(
 //* Load custom stylesheet 
 add_action( 'wp_enqueue_scripts', 'custom_load_custom_style_sheet' );
 function custom_load_custom_style_sheet() {
-	wp_enqueue_style( 'custom-stylesheet', CHILD_URL . '/css/dm-styles.css', array(), PARENT_THEME_VERSION );
+	wp_enqueue_style( 'custom-stylesheet', CHILD_URL . '/css/jt-styles.css', array(), PARENT_THEME_VERSION );
 }
 
 //* add favicon

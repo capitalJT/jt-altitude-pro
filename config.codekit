@@ -2,11 +2,11 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19115",
 "files": {
-	"\/css\/dm-styles.css": {
+	"\/css\/jt-styles.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/dm-styles.css",
+		"inputAbbreviatedPath": "\/css\/jt-styles.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -82,6 +82,50 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/images\/apple-touch-icon-114x114-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5167,
+		"inputAbbreviatedPath": "\/images\/apple-touch-icon-114x114-precomposed.png",
+		"outputAbbreviatedPath": "\/images\/apple-touch-icon-114x114-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/apple-touch-icon-144x144-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7342,
+		"inputAbbreviatedPath": "\/images\/apple-touch-icon-144x144-precomposed.png",
+		"outputAbbreviatedPath": "\/images\/apple-touch-icon-144x144-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/apple-touch-icon-72x72-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2736,
+		"inputAbbreviatedPath": "\/images\/apple-touch-icon-72x72-precomposed.png",
+		"outputAbbreviatedPath": "\/images\/apple-touch-icon-72x72-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/apple-touch-icon-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2046,
+		"inputAbbreviatedPath": "\/images\/apple-touch-icon-precomposed.png",
+		"outputAbbreviatedPath": "\/images\/apple-touch-icon-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/images\/bg-1.jpg": {
 		"fileType": 16384,
@@ -371,15 +415,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/scss\/dm-styles.scss": {
+	"\/scss\/jt-styles.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scss\/dm-styles.scss",
-		"outputAbbreviatedPath": "\/css\/dm-styles.css",
+		"inputAbbreviatedPath": "\/scss\/jt-styles.scss",
+		"outputAbbreviatedPath": "\/css\/jt-styles.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
