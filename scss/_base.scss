@@ -1,0 +1,97 @@
+// Colors
+
+$color-grey: #666666;
+$color-offwhite:#fcfbf9;
+$olive-yellow: #B0AF81;
+$light-grey: #A1A0A1;
+$dark-grey: #666666;
+$background: #FCFBF9;
+$dark-purple: #663366;
+$orange: #E24D25;
+$color-brand: $orange;
+$sage: #efefe6; 
+// $dm-green: #9a998b;
+
+$color-accent:$olive-yellow;
+$color-primary: $orange;
+
+$border-radius: 4px;
+
+// Extends
+%flexbox-vertical-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%transition {
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+%text-center{
+  text-align: center;
+}
+
+%display-none{
+  display: none;
+}
+
+// background: -webkit-linear-gradient(left,#fcfbf9 0,#fcfbf9 50%,#efefe6 50%,#efefe6 100%);
+// background: linear-gradient(to right,#fcfbf9 0,#fcfbf9 50%,#efefe6 50%,#efefe6 100%);
+
+.nav-primary .genesis-nav-menu{
+  text-align: left;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+.block{
+  display: block;
+}
+
+
+$placeholder-color: #666;
+::-webkit-input-placeholder {
+   color: $placeholder-color;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $placeholder-color;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $placeholder-color;  
+}
+
+:-ms-input-placeholder {  
+   color: $placeholder-color; 
+}
+
+
+.footer {
+  border-top: 1px solid #dedede;
+  padding-top: 10px;
+  color: #676767;
+}
+
+main article{
+  header p.entry-meta{
+    @extend %display-none;
+  }
+}

@@ -1,0 +1,252 @@
+////////////////////////////////////////////////////////////////////////
+// skip to next section
+
+.home{
+  @include max-800{
+    .site-inner{
+      padding:0;
+    }
+  }
+  @include medium-screen{
+    .site-inner{
+      max-width:100%;
+      margin-top: 76px;
+    }
+  }
+  @include max-1023{
+    .site-inner{
+      margin-top: 0;
+    }
+  }
+  @include large-screen-max{
+    .home-page-h1, .dm-campaign-monitor-form, .client-section{
+      max-width: 960px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+  }
+  .entry{
+    margin-bottom: 0px;
+  }
+  .content .entry-header{
+    display: none;  
+    color:white;
+  }
+}
+.home.full-width-content .content{
+  padding-left:0;
+  padding-right:0;
+}
+
+////////////////////////////////////////////////////////////////////////
+
+.featured-blurb, .dm-campaign-monitor-form, .client-section{
+
+}
+
+.home-page{
+  section{
+    padding:20px;
+  }
+}
+
+.featured-blurb{
+  background-color: $color-brand;
+}
+
+.home-page-h1{
+  color:white;
+  @extend %h3-font-size;
+  margin-bottom: 0;
+}
+
+
+
+////////////////////////////////////////////////////////////////////////
+// Sections
+////////////////////////////////////////////////////////////////////////
+
+// Campaign Monitor Form Area
+
+.home-page-h1, .dm-campaign-monitor-form, .client-section{
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 1200px;
+}
+.dm-campaign-monitor-form{
+  width:100%;
+  // background-color: #fff;
+  .dm-campaign-monitor-form-text, form{
+    display: inline-block;
+  }
+
+  // would like to use some flex box here.
+  .dm-campaign-monitor-form-text{
+    width:100%;
+    box-sizing: border-box;
+  }
+  .section-blurb{
+    display: block;
+    margin-bottom: 10px;
+  }
+  label{
+    display: none;
+  }
+  @include min-1023{
+    .dm-campaign-monitor-form-text{
+      width:25%;
+    }
+    form{
+      width:75%;
+      float: right;
+    }
+    input, select, button{
+      float: left;
+    }
+    input{
+      width:29%;
+      margin-right: 1%;
+    }
+    select{
+      width:23%;
+      margin-right: 1%;
+    }
+    button{
+      width:15%;
+    }
+  }
+}
+
+// Client Section Area
+.client-section{
+  border-top: solid 4px $color-accent;
+}
+.client-section-text, .client-section-icons{
+  float: left;
+}
+.client-section-text{
+  .section-title{
+    @extend %h1-font-size;
+    color:$color-brand; 
+    display: block;
+    line-height: 1.5em;
+  }
+}
+.client-section-icons{
+  // background-color: #efefe6;
+  ul{
+    margin:0;
+  }
+  li{
+    list-style: none;
+    width:100%;
+    float: left;
+    @extend %text-center;
+    height:150px;
+    line-height: 150px;
+    border-bottom:solid thin #ccc;
+    @extend %flexbox-vertical-center;
+  }
+  img{
+    max-width: 90%;
+  }
+}
+
+@include medium-screen{
+  .home-page-h1{
+    font-size: 45px;
+    padding:65px;
+  }
+  .featured-blurb, .dm-campaign-monitor-form{
+    margin-bottom: 40px;
+  }
+  .featured-blurb{
+
+  }
+  .dm-campaign-monitor-form-text{
+    padding-right:20px
+  }
+  .dm-campaign-monitor-form{
+    form{
+      margin-top: 20px;
+    }  
+  }
+
+  section.client-section{
+    padding-top: 50px;
+  }
+
+  .client-section-text, .client-section-icons{
+    width:50%;
+  }
+  .client-section-text{
+    padding-right:20px;
+  }
+  .client-section-icons{
+    padding-left:20px;
+    margin-top: -40px;
+    li{
+      width: 33.3333%;
+      border-bottom: none;
+    }
+  }
+}
+@include max-1023{
+  .home-page-h1, .dm-campaign-monitor-form{
+    max-width: 768px;
+  }
+  .dm-campaign-monitor-form{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1023px) {}
+
+@include max-1280{
+  .home-page-h1, .dm-campaign-monitor-form, .client-section{
+    max-width: 1140px;
+  }
+}
+
+@include large-screen{
+  .home-page-h1{
+    font-size: 72px;
+    padding:150px 100px;
+  }
+}
+
+
+#front-page-1{
+  .widget-title{
+    // background-color: red;
+    font-size:2em;
+    margin-bottom: 0.125em;
+  }
+}
+
+#front-page-2{
+  div.widget-wrap{
+    max-width: 45em;
+    margin: auto;
+  }
+}
+#front-page-4{
+  a.genericon{
+    font-size: 2em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+  }
+}
+.work{
+  .thumbnail-list{
+    // border: solid thin red;
+    li{
+      display: block; 
+      max-width: 45em;
+      margin: 0 auto 1em;
+    }
+  }
+}
+
+

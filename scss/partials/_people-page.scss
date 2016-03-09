@@ -1,0 +1,57 @@
+.single-people, .post-type-archive-people{
+  .content{
+    .entry-meta{ // remove the date from above the featured image
+      display: none;
+    }
+  }
+  .entry .entry-title{
+    margin-bottom: 10px;
+    text-align: left;
+    @extend %h3-font-size;
+    color: $color-primary;
+  }
+  .title{
+    @extend %h6-font-size;
+    margin-bottom: 10px;
+  }
+}
+.post-type-archive-people{
+  h1.entry-title{
+    text-align: center;
+    margin-top: -5px;
+  }
+  .entry{
+    margin-bottom: 20px;
+    img{
+      max-width: 300px;
+      margin-bottom: 5px;
+    }
+    .entry-title{
+      @extend %h3-font-size;
+      margin-bottom: 0;
+    }
+  }
+  .entry-footer::before{
+    border:none;
+    margin:0;
+    padding:0;
+  }
+}
+
+@include medium-screen{
+  .post-type-archive-people{
+    .header-wrap{
+      max-width: 768px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .type-people{
+      padding:20px;
+      width:33.33%;
+      float: left;
+    }
+    .entry img{
+      width: 100%;
+    }
+  }
+}

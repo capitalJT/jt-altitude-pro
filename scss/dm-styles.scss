@@ -1,0 +1,102 @@
+@import "base";
+@import "mixins/media-queries";
+@import "typography";
+
+@import "partials/navigation";
+@import "partials/home-page";
+@import "partials/footer-widgets";
+@import "partials/site-footer";
+@import "partials/scroll-to-top";
+@import "partials/what-we-do-page";
+@import "partials/why-clients-love-us-page";
+@import "partials/people-page";
+@import "partials/blogroll-page";
+@import "partials/contact-us-page";
+
+
+form{
+  width:100%;
+}
+
+input,select{
+  font-size: 16px;
+  height:50px;
+  padding:10px;
+}
+input, select{
+  margin-bottom:20px;
+  box-sizing: border-box;
+}
+input{
+  border-radius: $border-radius;
+}
+select{
+  line-height: 19px;
+}
+
+.site-header{
+  background-color: $color-brand;
+  &.dark{
+    box-shadow: 0 3px 5px rgba(0,0,0,.05);
+    .site-description{
+      text-indent: -9999px;
+      height:0;
+    }
+  }
+}
+
+.site-inner{
+  @include max-1023{
+    margin-top: 30px;
+  }
+}
+
+@include medium-screen{
+  .site-header{
+    padding-bottom:0px;
+  }
+  .title-area{
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  .site-title{
+    // background-color: pink;
+  }
+  .site-description{
+    // background-color: yellow;
+    text-indent: initial;
+    height:initial;
+  }
+
+  .left-half, .right-half{
+    width:50%;
+  }
+  .left-half{
+    float: left;
+    padding-right: 20px;
+  }
+  .right-half{
+    float: right;
+    padding-left: 20px;
+  } 
+}
+
+// Buttons
+%button{
+  background-color: $color-primary;
+  border-color: $color-primary;
+  font-weight: bold;
+  @extend %transition;
+  &:hover{
+    background-color: $olive-yellow;
+    border-color: $olive-yellow;
+    // color: $color-primary;
+  }
+}
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button{
+  @extend %button;
+}
+
+div#respond.comment-respond{
+  display: none;
+}

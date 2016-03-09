@@ -1,0 +1,1 @@
+jQuery(function($){document.location.hash&&window.setTimeout(function(){document.location.href+=""},10),$.localScroll({duration:750});var i=$(window).height();$(".image-section").css({height:i+"px"}),$(window).resize(function(){var i=$(window).height();$(".image-section").css({height:i+"px"})})});
