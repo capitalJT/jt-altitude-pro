@@ -15,6 +15,7 @@
   }
   &:after{
     content:"↑";
+    color: $color-primary;
   }
 }
 
@@ -36,13 +37,13 @@
 }
 .scroll-to-top-show{
   animation-name: scroll-to-top-show;
-  animation-duration: 1s; 
+  animation-duration: 0.7s; 
   animation-fill-mode: both; 
   animation-iteration-count:1;
 }
 .scroll-to-top-hide{
   animation-name: scroll-to-top-hide;
-  animation-duration: 1s; 
+  animation-duration: 0.7s; 
   animation-fill-mode: both; 
   animation-iteration-count:1;
 }

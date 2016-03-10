@@ -1001,7 +1001,7 @@ Site Header
 }
 
 .featured-section .site-header > .wrap {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .site-header.dark {
@@ -1814,7 +1814,7 @@ Media Queries
 	.front-page-3,
 	.front-page-5,
 	.front-page-7 {
-	    background-attachment: scroll;
+	    /*background-attachment: scroll;*/
 	}
 
 }

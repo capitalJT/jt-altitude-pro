@@ -242,20 +242,61 @@
 .work{
   .thumbnail-list{
     li{
-      display: block; 
+      // display: block; 
+      // display: flex;
       max-width: 45em;
-      margin: 0 auto 1em;
+      // float: left;
+      // width: 50%;
+      margin: 0 auto 2.25em;
+      padding: 0;
+
       &:hover{
         max-width: 45.125em;
         img{
           @include box-shadow($horizontal: 2px, $vertical: 4px, $blur: 1em, $color: rgba(0,0,0,0.7));
         }
         a{
-          color: #ccc;
+          color: white; 
+        }
+        h3{
+          top: 42%;
+          visibility: visible;
+          opacity: 1;
         }
       }
     }
-
+    a{
+      // background-color: rgba(255,255,255,0.2);
+      position: relative;
+      display: block;
+      line-height: 0;
+      // padding: 0.3em;
+    }
+    h3{
+      position: absolute;
+      background-color: rgba(0,0,0,0.8);
+      padding: 1em;
+      width: 100%;
+      top: 50%;
+      visibility: hidden;
+      opacity: 0;
+      @include transition(top 0.3s ease-in-out, opacity 0.3s ease-in-out);
+    }
+    img{
+      display: inherit;
+    }
+    span{
+      // position: absolute;
+      // top: 0;
+      // right: 0;
+      // bottom: 0;
+      // left: 0;
+      // z-index: 999;
+      // width: 100%;
+      // border: solid thin green;
+      // background-color: rgba(0,0,0,0.5);
+      // display: block;
+    }
   }
 }
 

@@ -68,12 +68,12 @@ jQuery(function( $ ){
         			aTarget = "";
         		}
 
-        		var clientName = value.client;
-        		// var clientDescription = value.description;
+        		// var clientName = value.client;
+        		var clientDescription = value.description;
         		var clientImgSrc = value.imgSrc;
         		var clientlinkHref = value.linkHref;
 
-        		var output = "<li><a href='"+ clientlinkHref +"'"+ aTarget +"><h3>" + clientName +"</h3><img src='"+ clientImgSrc +"'></a></li>";
+        		var output = "<li><a href='"+ clientlinkHref +"'"+ aTarget +"><span><h3>" + clientDescription +"</h3><img src='"+ clientImgSrc +"'></span></a></li>";
 
      			items.push( output );
         		

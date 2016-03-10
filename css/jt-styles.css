@@ -391,9 +391,9 @@ nav.nav-primary .responsive-menu-icon {
   margin-right: 0.4em; }
 
 .work .thumbnail-list li {
-  display: block;
   max-width: 45em;
-  margin: 0 auto 1em; }
+  margin: 0 auto 2.25em;
+  padding: 0; }
   .work .thumbnail-list li:hover {
     max-width: 45.125em; }
     .work .thumbnail-list li:hover img {
@@ -401,7 +401,30 @@ nav.nav-primary .responsive-menu-icon {
       -moz-box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7);
       box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7); }
     .work .thumbnail-list li:hover a {
-      color: #ccc; }
+      color: white; }
+    .work .thumbnail-list li:hover h3 {
+      top: 42%;
+      visibility: visible;
+      opacity: 1; }
+.work .thumbnail-list a {
+  position: relative;
+  display: block;
+  line-height: 0; }
+.work .thumbnail-list h3 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1em;
+  width: 100%;
+  top: 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -moz-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -ms-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; }
+.work .thumbnail-list img {
+  display: inherit; }
 
 .footer-widgets {
   background-color: #A1A0A1; }
@@ -508,7 +531,8 @@ nav.nav-primary .responsive-menu-icon {
     background-color: #ccc;
     cursor: pointer; }
   .scroll-to-top:after {
-    content: "↑"; }
+    content: "↑";
+    color: #E24D25; }
 
 @keyframes scroll-to-top-show {
   0% {
@@ -522,13 +546,13 @@ nav.nav-primary .responsive-menu-icon {
     bottom: -100px; } }
 .scroll-to-top-show {
   animation-name: scroll-to-top-show;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
 .scroll-to-top-hide {
   animation-name: scroll-to-top-hide;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
