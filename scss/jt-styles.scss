@@ -1,4 +1,5 @@
 @import "base";
+@import "mixins/settings";
 @import "mixins/media-queries";
 @import "typography";
 
@@ -81,18 +82,6 @@ select{
   } 
 }
 
-// Buttons
-%button{
-  background-color: $color-primary;
-  border-color: $color-primary;
-  font-weight: bold;
-  @extend %transition;
-  &:hover{
-    background-color: $olive-yellow;
-    border-color: $olive-yellow;
-    // color: $color-primary;
-  }
-}
 button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button{
   @extend %button;
 }

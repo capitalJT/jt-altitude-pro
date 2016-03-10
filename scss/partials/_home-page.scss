@@ -238,14 +238,24 @@
     margin-right: 0.4em;
   }
 }
+
 .work{
   .thumbnail-list{
-    // border: solid thin red;
     li{
       display: block; 
       max-width: 45em;
       margin: 0 auto 1em;
+      &:hover{
+        max-width: 45.125em;
+        img{
+          @include box-shadow($horizontal: 2px, $vertical: 4px, $blur: 1em, $color: rgba(0,0,0,0.7));
+        }
+        a{
+          color: #ccc;
+        }
+      }
     }
+
   }
 }
 

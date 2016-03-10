@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center; }
 
-.text-link:hover, .blog .content .entry-content a:hover:not(.more-link), .single-post .content .entry-content a:hover:not(.more-link), .blog .content .entry-content a:hover:not(.sd-button), .single-post .content .entry-content a:hover:not(.sd-button), .scroll-to-top, button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button {
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button, .text-link:hover, .blog .content .entry-content a:hover:not(.more-link), .single-post .content .entry-content a:hover:not(.more-link), .blog .content .entry-content a:hover:not(.sd-button), .single-post .content .entry-content a:hover:not(.sd-button), .scroll-to-top {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -53,6 +53,32 @@ main article header p.entry-meta, .single-post .content .entry-footer {
   border-top: 1px solid #dedede;
   padding-top: 10px;
   color: #676767; }
+
+/*
+    Example usage:
+    @include animation(10s, 5s, changecolour, ease-in, alternate, 3)
+ */
+/*
+    Example usage:
+@include keyframes(bgcolor) {
+  0% {
+    background-color: #ffccf2;
+  }
+  50% {
+    background-color: #ccffcc;
+  }
+  100% {
+    background-color: #ccffff;
+  }
+}
+*/
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button {
+  background-color: #E24D25;
+  border-color: #E24D25;
+  font-weight: bold; }
+  button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover {
+    background-color: #B0AF81;
+    border-color: #B0AF81; }
 
 .client-section-text .section-title {
   font-size: 72px;
@@ -368,6 +394,14 @@ nav.nav-primary .responsive-menu-icon {
   display: block;
   max-width: 45em;
   margin: 0 auto 1em; }
+  .work .thumbnail-list li:hover {
+    max-width: 45.125em; }
+    .work .thumbnail-list li:hover img {
+      -webkit-box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7);
+      -moz-box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7);
+      box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7); }
+    .work .thumbnail-list li:hover a {
+      color: #ccc; }
 
 .footer-widgets {
   background-color: #A1A0A1; }
@@ -684,13 +718,5 @@ select {
   .right-half {
     float: right;
     padding-left: 20px; } }
-button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button {
-  background-color: #E24D25;
-  border-color: #E24D25;
-  font-weight: bold; }
-  button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover {
-    background-color: #B0AF81;
-    border-color: #B0AF81; }
-
 div#respond.comment-respond {
   display: none; }

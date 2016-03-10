@@ -1,0 +1,102 @@
+{
+  "thumbnails": [
+    { "client" : "Digital Meaning",
+      "description" : "Digital Meaning",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/Digital-Meaning-thumbnail.png",
+      "linkHref" : "http://digitalmeaning.co/",
+      "extLink" : true
+
+    },
+    { "client" : "CoroStuff",
+      "description" : "CoroStuff",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/CoroStuff-thumbnail.png",
+      "linkHref" : "http://corostuff.com/",
+      "extLink" : true
+
+    },
+    { "client" : "Al Jazeera",
+      "description" : "Al Jazeera Design Language System",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJ-DLS-Home.jpg",
+      "linkHref" : "http://jabaltorres.com/al-jazeera-design-language-system/",
+      "extLink" : false
+
+    },
+    { "client" : "Al Jazeera",
+      "description" : "Al Jazeera Training Center",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJTC-thumbnail.png",
+      "linkHref" : "http://training.aljazeera.net/en/",
+      "extLink" : false
+
+    },
+    { "client" : "Al Jazeera",
+      "description" : "Al Jazeera Icons",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJMN-icons.jpg",
+      "linkHref" : "http://jabaltorres.com/al-jazeera-icons/",
+      "extLink" : false
+
+    },
+    { "client" : "The Refinery",
+      "description" : "Refinery End of Year",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/refinery-2014-eoy.png",
+      "linkHref" : "http://jabaltorres.com/refinery-end-of-year/",
+      "extLink" : false
+
+    },
+    { "client" : "Systematic",
+      "description" : "The Other Woman",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/the-other-woman.png",
+      "linkHref" : "http://jabaltorres.com/the-other-woman/",
+      "extLink" : false
+
+    },
+    { "client" : "Butcher Shop Creative",
+      "description" : "AutoReturn",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/autoreturn.png",
+      "linkHref" : "http://jabaltorres.com/auto-return/",
+      "extLink" : false
+
+    },
+    { "client" : "The Refinery",
+      "description" : "Mad Men Season 7 DPK",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/mms7-dpk.png",
+      "linkHref" : "http://jabaltorres.com/mad-men-season-7-dpk/",
+      "extLink" : false
+
+    },
+    { "client" : "Armstrong Retouching",
+      "description" : "Armstrong Retouching",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/armstrong-retouching.jpg",
+      "linkHref" : "http://jabaltorres.com/armstrong-retouching/",
+      "extLink" : false
+
+    },
+    { "client" : "The Refinery",
+      "description" : "Mad Men Digital Campaign",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/mad-men-tumblr.png",
+      "linkHref" : "http://jabaltorres.com/mad-men-digital-campaign/",
+      "extLink" : false
+
+    },
+    { "client" : "The Refinery",
+      "description" : "The Red Road Digital Campaign",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/the-red-road.png",
+      "linkHref" : "http://jabaltorres.com/the-red-road-digital-campaign/",
+      "extLink" : true
+
+    },
+    { "client" : "The Refinery",
+      "description" : "The Refinery Press Kit Portfolio",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/refinery-press-kits.png",
+      "linkHref" : "#",
+      "extLink" : false
+
+    },
+    { "client" : "IMNOTITALIAN",
+      "description" : "I'm Not Italian",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/imnotitalian.png",
+      "linkHref" : "http://imnotitalian.com/",
+      "extLink" : true
+
+    }
+  ]
+}

@@ -25,8 +25,6 @@ jQuery(function( $ ){
 			$('.scroll-to-top').addClass('scroll-to-top-hide');
 			$('.scroll-to-top').removeClass('scroll-to-top-show');				
 		}
-		
-		console.log("function is running");
 
 	});
 
@@ -56,5 +54,35 @@ jQuery(function( $ ){
 	// console.log(header_height);
 	// $(".site-inner").css("margin-top", header_height);
 
+	// using gist as a temporary bandaid
+	$.getJSON('https://gist.githubusercontent.com/capitalJT/d2f99864e580533b0c99/raw/b00915a32e3949f752755d81b9f8bc9dc4a888af/jt-data.json', function(data) {
+	    var items = [];
+	  	$.each(data, function(idx, obj){ 
+        	$.each(obj, function(key, value){
+
+        		// check for external link
+        		var aTarget = null;
+				if (value.extLink == true){
+        			aTarget = 'target="_blank"';
+        		} else {
+        			aTarget = "";
+        		}
+
+        		var clientName = value.client;
+        		// var clientDescription = value.description;
+        		var clientImgSrc = value.imgSrc;
+        		var clientlinkHref = value.linkHref;
+
+        		var output = "<li><a href='"+ clientlinkHref +"'"+ aTarget +"><h3>" + clientName +"</h3><img src='"+ clientImgSrc +"'></a></li>";
+
+     			items.push( output );
+        		
+        	});
+    	});
+	 
+	  	$( "<ul/>", { "class": "thumbnail-list", html: items }).appendTo( ".work" );
+	});
+
 });
+
 
