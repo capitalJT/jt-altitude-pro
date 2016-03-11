@@ -666,7 +666,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Janelle Cipriano",
+"lastSavedByUser": "jabal torres",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -830,7 +830,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888\/wordpress",
+	"externalServerAddress": "http:\/\/localhost:8888\/jabaltorres-wp",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
@@ -1167,6 +1167,10 @@
 			}
 		},
 	"jsLintFlags2": {
+		"ass": {
+			"active": false,
+			"flagValue": -1
+			},
 		"bitwise": {
 			"active": 0,
 			"flagValue": -1
@@ -1175,36 +1179,92 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"couch": {
-			"active": 0,
+		"closure": {
+			"active": false,
+			"flagValue": -1
+			},
+		"continue": {
+			"active": false,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": false,
 			"flagValue": -1
 			},
 		"devel": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"es6": {
-			"active": 0,
+		"eqeq": {
+			"active": false,
 			"flagValue": -1
 			},
-		"eval": {
-			"active": 0,
+		"evil": {
+			"active": false,
 			"flagValue": -1
 			},
-		"for": {
-			"active": 0,
+		"forin": {
+			"active": false,
 			"flagValue": -1
+			},
+		"indent": {
+			"active": false,
+			"flagValue": 4
 			},
 		"maxlen": {
 			"active": 0,
 			"flagValue": 150
 			},
+		"newcap": {
+			"active": false,
+			"flagValue": -1
+			},
 		"node": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"this": {
-			"active": 0,
+		"nomen": {
+			"active": false,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": false,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": false,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": false,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": false,
+			"flagValue": -1
+			},
+		"sloppy": {
+			"active": false,
+			"flagValue": -1
+			},
+		"stupid": {
+			"active": false,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": false,
+			"flagValue": -1
+			},
+		"todo": {
+			"active": false,
+			"flagValue": -1
+			},
+		"unparam": {
+			"active": false,
+			"flagValue": -1
+			},
+		"vars": {
+			"active": false,
 			"flagValue": -1
 			},
 		"white": {

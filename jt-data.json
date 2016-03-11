@@ -14,6 +14,34 @@
       "extLink" : true
 
     },
+    { "client" : "BabyCenter",
+      "description" : "Pregnancy.com Site",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/Baby-Center.png",
+      "linkHref" : "http://pregnancy.com/",
+      "extLink" : true
+
+    },
+    { "client" : "Digital Meaning",
+      "description" : "CollabNet Site",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/Collabnet.png",
+      "linkHref" : "http://www.collab.net/",
+      "extLink" : true
+
+    },
+    { "client" : "Li Shen DesignCo",
+      "description" : "Dragon Ball Z",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/Li-Shen-DBZ.jpg",
+      "linkHref" : "http://jabaltorres.com/demos/dbz/",
+      "extLink" : false
+
+    },
+    { "client" : "Better World Advertising",
+      "description" : "What Moves You Campaign",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/ITC-What-Moves-You.png",
+      "linkHref" : "http://movemorenow.org/",
+      "extLink" : true
+
+    },
     { "client" : "Al Jazeera",
       "description" : "Al Jazeera Design Language System",
       "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJ-DLS-Home.jpg",
@@ -26,6 +54,13 @@
       "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJTC-thumbnail.png",
       "linkHref" : "http://training.aljazeera.net/en/",
       "extLink" : false
+
+    },
+    { "client" : "Al Jazeera",
+      "description" : "Al Jazeera Recruitment Site",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJ-Careers.png",
+      "linkHref" : "http://careers.aljazeera.net/en/",
+      "extLink" : true
 
     },
     { "client" : "Al Jazeera",
