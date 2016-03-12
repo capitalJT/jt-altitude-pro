@@ -66,56 +66,6 @@
 // Sections
 ////////////////////////////////////////////////////////////////////////
 
-// Campaign Monitor Form Area
-
-.home-page-h1, .dm-campaign-monitor-form, .client-section{
-  margin-left:auto;
-  margin-right:auto;
-  max-width: 1200px;
-}
-.dm-campaign-monitor-form{
-  width:100%;
-  // background-color: #fff;
-  .dm-campaign-monitor-form-text, form{
-    display: inline-block;
-  }
-
-  // would like to use some flex box here.
-  .dm-campaign-monitor-form-text{
-    width:100%;
-    box-sizing: border-box;
-  }
-  .section-blurb{
-    display: block;
-    margin-bottom: 10px;
-  }
-  label{
-    display: none;
-  }
-  @include min-1023{
-    .dm-campaign-monitor-form-text{
-      width:25%;
-    }
-    form{
-      width:75%;
-      float: right;
-    }
-    input, select, button{
-      float: left;
-    }
-    input{
-      width:29%;
-      margin-right: 1%;
-    }
-    select{
-      width:23%;
-      margin-right: 1%;
-    }
-    button{
-      width:15%;
-    }
-  }
-}
 
 // Client Section Area
 .client-section{
@@ -191,15 +141,7 @@
     }
   }
 }
-@include max-1023{
-  .home-page-h1, .dm-campaign-monitor-form{
-    max-width: 768px;
-  }
-  .dm-campaign-monitor-form{
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+@include max-1023{}
 
 @media only screen and (min-width: 800px) and (max-width: 1023px) {}
 
@@ -209,47 +151,15 @@
   }
 }
 
-@include large-screen{
-  .home-page-h1{
-    font-size: 72px;
-    padding:150px 100px;
-  }
-}
-
-
-#front-page-1{
-  .widget-title{
-    // background-color: red;
-    font-size:2em;
-    margin-bottom: 0.125em;
-  }
-}
-
-#front-page-2{
-  div.widget-wrap{
-    max-width: 45em;
-    margin: auto;
-  }
-}
-#front-page-4{
-  a.genericon{
-    font-size: 2em;
-    margin-left: 0.4em;
-    margin-right: 0.4em;
-  }
-}
+@include large-screen{}
 
 .work{
   .thumbnail-list{
     li{
-      // display: block; 
-      // display: flex;
       max-width: 45em;
-      // float: left;
-      // width: 50%;
+      background-color: rgba(255,255,255,0.1);
       margin: 0 auto 2.25em;
-      padding: 0;
-
+      padding: 0.5em;
       &:hover{
         max-width: 45.125em;
         img{
@@ -259,45 +169,230 @@
           color: white; 
         }
         h3{
-          top: 42%;
           visibility: visible;
-          opacity: 1;
+        }
+        .overlay{
+          background-color: rgba(0,0,0,0.1);
         }
       }
     }
     a{
-      // background-color: rgba(255,255,255,0.2);
+      background-color: rgba(255,255,255,0.2);
       position: relative;
       display: block;
       line-height: 0;
-      // padding: 0.3em;
-    }
-    h3{
-      position: absolute;
-      background-color: rgba(0,0,0,0.8);
-      padding: 1em;
-      width: 100%;
-      top: 50%;
-      visibility: hidden;
-      opacity: 0;
-      @include transition(top 0.3s ease-in-out, opacity 0.3s ease-in-out);
+      color: #eee;
     }
     img{
       display: inherit;
     }
-    span{
-      // position: absolute;
-      // top: 0;
-      // right: 0;
-      // bottom: 0;
-      // left: 0;
-      // z-index: 999;
-      // width: 100%;
-      // border: solid thin green;
-      // background-color: rgba(0,0,0,0.5);
-      // display: block;
+    .text{
+      // border: solid thin red;
+      padding: 1em 0.5em;
+      position: absolute;
+      z-index: 999;
+      width: 100%;
+      // background-color: pink;
+      background-color: rgba(0,0,0,0.7);
+      border-top: solid thin rgba(255,255,255,0.1);
+      border-bottom: solid thin rgba(255,255,255,0.1);
+      top: 25%;
+      h3{
+        margin: 0 0 0.6em;
+        font-size: $h5-font-size;
+        
+        // background-color: yellow;
+        // padding: 1em;
+        // z-index: 999;
+        // width: 100%;
+        // top: 42%;
+        // visibility: hidden;
+        // opacity: 0;
+        @include transition(top 0.3s ease-in-out, opacity 0.3s ease-in-out);
+      }
+      span{
+        display: block;
+        padding-bottom: 0.7em;
+      }
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.8);
+      @include transition(background-color 0.3s ease-in-out);
+    }
+    @include medium-screen{
+      .text{
+        top: 37%;
+        h3{
+          font-size: $h4-font-size;
+        }
+      }
     }
   }
 }
+
+@media only screen and (max-width: 1200px){
+  .front-page-3{
+    background-attachment: fixed;
+  }
+}
+
+.home .wrapper{
+  // border: solid thin blue;
+  // background-color: blue;
+  display: block;
+  p{
+    margin: 0;
+  }
+  .section{
+    box-sizing: border-box;
+    padding: 2em;
+  }
+  .inner-section{
+    // border: solid thin green;
+    padding: 1em;
+    // background-color: yellow;
+    max-width: 45em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  article{
+    // background-color: orange;
+    padding-top: 1.8em;
+    // border: solid thin red;
+    text-align: center;
+    header{
+      margin-bottom: 1.5em;
+      border-bottom: solid thin rgba(0,0,0,0.2);
+    }
+    .content{
+      display: block;
+    }
+  }
+
+  %sharedGradient{
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.9) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.2)), color-stop(30%,rgba(0,0,0,0.5)), color-stop(80%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.9)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#e6000000',GradientType=0 );
+    overflow: scroll;
+    position: relative;
+  }
+  #intro{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .inner-section{
+      // background-color: #eee;
+      margin-top: -4em;
+      text-align: center;
+      color: white;
+      header{
+        margin-bottom: 0;
+        border-bottom: solid thin rgba(255,255,255,0.25);
+      }
+      article{
+        // background-color: red;
+        padding-top:0;
+      }
+      .name, .description{
+        // margin: 0 0 0.5em;
+      }
+      .name{
+        text-transform: uppercase;
+        margin: 0 0 0.5em;
+        color: white;
+      }
+      .description{
+        margin: 0;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.25em;
+      }
+    }
+  }
+  #intro, #work{
+    @extend %sharedGradient;
+  }
+  .intro-section-outer-wrapper, .work-section-outer-wrapper{
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    position: relative;
+    display: block;
+    @include max-800{
+      background-attachment: scroll;
+    }
+  }
+  .intro-section-outer-wrapper{
+    background-image: url("//www.jabaltorres.com/wp-content/uploads/2016/03/P1000151_JT.jpg");
+  }
+  .work-section-outer-wrapper{
+    background-image: url("//www.jabaltorres.com/wp-content/themes/jt-altitude-pro/images/bg-3.jpg");
+  }
+  #about{
+     background-color: #fff;
+     p{
+      margin-bottom: 1.5em;
+     }
+  }
+  #work{
+     header{
+      color: white;
+     }
+     ul{
+      margin: 0;
+      li{
+        list-style-type: none;
+      }
+     }
+  }
+  #contact{
+    background-color: #fff;
+    ul{
+      // background-color: green;
+      display: block;
+      margin: 0;
+    }
+    li{
+      display: inline-block;
+      list-style-type: none;
+    }
+    a{
+      display: inline-block;
+      padding: 0.5em;
+      margin-left: 0.125em;
+      margin-right: 0.125em;
+      color: $color-primary;
+      font-size: 2em;
+      @include transition(background-color 0.3s ease-in-out);
+      &:hover{
+        background-color: #eee;
+      }
+    }
+    .icon{
+      &:before{}
+    }
+    .content{
+      .social-links{}
+    
+    }
+  }
+}
+
+
+
+
+
 
 

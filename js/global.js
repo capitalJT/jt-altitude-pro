@@ -55,7 +55,7 @@ jQuery(function( $ ){
 	// $(".site-inner").css("margin-top", header_height);
 
 	// using gist as a temporary bandaid
-	$.getJSON('https://gist.githubusercontent.com/capitalJT/d2f99864e580533b0c99/raw/7cf2b4e37fc4d121ba598d8a41df0339b7db975c/jt-data.json', function(data) {
+	$.getJSON('https://gist.githubusercontent.com/capitalJT/d2f99864e580533b0c99/raw/4031dbd77ae337c65ec2d46cff1dded1cb28af5f/jt-data.json', function(data) {
 	    var items = [];
 	  	$.each(data, function(idx, obj){ 
         	$.each(obj, function(key, value){
@@ -69,11 +69,12 @@ jQuery(function( $ ){
         		}
 
         		// var clientName = value.client;
-        		var clientDescription = value.description;
-        		var clientImgSrc = value.imgSrc;
-        		var clientlinkHref = value.linkHref;
+        		var description = value.description;
+        		var role = value.role;
+        		var imgSrc = value.imgSrc;
+        		var linkHref = value.linkHref;
 
-        		var output = "<li><a href='"+ clientlinkHref +"'"+ aTarget +"><span><h3>" + clientDescription +"</h3><img src='"+ clientImgSrc +"'></span></a></li>";
+        		var output = "<li><a href='"+ linkHref +"'"+ aTarget +"><div class=\"text\"><h3>" + description +"</h3><span class=\"role\">"+ role +"</span></div><img src='"+ imgSrc +"'><span class=\"overlay\"></span></a></li>";
 
      			items.push( output );
         		
@@ -82,6 +83,32 @@ jQuery(function( $ ){
 	 
 	  	$( "<ul/>", { "class": "thumbnail-list", html: items }).appendTo( ".work" );
 	});
+
+
+  // $('#menu-primary-nav a').on('click',function (e) {
+  //     e.preventDefault();
+  //     var target = this.hash;
+  //     $target = $(target);
+  //     $('html, body').stop().animate({
+  //         'scrollTop':  $target.offset().top //no need of parseInt here
+  //     }, 900, 'swing', function () {
+  //         window.location.hash = target;
+  //     });
+  //     console.log(target);
+  // });
+
+  $('#menu-primary-nav a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
 
 });
 

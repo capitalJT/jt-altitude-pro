@@ -92,7 +92,7 @@ function altitude_footer_menu() {
 //* Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
-	$creds = '[footer_copyright] &middot; Jabal Torres &middot;';
+	$creds = '[footer_copyright] &middot; Jabal Torres &middot; Made in \'Merica';
 	return $creds;
 }
 
@@ -300,7 +300,7 @@ function featured_post_image() {
 // }
 
 function remove_p_on_pages() {
-	if ( is_page( array( 'portfolio-template', 'work' ) ) ){
+	if ( is_page( array( 'home', 'work' ) ) ){
 		remove_filter( 'the_content', 'wpautop' );
 		remove_filter( 'the_excerpt', 'wpautop' );
 	}

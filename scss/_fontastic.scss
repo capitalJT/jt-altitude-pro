@@ -1,0 +1,154 @@
+@mixin border-radius($val: 3px){
+	-webkit-border-radius:$val;
+	        border-radius:$val;
+}
+
+// @mixin box-shadow{
+// 	-webkit-box-shadow:inset 0 0 3px $color-accent;
+// 				  box-shadow:inset 0 0 3px $color-accent;
+// }
+
+@mixin border-box{
+		-webkit-box-sizing:border-box;
+	     -moz-box-sizing:border-box;
+	          box-sizing:border-box;
+}
+
+//shared styles for each section
+%shared{
+	margin:0 0 20px 0;
+	padding:20px 0 20px 30px;
+	color:rgba(0,0,0,0.5);
+	border:1px solid #d8e0e5;
+	@include border-radius;
+}
+%input-shared{
+	display:block;
+	margin:0;
+	margin-top:5px;
+	padding:8px;
+	font-size:16px;
+	line-height:16px;
+	border:1px solid #d8e0e5;
+	height:40px;
+	outline:0;
+	background:#fff;
+	@include border-radius($val: 5px);
+	&:focus{
+		border:1px solid #fbde4a;
+		@include box-shadow;
+	}
+	&:hover{
+		@include box-shadow;
+	}
+}
+%list-shared{
+	display:inline-block;
+	margin:0 30px 20px 0;
+	overflow:hidden;
+	padding:0;
+}
+body{
+	// font-family:'Helvetica',sans-serif;
+}
+.container{
+	margin:15px auto;
+	width:80%;
+}
+
+$fz:(
+	sm: 12px,
+	reg: 16px,
+	large: 26px,
+	xl: 38px
+);
+
+h1{
+	margin:40px 0 20px;
+	font-weight:700;
+	font-size: map-get($fz,xl);
+	line-height:32px;
+	color:$color-primary;
+}
+
+h2{
+	font-size:18px;
+	padding:0 0 21px 5px;
+	margin:45px 0 0 0;
+	text-transform:uppercase;
+	font-weight:500;
+}
+.small{
+	font-size:14px;
+	color:#a5adb4;
+	a{
+		color:$color-primary;
+		&:hover{
+			color:$color-accent;
+		}
+	}
+}
+
+.glyphs{
+	@extend %shared;
+	li{
+		@extend %list-shared;
+	}
+	input{
+		@extend %input-shared;
+	}
+}
+
+.character-mapping{
+	li{
+		width:90px
+	}
+	.icon{
+		margin:10px 0 10px 15px;
+		padding:15px;
+		position:relative;
+		width:55px;
+		height:55px;
+		color:$color-primary;
+		overflow:hidden;
+		font-size:32px;
+		svg{fill:#000}
+	}
+	input{
+		width:100%;
+		text-align:center;
+	}
+}
+
+.css-mapping{
+	.icon{
+		margin:0;
+		margin-right:10px;
+		padding:13px;
+		height:50px;
+		width:50px;
+		color:$color-primary;
+		overflow:hidden;
+		float:left;
+		font-size:24px;
+	}
+	input{
+		width:150px;
+		float:right;
+	}
+}
+
+.svg-sprite{
+
+  [class^="icon-"],
+	[class*=" icon-"] {
+	  margin: 10px;
+	  height: 35px;
+	  width: 35px;
+	  float: left;
+	}
+	input{
+	  width:150px;
+	  float:right;
+	}
+}

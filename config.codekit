@@ -74,6 +74,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/html\/home.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/html\/home.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/html\/jt-home-page.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -421,6 +430,38 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/scss\/_font.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/_font.scss",
+		"outputAbbreviatedPath": "\/css\/_font.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/_fontastic.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/_fontastic.scss",
+		"outputAbbreviatedPath": "\/css\/_fontastic.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/scss\/_typography.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -666,7 +707,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "jabal torres",
+"lastSavedByUser": "Janelle Cipriano",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -830,7 +871,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888\/jabaltorres-wp",
+	"externalServerAddress": "http:\/\/localhost:8888\/wordpress",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
@@ -1167,10 +1208,6 @@
 			}
 		},
 	"jsLintFlags2": {
-		"ass": {
-			"active": false,
-			"flagValue": -1
-			},
 		"bitwise": {
 			"active": 0,
 			"flagValue": -1
@@ -1179,92 +1216,36 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"closure": {
-			"active": false,
-			"flagValue": -1
-			},
-		"continue": {
-			"active": false,
-			"flagValue": -1
-			},
-		"debug": {
-			"active": false,
+		"couch": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"devel": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"eqeq": {
-			"active": false,
+		"es6": {
+			"active": 0,
 			"flagValue": -1
 			},
-		"evil": {
-			"active": false,
+		"eval": {
+			"active": 0,
 			"flagValue": -1
 			},
-		"forin": {
-			"active": false,
+		"for": {
+			"active": 0,
 			"flagValue": -1
-			},
-		"indent": {
-			"active": false,
-			"flagValue": 4
 			},
 		"maxlen": {
 			"active": 0,
 			"flagValue": 150
 			},
-		"newcap": {
-			"active": false,
-			"flagValue": -1
-			},
 		"node": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"nomen": {
-			"active": false,
-			"flagValue": -1
-			},
-		"plusplus": {
-			"active": false,
-			"flagValue": -1
-			},
-		"properties": {
-			"active": false,
-			"flagValue": -1
-			},
-		"regexp": {
-			"active": false,
-			"flagValue": -1
-			},
-		"rhino": {
-			"active": false,
-			"flagValue": -1
-			},
-		"sloppy": {
-			"active": false,
-			"flagValue": -1
-			},
-		"stupid": {
-			"active": false,
-			"flagValue": -1
-			},
-		"sub": {
-			"active": false,
-			"flagValue": -1
-			},
-		"todo": {
-			"active": false,
-			"flagValue": -1
-			},
-		"unparam": {
-			"active": false,
-			"flagValue": -1
-			},
-		"vars": {
-			"active": false,
+		"this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"white": {

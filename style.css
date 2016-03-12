@@ -1814,7 +1814,7 @@ Media Queries
 	.front-page-3,
 	.front-page-5,
 	.front-page-7 {
-	    /*background-attachment: scroll;*/
+	    background-attachment: scroll;
 	}
 
 }
