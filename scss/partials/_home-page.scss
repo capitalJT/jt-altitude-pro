@@ -1,6 +1,4 @@
 ////////////////////////////////////////////////////////////////////////
-// skip to next section
-
 .home{
   @include max-800{
     .site-inner{
@@ -10,7 +8,7 @@
   @include medium-screen{
     .site-inner{
       max-width:100%;
-      margin-top: 76px;
+      margin-top: 71px;
     }
   }
   @include max-1023{
@@ -40,118 +38,26 @@
 
 ////////////////////////////////////////////////////////////////////////
 
-.featured-blurb, .dm-campaign-monitor-form, .client-section{
-
-}
-
 .home-page{
   section{
     padding:20px;
   }
 }
 
-.featured-blurb{
-  background-color: $color-brand;
-}
-
-.home-page-h1{
-  color:white;
-  @extend %h3-font-size;
-  margin-bottom: 0;
-}
-
-
-
 ////////////////////////////////////////////////////////////////////////
 // Sections
 ////////////////////////////////////////////////////////////////////////
 
-
-// Client Section Area
-.client-section{
-  border-top: solid 4px $color-accent;
-}
-.client-section-text, .client-section-icons{
-  float: left;
-}
-.client-section-text{
-  .section-title{
-    @extend %h1-font-size;
-    color:$color-brand; 
-    display: block;
-    line-height: 1.5em;
-  }
-}
-.client-section-icons{
-  // background-color: #efefe6;
-  ul{
-    margin:0;
-  }
-  li{
-    list-style: none;
-    width:100%;
-    float: left;
-    @extend %text-center;
-    height:150px;
-    line-height: 150px;
-    border-bottom:solid thin #ccc;
-    @extend %flexbox-vertical-center;
-  }
-  img{
-    max-width: 90%;
-  }
-}
-
-@include medium-screen{
-  .home-page-h1{
-    font-size: 45px;
-    padding:65px;
-  }
-  .featured-blurb, .dm-campaign-monitor-form{
-    margin-bottom: 40px;
-  }
-  .featured-blurb{
-
-  }
-  .dm-campaign-monitor-form-text{
-    padding-right:20px
-  }
-  .dm-campaign-monitor-form{
-    form{
-      margin-top: 20px;
-    }  
-  }
-
-  section.client-section{
-    padding-top: 50px;
-  }
-
-  .client-section-text, .client-section-icons{
-    width:50%;
-  }
-  .client-section-text{
-    padding-right:20px;
-  }
-  .client-section-icons{
-    padding-left:20px;
-    margin-top: -40px;
-    li{
-      width: 33.3333%;
-      border-bottom: none;
-    }
-  }
-}
+@include medium-screen{}
 @include max-1023{}
-
 @media only screen and (min-width: 800px) and (max-width: 1023px) {}
-
-@include max-1280{
-  .home-page-h1, .dm-campaign-monitor-form, .client-section{
-    max-width: 1140px;
-  }
-}
+@include max-1280{}
 
 @include large-screen{}
+
+.entry-content ul.thumbnail-list{
+  margin-left: auto;
+}
 
 .work{
   .thumbnail-list{
@@ -160,6 +66,7 @@
       background-color: rgba(255,255,255,0.1);
       margin: 0 auto 2.25em;
       padding: 0.5em;
+      list-style-type: none;
       &:hover{
         max-width: 45.125em;
         img{
@@ -192,6 +99,7 @@
       position: absolute;
       z-index: 999;
       width: 100%;
+      text-align: center;
       // background-color: pink;
       background-color: rgba(0,0,0,0.7);
       border-top: solid thin rgba(255,255,255,0.1);
@@ -235,15 +143,10 @@
   }
 }
 
-@media only screen and (max-width: 1200px){
-  .front-page-3{
-    background-attachment: fixed;
-  }
-}
+@media only screen and (max-width: 1200px){}
 
+// All experimental code for the homepage
 .home .wrapper{
-  // border: solid thin blue;
-  // background-color: blue;
   display: block;
   p{
     margin: 0;
@@ -301,7 +204,6 @@
         border-bottom: solid thin rgba(255,255,255,0.25);
       }
       article{
-        // background-color: red;
         padding-top:0;
       }
       .name, .description{
@@ -309,13 +211,12 @@
       }
       .name{
         text-transform: uppercase;
-        margin: 0 0 0.5em;
-        color: white;
       }
       .description{
-        margin: 0;
+        text-transform: uppercase;
         font-family: 'Playfair Display', serif;
         font-size: 1.25em;
+        margin-bottom: 1.45em;
       }
     }
   }
@@ -345,6 +246,38 @@
      p{
       margin-bottom: 1.5em;
      }
+     .dev-languages{
+      // background-color: yellow;
+      padding: 0;
+      margin-left: 0;
+      // display: flex;
+      li{
+        list-style-type: none;
+        display: inline-block;
+        border: solid thin $color-primary;
+        // background-color: $color-primary;
+        font-family: 'Oswald', sans-serif;
+        // background-color: #eee;
+        font-size: 1.5em;
+        width: 5em;
+        height: 5em;
+        line-height: 5em;
+
+        border-radius: 100%;
+        // padding: 
+        box-sizing: border-box;
+        span{
+          border-bottom: solid thin #eee;
+        }
+        &:nth-of-type(even){
+          margin-left: 1em;
+          margin-right: 1em;
+        }
+        &:hover{
+          // font-size: 1.7em;
+        }
+      }
+    }
   }
   #work{
      header{
@@ -389,9 +322,6 @@
     }
   }
 }
-
-
-
 
 
 

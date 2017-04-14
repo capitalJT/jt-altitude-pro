@@ -1,7 +1,7 @@
 nav.nav-primary{
   .responsive-menu-icon{ // hamburger nav
     float: right;
-    border: solid thin #eee;
+    border: solid thin rgba(255,255,255,0.4);
     margin-top: -52px;
     margin-right: -18px;
     width:32px;
@@ -10,7 +10,7 @@ nav.nav-primary{
   }
 }
 .front-page .genesis-nav-menu li.current-menu-item > a:hover, .genesis-nav-menu li.current-menu-item > a, .genesis-nav-menu > li > a:hover{
-  border-color: $color-primary;
+  // border-color: $color-primary;
 }
 .genesis-nav-menu{
   display: block;
@@ -32,7 +32,8 @@ nav.nav-primary{
     border-width:1px;
   }
   @include min-1023{
-    margin-top: -80px;
+    margin-top: -55px;
+    // background-color: red;
   }
 }
 .site-header{
@@ -43,9 +44,9 @@ nav.nav-primary{
         padding-top: 5px;
         padding-bottom: 5px;
         border-color:white;
-        border-color:rgba(0,0,0,0);
+        // border-color:rgba(0,0,0,0);
         &:hover{
-          border-color: $color-primary;
+          // border-color: $color-primary;
         }
       }
     }
@@ -55,6 +56,6 @@ nav.nav-primary{
   .genesis-nav-menu.responsive-menu {
     clear: both;
     padding-top:15px;
-    border-bottom: solid thin #eee;
+    // border-bottom: solid thin #eee;
   }
 } 

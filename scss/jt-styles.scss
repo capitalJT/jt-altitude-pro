@@ -2,8 +2,7 @@
 @import "mixins/settings";
 @import "mixins/media-queries";
 @import "typography";
-@import "font";
-@import "fontastic";
+@import "icon-font";
 
 @import "partials/navigation";
 @import "partials/home-page";
@@ -13,8 +12,8 @@
 // @import "partials/what-we-do-page";
 // @import "partials/why-clients-love-us-page";
 // @import "partials/people-page";
-// @import "partials/blogroll-page";
-// @import "partials/contact-us-page";
+@import "partials/blogroll-page";
+@import "partials/work-example";
 
 
 form{
@@ -38,7 +37,7 @@ select{
 }
 
 .site-header{
-  background-color: $color-brand;
+  // background-color: $color-brand;
   &.dark{
     box-shadow: 0 3px 5px rgba(0,0,0,.05);
     .site-description{
@@ -67,8 +66,8 @@ select{
   }
   .site-description{
     // background-color: yellow;
-    text-indent: initial;
-    height:initial;
+    // text-indent: initial;
+    // height:initial;
   }
 
   .left-half, .right-half{

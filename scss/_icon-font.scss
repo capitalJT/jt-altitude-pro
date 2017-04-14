@@ -1,43 +1,5 @@
 @charset "UTF-8";
 
-// %content{
-//   content: attr(data-icon);
-// }
-
-// %font-styles{
-//   font-family: "ajmn-font";
-//   font-style: normal;
-//   font-weight: normal;
-//   font-variant: normal;
-//   text-transform: none;
-//   speak: none;
-//   line-height: 1;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
-
-// @font-face {
-//   font-family: "ajmn-icons";
-//   src:url("../fonts/ajmn-icons.eot");
-//   src:url("../fonts/ajmn-icons.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/ajmn-icons.woff") format("woff"),
-//     url("../fonts/ajmn-icons.ttf") format("truetype"),
-//     url("../fonts/ajmn-icons.svg#ajmn-icons") format("svg");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// [data-icon]:before {
-//   @extend %content;
-// }
-
-// [data-icon]:before,
-// [class^="ajmn-"]:before,
-// [class*=" ajmn-"]:before {
-//   @extend %font-styles;
-// }
-
-
 @font-face {
   font-family: "ajmn-icons";
   src:url("../fonts/ajmn-icons.eot");

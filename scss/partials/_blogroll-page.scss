@@ -60,7 +60,6 @@
     }
   }
 }
-
 .single-post{
   .wp-post-image{
     @extend %featured-img;
@@ -75,3 +74,7 @@
 a.more-link{
   font-weight: bold;
 }
+
+// .single-post .content img {
+//   border: solid thin #eee;
+// }

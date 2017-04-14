@@ -8,6 +8,7 @@
   z-index:9999;
   border-radius: $border-radius;
   text-align: center;
+  // display: none;
   @extend %transition;
   &:hover{
     background-color: #ccc;

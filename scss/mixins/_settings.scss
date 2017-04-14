@@ -43,6 +43,22 @@
   animation: none;
 }
 
+@mixin border-radius($val: 3px){
+  -webkit-border-radius:$val;
+          border-radius:$val;
+}
+
+// @mixin box-shadow{
+//  -webkit-box-shadow:inset 0 0 3px $color-accent;
+//          box-shadow:inset 0 0 3px $color-accent;
+// }
+
+@mixin border-box{
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+            box-sizing:border-box;
+}
+
 // keyframes mixin
 /*
     Example usage:
@@ -150,8 +166,6 @@
   user-select: $val;
 }
 
-
-
 @mixin box-shadow($horizontal: 0px, $vertical: 1px, $blur: 2px, $color: #CCC) {
   -webkit-box-shadow: $horizontal $vertical $blur $color;
   -moz-box-shadow: $horizontal $vertical $blur $color;
@@ -171,8 +185,8 @@ $a-tags: 'a, a:active, a:hover, a:visited';
   font-weight: bold;
   @extend %transition;
   &:hover{
-    background-color: $olive-yellow;
-    border-color: $olive-yellow;
+    // background-color: $olive-yellow;
+    // border-color: $olive-yellow;
     // color: $color-primary;
   }
 }
