@@ -186,7 +186,7 @@
     background: -ms-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
     background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#e6000000',GradientType=0 );
-    overflow: scroll;
+    // overflow: scroll;
     position: relative;
   }
   #intro{
@@ -228,11 +228,11 @@
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
+    // overflow: scroll;
     position: relative;
     display: block;
     @include max-800{
-      background-attachment: scroll;
+      // background-attachment: scroll;
     }
   }
   .intro-section-outer-wrapper{
@@ -242,11 +242,11 @@
     background-image: url("//www.jabaltorres.com/wp-content/themes/jt-altitude-pro/images/bg-3.jpg");
   }
   #about{
-     background-color: #fff;
-     p{
+    background-color: #fff;
+    p{
       margin-bottom: 1.5em;
-     }
-     .dev-languages{
+    }
+    .dev-languages{
       // background-color: yellow;
       padding: 0;
       margin-left: 0;
@@ -262,9 +262,7 @@
         width: 5em;
         height: 5em;
         line-height: 5em;
-
         border-radius: 100%;
-        // padding: 
         box-sizing: border-box;
         span{
           border-bottom: solid thin #eee;

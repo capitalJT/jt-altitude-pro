@@ -605,7 +605,6 @@ nav.nav-primary .responsive-menu-icon {
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#e6000000',GradientType=0 );
-    overflow: scroll;
     position: relative; }
   .home .wrapper #intro {
     height: 100vh;
@@ -633,12 +632,8 @@ nav.nav-primary .responsive-menu-icon {
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
     position: relative;
     display: block; }
-    @media only screen and (max-width: 800px) {
-      .home .wrapper .intro-section-outer-wrapper, .home .wrapper .work-section-outer-wrapper {
-        background-attachment: scroll; } }
   .home .wrapper .intro-section-outer-wrapper {
     background-image: url("//www.jabaltorres.com/wp-content/uploads/2016/03/P1000151_JT.jpg"); }
   .home .wrapper .work-section-outer-wrapper {
@@ -850,5 +845,14 @@ select {
 
 div#respond.comment-respond {
   display: none; }
+
+.article-list-item {
+  border: solid thin green; }
+
+.single-case-study {
+  border: solid thin orange; }
+
+.archive-pagination.pagination {
+  background-color: pink; }
 
 /*# sourceMappingURL=jt-styles.css.map */

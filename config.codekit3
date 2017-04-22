@@ -338,6 +338,18 @@
 		"oAP": "\/images\/favicon.ico",
 		"oF": 0
 		},
+	"\/includes\/case_study_cpt.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/includes\/case_study_cpt.php",
+		"oF": 0
+		},
+	"\/includes\/single_case_study_cpt.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/includes\/single_case_study_cpt.php",
+		"oF": 0
+		},
 	"\/js\/global.js": {
 		"ft": 64,
 		"mi": 1,
@@ -413,6 +425,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/languages\/altitude.pot",
+		"oF": 0
+		},
+	"\/lib\/case-studies-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/case-studies-page.php",
 		"oF": 0
 		},
 	"\/lib\/customize.php": {
@@ -673,6 +691,12 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/single-case_studies.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-case_studies.php",
+		"oF": 0
 		},
 	"\/style.css": {
 		"aP": 1,
