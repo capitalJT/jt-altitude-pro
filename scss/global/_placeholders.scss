@@ -9,3 +9,43 @@
     @extend %transition;
   }
 }
+
+// Extends
+%flexbox-vertical-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%transition {
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+%text-center{
+  text-align: center;
+}
+
+%display-none{
+  display: none;
+}
+
+%text-shadow{
+  text-shadow: 2px 2px 15px #000;
+}
+
+// Buttons
+%button{
+  background-color: $color-primary;
+  border-color: $color-primary;
+  font-weight: bold;
+  @extend %transition;
+  &:hover{
+    // background-color: $olive-yellow;
+    // border-color: $olive-yellow;
+    // color: $color-primary;
+  }
+}

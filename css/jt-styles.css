@@ -1,17 +1,4 @@
 @charset "UTF-8";
-.text-link:hover, .blog .content .entry-content a:hover:not(.more-link), .single-post .content .entry-content a:hover:not(.more-link), .blog .content .entry-content a:hover:not(.sd-button), .single-post .content .entry-content a:hover:not(.sd-button), button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button, .scroll-to-top {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-
-main article header p.entry-meta, .single-post .content .entry-footer {
-  display: none; }
-
-.nav-primary .genesis-nav-menu {
-  text-align: left; }
-
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -26,6 +13,9 @@ main article header p.entry-meta, .single-post .content .entry-footer {
 
 .block {
   display: block; }
+
+.nav-primary .genesis-nav-menu {
+  text-align: left; }
 
 ::-webkit-input-placeholder {
   color: #666; }
@@ -58,6 +48,21 @@ a {
   .text-link:hover, .blog .content .entry-content a:hover:not(.more-link), .single-post .content .entry-content a:hover:not(.more-link), .blog .content .entry-content a:hover:not(.sd-button), .single-post .content .entry-content a:hover:not(.sd-button) {
     color: #E24D25; }
 
+.text-link:hover, .blog .content .entry-content a:hover:not(.more-link), .single-post .content .entry-content a:hover:not(.more-link), .blog .content .entry-content a:hover:not(.sd-button), .single-post .content .entry-content a:hover:not(.sd-button), button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button, .scroll-to-top {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+main article header p.entry-meta, .single-post .content .entry-footer {
+  display: none; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button {
+  background-color: #E24D25;
+  border-color: #E24D25;
+  font-weight: bold; }
+
 /*
     Example usage:
     @include animation(10s, 5s, changecolour, ease-in, alternate, 3)
@@ -76,11 +81,6 @@ a {
   }
 }
 */
-button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button {
-  background-color: #E24D25;
-  border-color: #E24D25;
-  font-weight: bold; }
-
 .site-title, .section-title, .blog .content .entry-title, .single-post .content .entry-title {
   font-size: 48px;
   color: #666666; }
@@ -811,10 +811,11 @@ a.more-link {
   margin-bottom: 40px; }
 
 .work-list-item {
-  border: solid thin red;
   margin-bottom: 20px;
   display: block;
   position: relative; }
+  .work-list-item a {
+    display: inline; }
   .work-list-item .text {
     padding: 1em 0.5em;
     position: absolute;
@@ -824,9 +825,10 @@ a.more-link {
     background-color: rgba(0, 0, 0, 0.7);
     border-top: solid thin rgba(255, 255, 255, 0.1);
     border-bottom: solid thin rgba(255, 255, 255, 0.1);
-    top: 37%; }
+    top: 37%;
+    color: white; }
     .work-list-item .text h3 {
-      margin: 0 0 0.6em;
+      margin: 0;
       font-size: 24px;
       -webkit-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
       -moz-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -836,6 +838,8 @@ a.more-link {
     .work-list-item .text span {
       display: block;
       padding-bottom: 0.7em; }
+  .work-list-item .thumbnail img {
+    display: block; }
   .work-list-item .overlay {
     position: absolute;
     top: 0;
@@ -847,6 +851,23 @@ a.more-link {
     -o-transition: background-color 0.3s ease-in-out;
     -ms-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out; }
+
+.single-work {
+  margin-bottom: 30px; }
+  .single-work .single-work-thumbnail {
+    margin-bottom: 20px; }
+  .single-work .img-description {
+    color: #656565;
+    font-size: 14px; }
+  .single-work .button {
+    padding: 5px 15px; }
+
+.client-info {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: solid thin #eee; }
+  .client-info .skills {
+    margin-bottom: 10px; }
 
 .single-case-study {
   background-color: #eee; }

@@ -173,21 +173,3 @@
 }
 
 $a-tags: 'a, a:active, a:hover, a:visited';
-
-%text-shadow{
-  text-shadow: 2px 2px 15px #000;
-}
-
-// Buttons
-%button{
-  background-color: $color-primary;
-  border-color: $color-primary;
-  font-weight: bold;
-  @extend %transition;
-  &:hover{
-    // background-color: $olive-yellow;
-    // border-color: $olive-yellow;
-    // color: $color-primary;
-  }
-}
-

@@ -2,9 +2,9 @@
 jQuery(function( $ ){
 
 	if (document.location.hash) {
-			window.setTimeout(function () {
-				document.location.href += '';
-			}, 10);
+		window.setTimeout(function () {
+			document.location.href += '';
+		}, 10);
 	}
 
 	// Local Scroll Speed
@@ -26,7 +26,3 @@ jQuery(function( $ ){
 	});
 
 });
-
-
-
-

@@ -19,7 +19,7 @@ function work_loop(){
 	if ($work -> have_posts()) { ?>
 		<ul class="work-list">
 			<?php while($work -> have_posts()): $work ->the_post(); ?>
-				<li><?php get_template_part( '/includes/work_cpt' );?></li>
+				<li class="work-list-item"><?php get_template_part( '/includes/work_cpt' );?></li>
 			<?php endwhile; ?>
 		</ul>
 	<?php }

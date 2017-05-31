@@ -107,36 +107,6 @@
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
-	"\/html\/dm\/contact-us.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/html\/dm\/contact-us.html",
-		"oF": 0
-		},
-	"\/html\/dm\/home-page.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/html\/dm\/home-page.html",
-		"oF": 0
-		},
-	"\/html\/dm\/people.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/html\/dm\/people.html",
-		"oF": 0
-		},
-	"\/html\/dm\/what-we-do.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/html\/dm\/what-we-do.html",
-		"oF": 0
-		},
-	"\/html\/dm\/why-clents-love-us.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/html\/dm\/why-clents-love-us.html",
-		"oF": 0
-		},
 	"\/html\/jt\/home.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -231,105 +201,6 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"\/images\/clent-Icons\/corodata.png": {
-		"ft": 32768,
-		"iS": 9357,
-		"oA": 0,
-		"oAP": "\/images\/clent-Icons\/corodata.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/clent-Icons\/corostuff.png": {
-		"ft": 32768,
-		"iS": 4320,
-		"oA": 0,
-		"oAP": "\/images\/clent-Icons\/corostuff.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/clent-Icons\/corovan.png": {
-		"ft": 32768,
-		"iS": 3940,
-		"oA": 0,
-		"oAP": "\/images\/clent-Icons\/corovan.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/clent-Icons\/credit-karma.png": {
-		"ft": 32768,
-		"iS": 8546,
-		"oA": 0,
-		"oAP": "\/images\/clent-Icons\/credit-karma.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/clent-Icons\/epic-self.png": {
-		"ft": 32768,
-		"iS": 3842,
-		"oA": 0,
-		"oAP": "\/images\/clent-Icons\/epic-self.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/clent-Icons\/feed-the-agency.png": {
-		"ft": 32768,
-		"iS": 12452,
-		"oA": 0,
-		"oAP": "\/images\/clent-Icons\/feed-the-agency.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/clent-Icons\/Fluidigm.png": {
-		"ft": 32768,
-		"iS": 5546,
-		"oA": 0,
-		"oAP": "\/images\/clent-Icons\/Fluidigm.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/clent-Icons\/massTLC.png": {
-		"ft": 32768,
-		"iS": 5807,
-		"oA": 0,
-		"oAP": "\/images\/clent-Icons\/massTLC.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/clent-Icons\/social-reality.png": {
-		"ft": 32768,
-		"iS": 5583,
-		"oA": 0,
-		"oAP": "\/images\/clent-Icons\/social-reality.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"\/images\/favicon.ico": {
@@ -550,6 +421,32 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/scss\/css\/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/global\/_utility-classes.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_utility-classes.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/global\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
