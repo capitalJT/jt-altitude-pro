@@ -1,0 +1,11 @@
+%text-link{
+  color: #444;
+  text-decoration: none;
+  border-bottom: solid 1px $color-primary;
+  padding-bottom: 2px;
+  font-weight: bold;
+  &:hover{
+    color: $color-primary;
+    @extend %transition;
+  }
+}

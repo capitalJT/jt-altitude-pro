@@ -137,16 +137,16 @@
 		"oAP": "\/html\/dm\/why-clents-love-us.html",
 		"oF": 0
 		},
-	"\/html\/home.html": {
+	"\/html\/jt\/home.html": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/html\/home.html",
+		"oAP": "\/html\/jt\/home.html",
 		"oF": 0
 		},
-	"\/html\/jt-home-page.html": {
+	"\/html\/jt\/readme.html": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/html\/jt-home-page.html",
+		"oA": 2,
+		"oAP": "\/html\/jt\/readme.html",
 		"oF": 0
 		},
 	"\/images\/apple-touch-icon-114x114-precomposed.png": {
@@ -350,6 +350,18 @@
 		"oAP": "\/includes\/single_case_study_cpt.php",
 		"oF": 0
 		},
+	"\/includes\/single_work_cpt.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/includes\/single_work_cpt.php",
+		"oF": 0
+		},
+	"\/includes\/work_cpt.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/includes\/work_cpt.php",
+		"oF": 0
+		},
 	"\/js\/global.js": {
 		"ft": 64,
 		"mi": 1,
@@ -451,6 +463,12 @@
 		"oAP": "\/lib\/theme-defaults.php",
 		"oF": 0
 		},
+	"\/lib\/work-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/work-page.php",
+		"oF": 0
+		},
 	"\/page_landing.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -474,19 +492,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/scss\/_base.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/css\/_base.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/_icon-font.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -500,19 +505,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/_typography.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/css\/_typography.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/css\/settings.css": {
 		"aP": 1,
 		"bl": 0,
@@ -522,6 +514,45 @@
 		"oAP": "\/scss\/css\/settings-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/scss\/global\/_base.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_base.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/global\/_placeholders.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_placeholders.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/global\/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/scss\/jt-styles.scss": {
 		"aP": 0,
@@ -558,6 +589,45 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/scss\/css\/_settings.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/pages\/_about.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_about.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/pages\/_case-studies.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_case-studies.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/pages\/_work.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_work.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -614,7 +684,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/partials\/_people-page.scss": {
+	"\/scss\/partials\/_pagination.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -622,7 +692,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/scss\/css\/_people-page.css",
+		"oAP": "\/scss\/css\/_pagination.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -653,32 +723,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/partials\/_what-we-do-page.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/scss\/css\/_what-we-do-page.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/partials\/_why-clients-love-us-page.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/scss\/css\/_why-clients-love-us-page.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/partials\/_work-example.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -692,10 +736,42 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/templates\/_case-studies-template.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_case-studies-template.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/templates\/_work-template.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_work-template.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/single-case_studies.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/single-case_studies.php",
+		"oF": 0
+		},
+	"\/single-work.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-work.php",
 		"oF": 0
 		},
 	"\/style.css": {

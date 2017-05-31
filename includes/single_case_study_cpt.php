@@ -1,23 +1,21 @@
 <?php 
+  $title = get_field('title');
   $description = get_field('description');
-  // $downloadLink = get_field('download_link');
-  // $downloadCTA = "Download!";
-  ?>
+?>
+
+
+<header class="entry-header">
+  <h1 class="entry-title" itemprop="headline"><?php echo the_title();?></h1> 
+</header>
+
 <article class="single-case-study">
-  <span>Note: Single Case Study</span><br>
-  <h1 class="article-title"><?php echo the_title();?></h1>
-
-  <div><?php the_post_thumbnail('full'); ?></div>
+  <div><?php echo $title; ?></div>
+  <div><?php the_post_thumbnail('large'); ?></div>
   <div><?php the_content(); ?></div>
-
-  <?php  
-    if ($description){ ?>
-      <div class="article-description"><?php echo $description;?></div>
-    <?php
-    }
-  ?>
   
-  <section class="article-content"><?php echo the_field('body_content');?></section>
+  <section class="article-content">
+    <?php echo the_field('body_content');?>
+  </section>
   
   
   <!-- <?php if ($downloadLink){ ?>
@@ -31,4 +29,5 @@
   <?php } ?> -->
   
   <?php echo edit_post_link('(Edit)', '<span>', '</span>'); ?>
+
 </article>

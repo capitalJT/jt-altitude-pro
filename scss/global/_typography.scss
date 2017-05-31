@@ -48,12 +48,12 @@ $small-font-size: 12px;
 // font-family: 'Roboto', sans-serif;
 
 %heading-font{
-  // font-family: 'League Gothic';
   font-family: 'Oswald', sans-serif;
 }
+
 %base-font{
-  font-size:$body-font-size;
-  line-height:1.5em;
+  font-size: $body-font-size;
+  line-height: 1.5em;
 }
 %subhead-1-font-size{
   font-size: 24px;
@@ -99,7 +99,7 @@ blockquote{
       padding-bottom:3px;
     }
     .site-title a{
-      color:$color-brand !important;
+      color: $color-brand !important;
     }
     .genesis-nav-menu{
       margin-top: 0;
@@ -112,6 +112,7 @@ blockquote{
     } 
   }
 }
+
 .site-title{
   @extend %heading-font;
   @extend %h3-font-size;
@@ -120,6 +121,7 @@ blockquote{
     font-size: $h4-font-size;
   }
 }
+
 .section-title, {
   color:$color-grey;
   @extend %heading-font;
@@ -129,7 +131,6 @@ blockquote{
 .post-type-archive-people{
   h1.entry-title{
     color: $color-grey;
-    // background-color: red;
   }
 }
 
@@ -163,7 +164,6 @@ blockquote{
 .page, .single-people .header-wrap, .post-type-archive-people .header-wrap{
   .entry-title{
     color: $light-grey;
-    // background-color:pink;
     font-size: 36px;
     @include medium-screen{
       font-size: 60px;
@@ -174,23 +174,8 @@ blockquote{
   }
 }
 
-.entry-time{
-  // background-color: #eee;
-}
+.entry-time{}
 
-%text-link{
-  // color: $color-primary;
-  color: #444;
-  text-decoration: none;
-  border-bottom: solid 1px $color-primary;
-  padding-bottom: 2px;
-  font-weight: bold;
-  &:hover{
-    color: $color-primary;
-    @extend %transition;
-  }
-}
 .text-link{
   @extend %text-link;
 }
-

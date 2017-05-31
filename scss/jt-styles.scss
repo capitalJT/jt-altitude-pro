@@ -1,20 +1,23 @@
-@import "base";
+@import "global/base";
+@import "global/placeholders";
 @import "mixins/settings";
 @import "mixins/media-queries";
-@import "typography";
+@import "global/typography";
 @import "icon-font";
-
 @import "partials/navigation";
 @import "partials/home-page";
 // @import "partials/footer-widgets";
 @import "partials/site-footer";
 @import "partials/scroll-to-top";
-// @import "partials/what-we-do-page";
-// @import "partials/why-clients-love-us-page";
-// @import "partials/people-page";
 @import "partials/blogroll-page";
 @import "partials/work-example";
+@import "partials/pagination";
 
+@import "templates/case-studies-template";
+@import "templates/work-template";
+
+@import "pages/case-studies";
+@import "pages/work";
 
 form{
   width:100%;
@@ -37,7 +40,6 @@ select{
 }
 
 .site-header{
-  // background-color: $color-brand;
   &.dark{
     box-shadow: 0 3px 5px rgba(0,0,0,.05);
     .site-description{
@@ -91,17 +93,15 @@ div#respond.comment-respond{
   display: none;
 }
 
-.about{
-  // background-color: red;
+.more-link{
+  display: block;
+  border: none !important;
 }
 
-// Case Studies
-.article-list-item{
-  border: solid thin green;
-}
-.single-case-study{
-  border: solid thin orange;
-}
-.archive-pagination.pagination{
+.post-edit-link{
+  padding: 10px;
   background-color: pink;
+  border: solid thin red;
+  border-radius: 4px;
+  display: inline-block;
 }

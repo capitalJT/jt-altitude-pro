@@ -1,5 +1,4 @@
 // Colors
-
 $color-grey: #666666;
 $color-offwhite:#fcfbf9;
 $olive-yellow: #B0AF81;
@@ -11,7 +10,7 @@ $orange: #E24D25;
 $color-brand: $orange;
 $sage: #efefe6; 
 
-$color-accent:$olive-yellow;
+$color-accent: $olive-yellow;
 $color-primary: $orange;
 
 $border-radius: 4px;
@@ -93,4 +92,9 @@ main article{
   header p.entry-meta{
     @extend %display-none;
   }
+}
+
+
+a{
+  color: $color-primary;
 }

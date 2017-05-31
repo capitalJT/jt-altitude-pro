@@ -3,8 +3,6 @@
 Template Name: Single Case Study
 */
 
-
-
 remove_action('genesis_loop', 'genesis_do_loop');
 
 add_action('genesis_loop', 'singleCaseStudy_loop');
@@ -20,12 +18,8 @@ function singleCaseStudy_loop() {
 	$casestudies = new WP_Query($casestudy_args);
 
 	if ($casestudies -> have_posts()) {
-		while($casestudies -> have_posts()): $casestudies ->the_post();
-			get_template_part( '/includes/single_case_study_cpt' );
-		endwhile;
+		get_template_part( '/includes/single_case_study_cpt' );
 	}
-   
-
 }
 
 genesis();
