@@ -5,3 +5,5 @@
 
 scss/.sass-cache/
 scss/.sass-cache/*
+
+*.DS_Store
