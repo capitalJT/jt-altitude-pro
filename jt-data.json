@@ -2,55 +2,31 @@
   "thumbnails": [
     { "client" : "Digital Meaning",
       "description" : "Digital Meaning",
-      "role": "Web Design, Web Development",
+      "role": "UI Design, Web Development",
       "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/Digital-Meaning-thumbnail.png",
-      "linkHref" : "http://digitalmeaning.co/",
-      "extLink" : true
+      "linkHref" : "http://www.jabaltorres.com/digital-meaning/",
+      "extLink" : false
 
     },
     { "client" : "CoroStuff",
       "description" : "CoroStuff",
-      "role": "Web Design, Web Development",
+      "role": "UI Design, Web Development",
       "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/CoroStuff-thumbnail.png",
-      "linkHref" : "http://corostuff.com/",
-      "extLink" : true
-
-    },
-    { "client" : "BabyCenter",
-      "description" : "Pregnancy.com Site",
-      "role": "Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/Baby-Center.png",
-      "linkHref" : "http://pregnancy.com/",
-      "extLink" : true
-
-    },
-    { "client" : "Digital Meaning",
-      "description" : "CollabNet Site",
-      "role": "Web Design, Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/Collabnet.png",
-      "linkHref" : "http://www.collab.net/",
-      "extLink" : true
-
-    },
-    { "client" : "Li Shen DesignCo",
-      "description" : "DBZ HTML5 Banner Ads",
-      "role": "Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/Li-Shen-DBZ.jpg",
-      "linkHref" : "http://jabaltorres.com/demos/dbz/",
+      "linkHref" : "http://www.jabaltorres.com/corostuff/",
       "extLink" : false
 
     },
     { "client" : "Better World Advertising",
-      "description" : "What Moves You Campaign",
-      "role": "Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/ITC-What-Moves-You.png",
-      "linkHref" : "http://movemorenow.org/",
-      "extLink" : true
+      "description" : "INPUD Redesign",
+      "role": "UI Design, UX Design",
+      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/INPUD-thumbnail.jpg",
+      "linkHref" : "http://jabaltorres.com/inpud-wireframes/",
+      "extLink" : false
 
     },
     { "client" : "Al Jazeera",
       "description" : "Al Jazeera Design Language System",
-      "role": "Web Design, Web Development",
+      "role": "UI / UX Design, Web Development",
       "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJ-DLS-Home.jpg",
       "linkHref" : "http://jabaltorres.com/al-jazeera-design-language-system/",
       "extLink" : false
@@ -60,31 +36,7 @@
       "description" : "Al Jazeera Training Center",
       "role": "Web Development",
       "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJTC-thumbnail.png",
-      "linkHref" : "http://training.aljazeera.net/en/",
-      "extLink" : false
-
-    },
-    { "client" : "Al Jazeera",
-      "description" : "Al Jazeera Recruitment Site",
-      "role": "Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJ-Careers.png",
-      "linkHref" : "http://careers.aljazeera.net/en/",
-      "extLink" : true
-
-    },
-    { "client" : "Al Jazeera",
-      "description" : "Al Jazeera Icons",
-      "role": "Web Design, Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJMN-icons.jpg",
-      "linkHref" : "http://jabaltorres.com/al-jazeera-icons/",
-      "extLink" : false
-
-    },
-    { "client" : "The Refinery",
-      "description" : "Refinery End of Year",
-      "role": "Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/refinery-2014-eoy.png",
-      "linkHref" : "http://jabaltorres.com/refinery-end-of-year/",
+      "linkHref" : "http://www.jabaltorres.com/al-jazeera-training-center/",
       "extLink" : false
 
     },
@@ -96,104 +48,11 @@
       "extLink" : false
 
     },
-    { "client" : "Butcher Shop Creative",
-      "description" : "AutoReturn",
-      "role": "Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/autoreturn.png",
-      "linkHref" : "http://jabaltorres.com/auto-return/",
-      "extLink" : false
-
-    },
     { "client" : "The Refinery",
-      "description" : "Mad Men Season 7 DPK",
-      "role": "Web Design, Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/mms7-dpk.png",
-      "linkHref" : "http://jabaltorres.com/mad-men-season-7-dpk/",
-      "extLink" : false
-
-    },
-    { "client" : "Armstrong Retouching",
-      "description" : "Armstrong Retouching",
-      "role": "Web Design, Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/armstrong-retouching.jpg",
-      "linkHref" : "http://jabaltorres.com/armstrong-retouching/",
-      "extLink" : false
-
-    },
-    { "client" : "The Refinery",
-      "description" : "Mad Men Digital Campaign",
-      "role": "Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/mad-men-tumblr.png",
-      "linkHref" : "http://jabaltorres.com/mad-men-digital-campaign/",
-      "extLink" : false
-
-    },
-    { "client" : "The Refinery",
-      "description" : "The Red Road Digital Campaign",
+      "description" : "The Red Road",
       "role": "UI Design, UX Design",
       "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/the-red-road.png",
-      "linkHref" : "http://jabaltorres.com/the-red-road-digital-campaign/",
-      "extLink" : true
-
-    },
-    { "client" : "The Refinery",
-      "description" : "The Refinery Press Kit Portfolio",
-      "role": "Web Design, Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/refinery-press-kits.png",
-      "linkHref" : "#",
-      "extLink" : false
-
-    },
-    { "client" : "IMNOTITALIAN",
-      "description" : "I'm Not Italian",
-      "role": "Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/imnotitalian.png",
-      "linkHref" : "http://imnotitalian.com/",
-      "extLink" : true
-
-    }
-  ]
-}
-
-{
-  "thumbnails": [
-    { "client" : "Digital Meaning",
-      "description" : "Digital Meaning",
-      "role": "Web Design, Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/Digital-Meaning-thumbnail.png",
-      "linkHref" : "http://digitalmeaning.co/",
-      "extLink" : true
-
-    },
-    { "client" : "CoroStuff",
-      "description" : "CoroStuff",
-      "role": "Web Design, Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/CoroStuff-thumbnail.png",
-      "linkHref" : "http://corostuff.com/",
-      "extLink" : true
-
-    },
-    { "client" : "Al Jazeera",
-      "description" : "Al Jazeera Design Language System",
-      "role": "Web Design, Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJ-DLS-Home.jpg",
-      "linkHref" : "http://jabaltorres.com/al-jazeera-design-language-system/",
-      "extLink" : false
-
-    },
-    { "client" : "Al Jazeera",
-      "description" : "Al Jazeera Training Center",
-      "role": "Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/AJTC-thumbnail.png",
-      "linkHref" : "http://training.aljazeera.net/en/",
-      "extLink" : true
-
-    },
-    { "client" : "Systematic",
-      "description" : "The Other Woman",
-      "role": "Web Development",
-      "imgSrc" : "http://jabaltorres.com/assets/img/thumbnails/the-other-woman.png",
-      "linkHref" : "http://jabaltorres.com/the-other-woman/",
+      "linkHref" : "http://www.jabaltorres.com/the-red-road-digital-campaign/",
       "extLink" : false
 
     },

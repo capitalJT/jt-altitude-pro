@@ -55,7 +55,7 @@ jQuery(function( $ ){
 	// $(".site-inner").css("margin-top", header_height);
 
 	// using gist as a temporary bandaid
-	$.getJSON('https://gist.githubusercontent.com/capitalJT/d2f99864e580533b0c99/raw/4031dbd77ae337c65ec2d46cff1dded1cb28af5f/jt-data.json', function(data) {
+	$.getJSON('http://jabaltorres.com/wp-content/themes/jt-altitude-pro/jt-data.json', function(data) {
 	    var items = [];
 	  	$.each(data, function(idx, obj){ 
         	$.each(obj, function(key, value){
