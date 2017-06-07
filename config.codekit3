@@ -107,6 +107,60 @@
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
+	"\/html\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/.gitignore",
+		"oF": 0
+		},
+	"\/html\/example-wp-files\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/example-wp-files\/.gitignore",
+		"oF": 0
+		},
+	"\/html\/example-wp-files\/lib\/customize.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/example-wp-files\/lib\/customize.php",
+		"oF": 0
+		},
+	"\/html\/example-wp-files\/lib\/digital-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/example-wp-files\/lib\/digital-page.php",
+		"oF": 0
+		},
+	"\/html\/example-wp-files\/lib\/homepage.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/example-wp-files\/lib\/homepage.php",
+		"oF": 0
+		},
+	"\/html\/example-wp-files\/lib\/onair-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/example-wp-files\/lib\/onair-page.php",
+		"oF": 0
+		},
+	"\/html\/example-wp-files\/lib\/output.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/example-wp-files\/lib\/output.php",
+		"oF": 0
+		},
+	"\/html\/example-wp-files\/lib\/print-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/example-wp-files\/lib\/print-page.php",
+		"oF": 0
+		},
+	"\/html\/example-wp-files\/lib\/theme-defaults.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/example-wp-files\/lib\/theme-defaults.php",
+		"oF": 0
+		},
 	"\/html\/jt\/home.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -117,6 +171,42 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/html\/jt\/readme.html",
+		"oF": 0
+		},
+	"\/html\/work\/aj-dls.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/work\/aj-dls.html",
+		"oF": 0
+		},
+	"\/html\/work\/ajtc.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/work\/ajtc.html",
+		"oF": 0
+		},
+	"\/html\/work\/inpud.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/work\/inpud.html",
+		"oF": 0
+		},
+	"\/html\/work\/mms7-dpk.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/work\/mms7-dpk.html",
+		"oF": 0
+		},
+	"\/html\/work\/the-other-woman.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/work\/the-other-woman.html",
+		"oF": 0
+		},
+	"\/html\/work\/the-red-road.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/work\/the-red-road.html",
 		"oF": 0
 		},
 	"\/images\/apple-touch-icon-114x114-precomposed.png": {

@@ -16,12 +16,12 @@ jQuery(function( $ ){
 	$( document ).on('scroll', function(){
 
 		if ( $( document ).scrollTop() > 0 ){
-			$( '.site-header' ).addClass( 'dark' );			
+			$('.site-header').addClass( 'dark' );			
 			$('.scroll-to-top').addClass('scroll-to-top-show');
 			$('.scroll-to-top').removeClass('scroll-to-top-hide');			
 
 		} else {
-			$( '.site-header' ).removeClass( 'dark' );
+			$('.site-header').removeClass( 'dark' );
 			$('.scroll-to-top').addClass('scroll-to-top-hide');
 			$('.scroll-to-top').removeClass('scroll-to-top-show');				
 		}
