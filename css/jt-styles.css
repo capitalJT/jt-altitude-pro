@@ -473,247 +473,6 @@ nav.nav-primary .responsive-menu-icon {
     clear: both;
     padding-top: 15px; } }
 
-@media only screen and (max-width: 800px) {
-  .home .site-inner {
-    padding: 0; } }
-
-@media only screen and (min-width: 800px) {
-  .home .site-inner {
-    max-width: 100%;
-    margin-top: 71px; } }
-
-@media only screen and (max-width: 1023px) {
-  .home .site-inner {
-    margin-top: 0; } }
-
-@media only screen and (max-width: 1200px) {
-  .home .home-page-h1, .home .dm-campaign-monitor-form, .home .client-section {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto; } }
-
-.home .entry {
-  margin-bottom: 0px; }
-
-.home .content .entry-header {
-  display: none;
-  color: white; }
-
-.home.full-width-content .content {
-  padding-left: 0;
-  padding-right: 0; }
-
-.home-page section {
-  padding: 20px; }
-
-.entry-content ul.thumbnail-list {
-  margin-left: auto; }
-
-.work .thumbnail-list li {
-  max-width: 45em;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin: 0 auto 2.25em;
-  padding: 0.5em;
-  list-style-type: none; }
-  .work .thumbnail-list li:hover {
-    max-width: 45.125em; }
-    .work .thumbnail-list li:hover img {
-      -webkit-box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7);
-      -moz-box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7);
-      box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7); }
-    .work .thumbnail-list li:hover a {
-      color: white; }
-    .work .thumbnail-list li:hover h3 {
-      visibility: visible; }
-    .work .thumbnail-list li:hover .overlay {
-      background-color: rgba(0, 0, 0, 0.1); }
-
-.work .thumbnail-list a {
-  background-color: rgba(255, 255, 255, 0.2);
-  position: relative;
-  display: block;
-  line-height: 0;
-  color: #eee; }
-
-.work .thumbnail-list img {
-  display: inherit; }
-
-.work .thumbnail-list .text {
-  padding: 1em 0.5em;
-  position: absolute;
-  z-index: 999;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-top: solid thin rgba(255, 255, 255, 0.1);
-  border-bottom: solid thin rgba(255, 255, 255, 0.1);
-  top: 25%; }
-  .work .thumbnail-list .text h3 {
-    margin: 0 0 0.6em;
-    font-size: 24px;
-    -webkit-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    -moz-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    -o-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    -ms-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; }
-  .work .thumbnail-list .text span {
-    display: block;
-    padding-bottom: 0.7em; }
-
-.work .thumbnail-list .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -moz-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  -ms-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out; }
-
-@media only screen and (min-width: 800px) {
-  .work .thumbnail-list .text {
-    top: 37%; }
-    .work .thumbnail-list .text h3 {
-      font-size: 36px; } }
-
-.home .wrapper {
-  display: block; }
-  .home .wrapper p {
-    margin: 0; }
-  .home .wrapper .section {
-    box-sizing: border-box;
-    padding: 2em; }
-  .home .wrapper .inner-section {
-    padding: 1em;
-    max-width: 45em;
-    margin: 0 auto;
-    box-sizing: border-box;
-    overflow: hidden; }
-  .home .wrapper article {
-    padding-top: 1.8em;
-    text-align: center; }
-    .home .wrapper article header {
-      margin-bottom: 1.5em;
-      border-bottom: solid thin rgba(0, 0, 0, 0.2); }
-    .home .wrapper article .content {
-      display: block; }
-  .home .wrapper #intro, .home .wrapper #work {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(30%, rgba(0, 0, 0, 0.5)), color-stop(80%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.9)));
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#e6000000',GradientType=0 );
-    position: relative; }
-  .home .wrapper #intro {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    width: 100%; }
-    .home .wrapper #intro .inner-section {
-      margin-top: -4em;
-      text-align: center;
-      color: white; }
-      .home .wrapper #intro .inner-section header {
-        margin-bottom: 0;
-        border-bottom: solid thin rgba(255, 255, 255, 0.25); }
-      .home .wrapper #intro .inner-section article {
-        padding-top: 0; }
-      .home .wrapper #intro .inner-section .name {
-        text-transform: uppercase; }
-      .home .wrapper #intro .inner-section .description {
-        text-transform: uppercase;
-        font-family: 'Playfair Display', serif;
-        font-size: 1.25em;
-        margin-bottom: 1.45em; }
-  .home .wrapper .intro-section-outer-wrapper, .home .wrapper .work-section-outer-wrapper {
-    background-attachment: fixed;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: block; }
-  .home .wrapper .intro-section-outer-wrapper {
-    background-image: url("//www.jabaltorres.com/wp-content/uploads/2016/03/P1000151_JT.jpg"); }
-  .home .wrapper .work-section-outer-wrapper {
-    background-image: url("//www.jabaltorres.com/wp-content/themes/jt-altitude-pro/images/bg-3.jpg"); }
-  .home .wrapper #about {
-    background-color: #fff; }
-    .home .wrapper #about p {
-      margin-bottom: 1.5em; }
-    .home .wrapper #about .dev-languages {
-      padding: 0;
-      margin-left: 0; }
-      .home .wrapper #about .dev-languages li {
-        list-style-type: none;
-        display: inline-block;
-        border: solid thin #E24D25;
-        font-family: 'Oswald', sans-serif;
-        font-size: 1.5em;
-        width: 5em;
-        height: 5em;
-        line-height: 5em;
-        border-radius: 100%;
-        box-sizing: border-box; }
-        .home .wrapper #about .dev-languages li span {
-          border-bottom: solid thin #eee; }
-        .home .wrapper #about .dev-languages li:nth-of-type(even) {
-          margin-left: 1em;
-          margin-right: 1em; }
-  .home .wrapper #work header {
-    color: white; }
-  .home .wrapper #work ul {
-    margin: 0; }
-    .home .wrapper #work ul li {
-      list-style-type: none; }
-  .home .wrapper #contact {
-    background-color: #fff; }
-    .home .wrapper #contact ul {
-      display: block;
-      margin: 0; }
-    .home .wrapper #contact li {
-      display: inline-block;
-      list-style-type: none; }
-    .home .wrapper #contact a {
-      display: inline-block;
-      padding: 0.5em;
-      margin-left: 0.125em;
-      margin-right: 0.125em;
-      color: #E24D25;
-      font-size: 2em;
-      -webkit-transition: background-color 0.3s ease-in-out;
-      -moz-transition: background-color 0.3s ease-in-out;
-      -o-transition: background-color 0.3s ease-in-out;
-      -ms-transition: background-color 0.3s ease-in-out;
-      transition: background-color 0.3s ease-in-out; }
-      .home .wrapper #contact a:hover {
-        background-color: #eee; }
-
-ul.text-icons {
-  margin-left: 0; }
-  ul.text-icons li {
-    list-style: none;
-    border: solid thin #E24D25;
-    display: inline-block;
-    border-radius: 100%;
-    width: 5em;
-    height: 5em;
-    line-height: 5em;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
-    margin: 0 10px; }
-  ul.text-icons span {
-    border-bottom: solid thin #eee; }
-
-.col-wrapper {
-  display: flex; }
-  .col-wrapper ul {
-    text-align: left; }
-
 .site-footer {
   background-color: #000;
   text-align: left;
@@ -872,6 +631,177 @@ a.more-link {
   .client-info .skills {
     margin-bottom: 10px; }
 
+@media only screen and (max-width: 800px) {
+  .home .site-inner {
+    padding: 0; } }
+
+@media only screen and (min-width: 800px) {
+  .home .site-inner {
+    max-width: 100%;
+    margin-top: 71px; } }
+
+@media only screen and (max-width: 1023px) {
+  .home .site-inner {
+    margin-top: 0; } }
+
+@media only screen and (max-width: 1200px) {
+  .home .home-page-h1, .home .dm-campaign-monitor-form, .home .client-section {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.home .entry {
+  margin-bottom: 0px; }
+
+.home .content .entry-header {
+  display: none;
+  color: white; }
+
+.home.full-width-content .content {
+  padding-left: 0;
+  padding-right: 0; }
+
+.home-page section {
+  padding: 20px; }
+
+.entry-content ul.thumbnail-list {
+  margin-left: auto; }
+
+.home .wrapper {
+  display: block; }
+  .home .wrapper p {
+    margin: 0; }
+  .home .wrapper .section {
+    box-sizing: border-box;
+    padding: 2em; }
+  .home .wrapper .inner-section {
+    padding: 1em;
+    max-width: 45em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden; }
+  .home .wrapper article {
+    padding-top: 1.8em;
+    text-align: center; }
+    .home .wrapper article header {
+      margin-bottom: 1.5em;
+      border-bottom: solid thin rgba(0, 0, 0, 0.2); }
+    .home .wrapper article .content {
+      display: block; }
+  .home .wrapper #intro, .home .wrapper #work {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(30%, rgba(0, 0, 0, 0.5)), color-stop(80%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#e6000000',GradientType=0 );
+    position: relative; }
+  .home .wrapper #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%; }
+    .home .wrapper #intro .inner-section {
+      margin-top: -4em;
+      text-align: center;
+      color: white; }
+      .home .wrapper #intro .inner-section header {
+        margin-bottom: 0;
+        border-bottom: solid thin rgba(255, 255, 255, 0.25); }
+      .home .wrapper #intro .inner-section article {
+        padding-top: 0; }
+      .home .wrapper #intro .inner-section .name {
+        text-transform: uppercase; }
+      .home .wrapper #intro .inner-section .description {
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.25em;
+        margin-bottom: 1.45em; }
+  .home .wrapper .intro-section-outer-wrapper, .home .wrapper .work-section-outer-wrapper {
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: block; }
+  .home .wrapper .intro-section-outer-wrapper {
+    background-image: url("//www.jabaltorres.com/wp-content/uploads/2016/03/P1000151_JT.jpg"); }
+  .home .wrapper .work-section-outer-wrapper {
+    background-image: url("//www.jabaltorres.com/wp-content/themes/jt-altitude-pro/images/bg-3.jpg"); }
+  .home .wrapper #about {
+    background-color: #fff; }
+    .home .wrapper #about p {
+      margin-bottom: 1.5em; }
+    .home .wrapper #about .dev-languages {
+      padding: 0;
+      margin-left: 0; }
+      .home .wrapper #about .dev-languages li {
+        list-style-type: none;
+        display: inline-block;
+        border: solid thin #E24D25;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5em;
+        width: 5em;
+        height: 5em;
+        line-height: 5em;
+        border-radius: 100%;
+        box-sizing: border-box; }
+        .home .wrapper #about .dev-languages li span {
+          border-bottom: solid thin #eee; }
+        .home .wrapper #about .dev-languages li:nth-of-type(even) {
+          margin-left: 1em;
+          margin-right: 1em; }
+  .home .wrapper #work header {
+    color: white; }
+  .home .wrapper #work ul {
+    margin: 0; }
+    .home .wrapper #work ul li {
+      list-style-type: none; }
+  .home .wrapper #contact {
+    background-color: #fff; }
+    .home .wrapper #contact ul {
+      display: block;
+      margin: 0; }
+    .home .wrapper #contact li {
+      display: inline-block;
+      list-style-type: none; }
+    .home .wrapper #contact a {
+      display: inline-block;
+      padding: 0.5em;
+      margin-left: 0.125em;
+      margin-right: 0.125em;
+      color: #E24D25;
+      font-size: 2em;
+      -webkit-transition: background-color 0.3s ease-in-out;
+      -moz-transition: background-color 0.3s ease-in-out;
+      -o-transition: background-color 0.3s ease-in-out;
+      -ms-transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out; }
+      .home .wrapper #contact a:hover {
+        background-color: #eee; }
+
+ul.text-icons {
+  margin-left: 0; }
+  ul.text-icons li {
+    list-style: none;
+    border: solid thin #E24D25;
+    display: inline-block;
+    border-radius: 100%;
+    width: 5em;
+    height: 5em;
+    line-height: 5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    margin: 0 10px; }
+  ul.text-icons span {
+    border-bottom: solid thin #eee; }
+
+.col-wrapper {
+  display: flex; }
+  .col-wrapper ul {
+    text-align: left; }
+
 .single-case-study {
   background-color: #eee; }
 
@@ -880,6 +810,76 @@ a.more-link {
 
 .page-template-work-page .entry {
   margin-bottom: 40px; }
+
+.work-list li {
+  max-width: 45em;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 auto 2.25em;
+  padding: 0.5em;
+  list-style-type: none; }
+  .work-list li:hover {
+    max-width: 45.125em; }
+    .work-list li:hover img {
+      -webkit-box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7);
+      -moz-box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7);
+      box-shadow: 2px 4px 1em rgba(0, 0, 0, 0.7); }
+    .work-list li:hover a {
+      color: white; }
+    .work-list li:hover h3 {
+      visibility: visible; }
+    .work-list li:hover .overlay {
+      background-color: rgba(0, 0, 0, 0.1); }
+
+.work-list a {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  display: block;
+  line-height: 0;
+  color: #eee; }
+
+.work-list img {
+  display: inherit; }
+
+.work-list .text {
+  padding: 1em 0.5em;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-top: solid thin rgba(255, 255, 255, 0.1);
+  border-bottom: solid thin rgba(255, 255, 255, 0.1);
+  top: 25%; }
+  .work-list .text h3 {
+    margin: 0 0 0.6em;
+    font-size: 24px;
+    -webkit-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -moz-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -o-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -ms-transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; }
+  .work-list .text span {
+    display: block;
+    padding-bottom: 0.7em; }
+
+.work-list .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out; }
+
+@media only screen and (min-width: 800px) {
+  .work-list .text {
+    top: 37%; }
+    .work-list .text h3 {
+      font-size: 36px; } }
 
 form {
   width: 100%; }

@@ -5,7 +5,6 @@
 @import "global/typography";
 @import "icon-font";
 @import "partials/navigation";
-@import "partials/home-page";
 // @import "partials/footer-widgets";
 @import "partials/site-footer";
 @import "partials/scroll-to-top";
@@ -16,6 +15,7 @@
 @import "templates/case-studies-template";
 @import "templates/work-template";
 
+@import "pages/home-page";
 @import "pages/case-studies";
 @import "pages/work";
 

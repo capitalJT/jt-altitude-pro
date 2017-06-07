@@ -161,16 +161,10 @@
 		"oAP": "\/html\/example-wp-files\/lib\/theme-defaults.php",
 		"oF": 0
 		},
-	"\/html\/jt\/home.html": {
+	"\/html\/home.html": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/html\/jt\/home.html",
-		"oF": 0
-		},
-	"\/html\/jt\/readme.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/html\/jt\/readme.html",
+		"oAP": "\/html\/home.html",
 		"oF": 0
 		},
 	"\/html\/work\/aj-dls.html": {
@@ -606,6 +600,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/pages\/_home-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_home-page.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/pages\/_work.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -641,19 +648,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/scss\/css\/_footer-widgets.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/partials\/_home-page.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/scss\/css\/_home-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
