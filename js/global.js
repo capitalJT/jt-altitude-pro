@@ -16,12 +16,12 @@ jQuery(function( $ ){
 	$( document ).on('scroll', function(){
 
 		if ( $( document ).scrollTop() > 0 ){
-			$('.site-header').addClass( 'dark' );			
+			$( '.site-header' ).addClass( 'dark' );			
 			$('.scroll-to-top').addClass('scroll-to-top-show');
 			$('.scroll-to-top').removeClass('scroll-to-top-hide');			
 
 		} else {
-			$('.site-header').removeClass( 'dark' );
+			$( '.site-header' ).removeClass( 'dark' );
 			$('.scroll-to-top').addClass('scroll-to-top-hide');
 			$('.scroll-to-top').removeClass('scroll-to-top-show');				
 		}
@@ -54,6 +54,7 @@ jQuery(function( $ ){
 	// console.log(header_height);
 	// $(".site-inner").css("margin-top", header_height);
 
+	// using gist as a temporary bandaid
 	$.getJSON('http://jabaltorres.com/wp-content/themes/jt-altitude-pro/jt-data.json', function(data) {
 	    var items = [];
 	  	$.each(data, function(idx, obj){ 
