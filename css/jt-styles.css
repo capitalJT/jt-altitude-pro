@@ -793,7 +793,7 @@ ul.text-icons {
     line-height: 5em;
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
-    margin: 0 10px; }
+    margin: 10px; }
   ul.text-icons span {
     border-bottom: solid thin #eee; }
 
@@ -810,6 +810,11 @@ ul.text-icons {
 
 .page-template-work-page .entry {
   margin-bottom: 40px; }
+
+.page-template-work-page .sub-head {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold; }
 
 .work-list li {
   max-width: 45em;
