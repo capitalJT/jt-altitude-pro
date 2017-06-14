@@ -634,6 +634,30 @@ form {
   .client-info .skills {
     margin-bottom: 10px; }
 
+.about {
+  text-align: center; }
+
+ul.text-icons {
+  margin-left: 0; }
+  ul.text-icons li {
+    list-style: none;
+    border: solid thin #E24D25;
+    display: inline-block;
+    border-radius: 100%;
+    width: 5em;
+    height: 5em;
+    line-height: 5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    margin: 10px; }
+  ul.text-icons span {
+    border-bottom: solid thin #eee; }
+
+.col-wrapper {
+  display: flex; }
+  .col-wrapper ul {
+    text-align: left; }
+
 @media only screen and (max-width: 800px) {
   .home .site-inner {
     padding: 0; } }
@@ -784,26 +808,8 @@ form {
       .home .wrapper #contact a:hover {
         background-color: #eee; }
 
-ul.text-icons {
-  margin-left: 0; }
-  ul.text-icons li {
-    list-style: none;
-    border: solid thin #E24D25;
-    display: inline-block;
-    border-radius: 100%;
-    width: 5em;
-    height: 5em;
-    line-height: 5em;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
-    margin: 10px; }
-  ul.text-icons span {
-    border-bottom: solid thin #eee; }
-
-.col-wrapper {
-  display: flex; }
-  .col-wrapper ul {
-    text-align: left; }
+.home.full-width-content .content {
+  padding-bottom: 0; }
 
 .single-case-study {
   background-color: #eee; }
@@ -948,8 +954,8 @@ div#respond.comment-respond {
 
 .post-edit-link {
   padding: 10px;
-  background-color: pink;
-  border: solid thin red;
+  background-color: #ccc;
+  border: solid thin #ddd;
   border-radius: 4px;
   display: inline-block; }
 

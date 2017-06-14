@@ -47,12 +47,12 @@
 // Sections
 ////////////////////////////////////////////////////////////////////////
 
-@include medium-screen{}
-@include max-1023{}
-@media only screen and (min-width: 800px) and (max-width: 1023px) {}
-@include max-1280{}
+// @include medium-screen{}
+// @include max-1023{}
+// @media only screen and (min-width: 800px) and (max-width: 1023px) {}
+// @include max-1280{}
 
-@include large-screen{}
+// @include large-screen{}
 
 .entry-content ul.thumbnail-list{
   margin-left: auto;
@@ -222,39 +222,9 @@
         background-color: #eee;
       }
     }
-    .icon{
-      &:before{}
-    }
-    .content{
-      .social-links{}
-    
-    }
   }
 }
 
-ul.text-icons{
-  margin-left: 0;
-  li{
-    list-style: none;
-    border: solid thin $color-primary;
-    display: inline-block;
-    border-radius: 100%;
-    width: 5em;
-    height: 5em;
-    line-height: 5em;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
-    margin: 10px;
-  }
-  span{
-    border-bottom: solid thin #eee;
-  }
+.home.full-width-content .content{
+  padding-bottom: 0;
 }
-
-.col-wrapper{
-  display: flex;
-  ul{
-    text-align: left;
-  }
-}
-

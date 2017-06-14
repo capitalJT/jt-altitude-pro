@@ -19,6 +19,7 @@
 @import "templates/case-studies-template";
 @import "templates/work-template";
 
+@import "pages/about";
 @import "pages/home-page";
 @import "pages/case-studies";
 @import "pages/work";
@@ -119,8 +120,8 @@ div#respond.comment-respond{
 
 .post-edit-link{
   padding: 10px;
-  background-color: pink;
-  border: solid thin red;
+  background-color: #ccc;
+  border: solid thin #ddd;
   border-radius: 4px;
   display: inline-block;
 }
