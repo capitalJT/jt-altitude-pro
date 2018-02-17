@@ -39,16 +39,16 @@
 a {
   color: #E24D25; }
 
-.text-link, .blog .content .entry-content a:not(.more-link), .single-post .content .entry-content a:not(.more-link), .blog .content .entry-content a:not(.sd-button), .single-post .content .entry-content a:not(.sd-button) {
+.text-link {
   color: #444;
   text-decoration: none;
   border-bottom: solid 1px #E24D25;
   padding-bottom: 2px;
   font-weight: bold; }
-  .text-link:hover, .blog .content .entry-content a:hover:not(.more-link), .single-post .content .entry-content a:hover:not(.more-link), .blog .content .entry-content a:hover:not(.sd-button), .single-post .content .entry-content a:hover:not(.sd-button) {
+  .text-link:hover {
     color: #E24D25; }
 
-.text-link:hover, .blog .content .entry-content a:hover:not(.more-link), .single-post .content .entry-content a:hover:not(.more-link), .blog .content .entry-content a:hover:not(.sd-button), .single-post .content .entry-content a:hover:not(.sd-button), button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button, .scroll-to-top {
+.text-link:hover, button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button, .scroll-to-top {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -432,10 +432,10 @@ blockquote {
   content: "t"; }
 
 nav.nav-primary .responsive-menu-icon {
-  float: right;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   border: solid thin rgba(255, 255, 255, 0.4);
-  margin-top: -52px;
-  margin-right: -18px;
   width: 32px;
   height: 32px;
   padding-top: 3px; }
@@ -540,7 +540,6 @@ nav.nav-primary .responsive-menu-icon {
     display: block; }
 
 .blog .content article {
-  padding-top: 20px;
   margin-bottom: 40px; }
 
 .blog .content .entry-title, .single-post .content .entry-title {
@@ -949,5 +948,8 @@ div#respond.comment-respond {
 
 .sd-social-icon .sd-content ul li[class*=share-] a.sd-button {
   padding: 7px; }
+
+aside {
+  padding-top: 10px; }
 
 /*# sourceMappingURL=jt-styles.css.map */

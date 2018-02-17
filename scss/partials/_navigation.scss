@@ -1,9 +1,11 @@
+// hamburger nav
+
 nav.nav-primary{
-  .responsive-menu-icon{ // hamburger nav
-    float: right;
+  .responsive-menu-icon{
+    position: absolute;
+    top:20px;
+    right:20px;
     border: solid thin rgba(255,255,255,0.4);
-    margin-top: -52px;
-    margin-right: -18px;
     width:32px;
     height:32px;
     padding-top: 3px;
@@ -52,6 +54,7 @@ nav.nav-primary{
     }
   }
 }
+
 @media only screen and (max-width: 800px){
   .genesis-nav-menu.responsive-menu {
     clear: both;
