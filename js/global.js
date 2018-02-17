@@ -98,17 +98,31 @@ jQuery(function( $ ){
   //     console.log(target);
   // });
 
-  $('#menu-primary-nav a').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500);
-        return false;
-      }
-    }
-  });
+	$('#menu-primary-nav a').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html, body').animate({
+				  scrollTop: target.offset().top
+				}, 500);
+				return false;
+			}
+		}
+	});
+
+	// $(window).scroll(function(){
+	// 	var stickyElement = $('#custom_html-2'),
+     //        stickytop = stickyElement.offset().top,
+	// 		scroll = $(window).scrollTop();
+    //
+     //    var bottom = $('#categories-2').offset().top + $('#categories-2').outerHeight(true);
+    //
+	// 	if (scroll >= bottom) {
+     //        stickyElement.addClass('fixed-widget');
+	// 	} else {
+     //        stickyElement.removeClass('fixed-widget');
+	// 	}
+	// });
 
 });

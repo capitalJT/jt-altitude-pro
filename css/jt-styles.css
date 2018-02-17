@@ -1115,6 +1115,14 @@ div#respond.comment-respond {
   padding: 7px; }
 
 aside {
-  padding-top: 10px; }
+  padding-top: 10px;
+  position: relative; }
+
+.fixed-widget {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  background-color: red;
+  border: solid thin red; }
 
 /*# sourceMappingURL=jt-styles.css.map */

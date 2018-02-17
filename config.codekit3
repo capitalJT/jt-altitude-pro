@@ -190,6 +190,13 @@
 		"oAP": "\/html\/home.html",
 		"oF": 0
 		},
+	"\/html\/sticky-widget.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/sticky-widget.html",
+		"oF": 0
+		},
 	"\/html\/work\/aj-dls.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -805,6 +812,16 @@
 		"oA": 2,
 		"oAP": "\/single-work.php",
 		"oF": 0
+		},
+	"\/style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/style-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/style.css": {
 		"aP": 1,

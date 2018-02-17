@@ -117,4 +117,16 @@ div#respond.comment-respond{
 
 aside{
   padding-top: 10px;
+  position: relative;
+}
+
+.fixed-widget {
+  position: fixed;
+  top:60px;
+  right:0;
+  //width: 100%;
+  background-color: red;
+  border: solid thin red;
+  //transform: translateZ(0);
+  //-webkit-transform: translateZ(0);
 }
