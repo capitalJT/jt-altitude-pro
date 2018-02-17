@@ -793,7 +793,8 @@ ul.text-icons {
     line-height: 5em;
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
-    margin: 10px; }
+    margin: 10px;
+    text-align: center; }
   ul.text-icons span {
     border-bottom: solid thin #eee; }
 
@@ -942,5 +943,11 @@ div#respond.comment-respond {
   border: solid thin red;
   border-radius: 4px;
   display: inline-block; }
+
+.post-278 {
+  text-align: center; }
+
+.sd-social-icon .sd-content ul li[class*=share-] a.sd-button {
+  padding: 7px; }
 
 /*# sourceMappingURL=jt-styles.css.map */
