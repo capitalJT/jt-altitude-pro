@@ -451,6 +451,7 @@ blockquote {
 
 nav.nav-primary .responsive-menu-icon {
   position: absolute;
+  top: 20px;
   right: 20px;
   border: solid thin rgba(255, 255, 255, 0.4);
   width: 32px;
