@@ -209,7 +209,7 @@ function altitude_post_info_filter( $post_info ) {
 add_filter( 'genesis_post_meta', 'altitude_post_meta_filter' );
 function altitude_post_meta_filter( $post_meta ) {
 
-	$post_meta = 'Written by [post_author_posts_link] [post_categories before=" &middot; About: "]  [post_tags before=" &middot; Tagged: "]';
+	$post_meta = 'Written by [post_author_posts_link] [post_categories before=" &middot; Categorized Under: "]  [post_tags before=" &middot; Tagged: "]';
 
 	return $post_meta;
 	

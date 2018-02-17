@@ -27,9 +27,9 @@
     }
   }
   .content{
-    .entry-title{}
+    //.entry-title{}
     article{
-      padding-top:20px;
+      //padding-top:20px;
       margin-bottom: 40px;
     }
   }
@@ -48,12 +48,12 @@
       }
     }
     .entry-content{
-      a:not(.more-link){
-        @extend %text-link;
-      }
-      a:not(.sd-button){
-        @extend %text-link;
-      }
+      //a:not(.more-link){
+      //  @extend %text-link;
+      //}
+      //a:not(.sd-button){
+      //  @extend %text-link;
+      //}
       img{
         border: solid thin #eee;
       }
