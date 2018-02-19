@@ -130,3 +130,17 @@ aside{
   //transform: translateZ(0);
   //-webkit-transform: translateZ(0);
 }
+
+// TODO: clean this shit up
+main.content .contact-form{
+  input[type=email],
+  input[type=text],
+  input[type=url]{
+    width: 100%;
+    max-width: 98%;
+    margin-bottom: 10px;
+  }
+  textarea{
+    width: 98%;
+  }
+}

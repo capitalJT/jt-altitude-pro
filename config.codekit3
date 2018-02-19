@@ -552,6 +552,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/global\/_reset.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_reset.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/global\/_typography.scss": {
 		"aP": 0,
 		"bl": 0,
