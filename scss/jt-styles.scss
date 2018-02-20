@@ -55,6 +55,10 @@ select{
   }
 }
 
+.title-area{
+  width: 250px;
+}
+
 @include medium-screen{
   .site-header{
     padding-bottom:0px;
