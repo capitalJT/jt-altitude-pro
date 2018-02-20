@@ -733,8 +733,8 @@ Common Classes
 
 .search-form input[type="search"] {
 	margin-right: 10px;
-	width: 100%;
-	/*min-width: 250px;*/
+	width: 94%;
+	min-width: 250px;
 }
 
 .search-form input[type="submit"] {
