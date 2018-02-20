@@ -64,7 +64,7 @@ select{
     padding-bottom:10px;
   }
   .site-title{
-    // background-color: pink;
+    //background-color: pink;
   }
   .site-description{
     // background-color: yellow;
@@ -82,7 +82,7 @@ select{
   .right-half{
     float: right;
     padding-left: 20px;
-  } 
+  }
 }
 
 button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button{
@@ -124,23 +124,8 @@ aside{
   position: fixed;
   top:60px;
   right:0;
-  //width: 100%;
   background-color: red;
   border: solid thin red;
   //transform: translateZ(0);
   //-webkit-transform: translateZ(0);
-}
-
-// TODO: clean this shit up
-main.content .contact-form{
-  input[type=email],
-  input[type=text],
-  input[type=url]{
-    width: 100%;
-    max-width: 98%;
-    margin-bottom: 10px;
-  }
-  textarea{
-    width: 98%;
-  }
 }
