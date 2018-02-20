@@ -124,8 +124,18 @@ aside{
   position: fixed;
   top:60px;
   right:0;
-  background-color: red;
-  border: solid thin red;
+  //background-color: red;
+  //border: solid thin red;
   //transform: translateZ(0);
   //-webkit-transform: translateZ(0);
+}
+
+#contact-form-19{
+  .contact-form input[type=email],
+  .contact-form input[type=text],
+  .contact-form input[type=url],
+  .contact-form textarea{
+    width: 100%;
+    max-width: 100%;
+  }
 }
