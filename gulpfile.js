@@ -84,7 +84,7 @@ gulp.task('watch', function () {
 gulp.task('browser-sync', ['sass'], function() {
   browserSync.init({
     // Change as required
-    proxy: "http://jabaldevsite.test/",
+    proxy: "https://jabaltorres.test/",
     socket: {
       // For local development only use the default Browsersync local URL.
       domain: 'localhost:3000'
