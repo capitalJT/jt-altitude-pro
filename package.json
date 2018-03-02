@@ -19,5 +19,10 @@
     "jshint-stylish": "^2.2.1"
   },
   "author": "Jabal Torres",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
 }
