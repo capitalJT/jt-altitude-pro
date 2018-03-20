@@ -105,7 +105,7 @@
     position: relative;
   }
   #intro{
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     width: 100%;
@@ -128,15 +128,16 @@
         text-transform: uppercase;
       }
       .description{
-        text-transform: uppercase;
+        //text-transform: uppercase;
         font-family: 'Playfair Display', serif;
         font-size: 1.25em;
+        line-height: 1.5;
         margin-bottom: 1.45em;
       }
     }
   }
   #intro, #work{
-    @extend %sharedGradient;
+    //@extend %sharedGradient;
   }
   .intro-section-outer-wrapper, .work-section-outer-wrapper{
     background-attachment: fixed;
