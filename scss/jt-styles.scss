@@ -69,14 +69,8 @@ select{
     padding-top:10px;
     padding-bottom:10px;
   }
-  .site-title{
-    //background-color: pink;
-  }
-  .site-description{
-    // background-color: yellow;
-    // text-indent: initial;
-    // height:initial;
-  }
+  .site-title{}
+  .site-description{}
 
   .left-half, .right-half{
     width:50%;
@@ -91,7 +85,11 @@ select{
   }
 }
 
-button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget .button{
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button, .widget .button{
   @extend %button;
 }
 
@@ -130,8 +128,6 @@ aside{
   position: fixed;
   top:60px;
   right:0;
-  //background-color: red;
-  //border: solid thin red;
   //transform: translateZ(0);
   //-webkit-transform: translateZ(0);
 }
@@ -144,4 +140,8 @@ aside{
     width: 100%;
     max-width: 100%;
   }
+}
+
+body{
+  color: red pink;
 }
