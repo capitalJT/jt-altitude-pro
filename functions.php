@@ -255,7 +255,8 @@ genesis_register_sidebar( array(
 //* Load custom stylesheet 
 add_action( 'wp_enqueue_scripts', 'custom_load_custom_style_sheet' );
 function custom_load_custom_style_sheet() {
-	wp_enqueue_style( 'custom-stylesheet', CHILD_URL . '/css/jt-styles.css', array(), PARENT_THEME_VERSION );
+    wp_enqueue_script( 'bootstrap-scripts', get_bloginfo( 'stylesheet_directory' ) . '/dist/js/vendor/bootstrap.min.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_style( 'custom-stylesheet', CHILD_URL . '/dist/css/jt-styles.css', array(), PARENT_THEME_VERSION );
 }
 
 //* add favicon
