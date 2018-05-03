@@ -1,3 +1,7 @@
+$global-margin-sm: 1rem;
+$global-margin-md: 2rem;
+
+
 @import "vendor/bootstrap";
 
 @import "global/base";
@@ -63,7 +67,7 @@ select{
 
 @include medium-screen{
   .site-header{
-    padding-bottom:0px;
+    padding-bottom:0;
   }
   .title-area{
     padding-top:10px;
@@ -139,5 +143,26 @@ aside{
   .contact-form textarea{
     width: 100%;
     max-width: 100%;
+  }
+}
+
+.featured-projects, .carousel{
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include media-breakpoint-down(md){
+    margin-bottom: $global-margin-md;
+    img{
+      margin-bottom: $global-margin-sm;
+    }
+  }
+  @include media-breakpoint-up(md){
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
