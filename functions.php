@@ -255,7 +255,8 @@ genesis_register_sidebar( array(
 //* Load custom stylesheet 
 add_action( 'wp_enqueue_scripts', 'custom_load_custom_style_sheet' );
 function custom_load_custom_style_sheet() {
-	wp_enqueue_style( 'custom-stylesheet', CHILD_URL . '/css/jt-styles.css', array(), PARENT_THEME_VERSION );
+    wp_enqueue_script( 'bootstrap-scripts', get_bloginfo( 'stylesheet_directory' ) . '/dist/js/vendor/bootstrap.min.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_style( 'custom-stylesheet', CHILD_URL . '/dist/css/jt-styles.css', array(), PARENT_THEME_VERSION );
 }
 
 //* add favicon
@@ -308,15 +309,13 @@ function remove_p_on_pages() {
 add_action( 'wp_head', 'remove_p_on_pages' );
 
 
-
+// Add widget before blog roll
 genesis_register_sidebar( array(
 	'id' => 'before-blog',
 	'name' => __( 'Before Blog Widget', 'wpsites' ),
 	'description' =>  __( 'This is the before post widget area on the blog page only.', 'wpsites' )
 ) );
-
 add_action( 'genesis_before_loop', 'wpsites_before_blog_widget', 9 );
-
 function wpsites_before_blog_widget() {
 	$classes = get_body_class();
 	if (in_array('blog',$classes)) {
@@ -328,7 +327,40 @@ function wpsites_before_blog_widget() {
 }
 
 
+// featured image link to post
+// http://www.wpbeginner.com/wp-themes/how-to-automatically-link-featured-images-to-posts-in-wordpress/
+function wpb_autolink_featured_images( $html, $post_id, $post_image_id ) {
+    if (! is_singular()) {
+        $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
+        return $html;
+    } else {
+        return $html;
+    }
+}
+add_filter( 'post_thumbnail_html', 'wpb_autolink_featured_images', 10, 3 );
 
 
+// Custom Dashboard Widget
+add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
+function my_custom_dashboard_widgets() {
+    global $wp_meta_boxes;
+    wp_add_dashboard_widget('custom_help_widget', 'Theme Support', 'custom_dashboard_help');
+}
+
+function custom_dashboard_help() {
+    echo '<p>Welcome to my custom genesis theme! Need help? Contact the developer <a href="mailto:info@jabaltorres.com">here</a>.</p>';
+}
 
 
+// digital-menu widget
+genesis_register_widget_area( array(
+    'id'          => 'dls-menu',
+    'name'        => __( 'DLS Menu', 'Altitude Pro Theme' ),
+    'description' => __( 'This is the DLS menu', 'Altitude Pro Theme' ),
+) );
+// digital-sidebar widget
+genesis_register_widget_area( array(
+    'id'          => 'dls-sidebar',
+    'name'        => __( 'DLS Side Bar', 'Altitude Pro Theme' ),
+    'description' => __( 'This widget area appears next to the content in the DLS Page Template', 'Altitude Pro Theme' ),
+) );

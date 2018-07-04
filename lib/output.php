@@ -21,7 +21,7 @@ function altitude_css() {
 	$settings = array();
 
 	foreach( $opts as $opt ){
-		$settings[$opt]['image'] = preg_replace( '/^https?:/', '', get_option( $opt .'-altitude-image', sprintf( '%s/images/bg-%s.jpg', get_stylesheet_directory_uri(), $opt ) ) );
+		$settings[$opt]['image'] = preg_replace( '/^https?:/', '', get_option( $opt .'-altitude-image', sprintf( '%s/dist/images/bg-%s.jpg', get_stylesheet_directory_uri(), $opt ) ) );
 	}
 
 	$css = '';
