@@ -47,12 +47,12 @@
 // Sections
 ////////////////////////////////////////////////////////////////////////
 
-@include medium-screen{}
-@include max-1023{}
-@media only screen and (min-width: 800px) and (max-width: 1023px) {}
-@include max-1280{}
+// @include medium-screen{}
+// @include max-1023{}
+// @media only screen and (min-width: 800px) and (max-width: 1023px) {}
+// @include max-1280{}
 
-@include large-screen{}
+// @include large-screen{}
 
 .entry-content ul.thumbnail-list{
   margin-left: auto;
@@ -71,18 +71,14 @@
     padding: 2em;
   }
   .inner-section{
-    // border: solid thin green;
     padding: 1em;
-    // background-color: yellow;
     max-width: 45em;
     margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden;
   }
   article{
-    // background-color: orange;
     padding-top: 1.8em;
-    // border: solid thin red;
     text-align: center;
     header{
       margin-bottom: 1.5em;
@@ -257,10 +253,6 @@ ul.text-icons{
   }
 }
 
-.col-wrapper{
-  display: flex;
-  ul{
-    text-align: left;
-  }
+.home.full-width-content .content{
+  padding-bottom: 0;
 }
-

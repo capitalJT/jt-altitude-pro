@@ -1,1 +1,29 @@
-.about-page{}
+.about{
+	text-align: center;
+}
+
+ul.text-icons{
+  margin-left: 0;
+  li{
+    list-style: none;
+    border: solid thin $color-primary;
+    display: inline-block;
+    border-radius: 100%;
+    width: 5em;
+    height: 5em;
+    line-height: 5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    margin: 10px;
+  }
+  span{
+    border-bottom: solid thin #eee;
+  }
+}
+
+.col-wrapper{
+  display: flex;
+  ul{
+    text-align: left;
+  }
+}
