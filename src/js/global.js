@@ -56,7 +56,6 @@ jQuery(function( $ ){
 	// console.log(header_height);
 	// $(".site-inner").css("margin-top", header_height);
 
-<<<<<<< HEAD
 	// using gist as a temporary bandaid
 	$.getJSON('http://jabaltorres.com/wp-content/themes/jt-altitude-pro/jt-data.json', function(data) {
 	    var items = [];
@@ -86,36 +85,7 @@ jQuery(function( $ ){
 	 
 	  	$( "<ul/>", { "class": "thumbnail-list", html: items }).appendTo( ".work" );
 	});
-=======
-	// $.getJSON('https://jabaltorres.com/wp-content/themes/jt-altitude-pro/jt-data.json', function(data) {
-	//     var items = [];
-	//   	$.each(data, function(idx, obj){
-     //    	$.each(obj, function(key, value){
-    //
-     //    		// check for external link
-     //    		var aTarget = null;
-	// 			    if (value.extLink == true){
-     //    			aTarget = 'target="_blank"';
-     //    		} else {
-     //    			aTarget = "";
-     //    		}
-    //
-     //    		// var clientName = value.client;
-     //    		var description = value.description;
-     //    		var role = value.role;
-     //    		var imgSrc = value.imgSrc;
-     //    		var linkHref = value.linkHref;
-    //
-     //    		var output = "<li><a href='"+ linkHref +"'"+ aTarget +"><div class=\"text\"><h3>" + description +"</h3><span class=\"role\">"+ role +"</span></div><img src='"+ imgSrc +"'><span class=\"overlay\"></span></a></li>";
-    //
-     // 			items.push( output );
-     //
-     //    	});
-    	// });
-	//
-	//   	$( "<ul/>", { "class": "thumbnail-list", html: items }).appendTo( ".work" );
-	// });
->>>>>>> master
+
 
 
   // $('#menu-primary-nav a').on('click',function (e) {
