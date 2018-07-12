@@ -183,7 +183,7 @@ jQuery(function( $ ){
 	// $(".site-inner").css("margin-top", header_height);
 
 	// using gist as a temporary bandaid
-	$.getJSON('http://jabaltorres.com/wp-content/themes/jt-altitude-pro/jt-data.json', function(data) {
+	$.getJSON('https://jabaltorres.com/wp-content/themes/jt-altitude-pro/jt-data.json', function(data) {
 	    var items = [];
 	  	$.each(data, function(idx, obj){ 
         	$.each(obj, function(key, value){
