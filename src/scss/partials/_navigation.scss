@@ -46,6 +46,7 @@ Site Navigation
 .genesis-nav-menu li.current-menu-item > a,
 .genesis-nav-menu > li > a:hover {
   border-color: #fff;
+  text-decoration: none;
 }
 
 .genesis-nav-menu > .menu-item > a {
@@ -200,6 +201,7 @@ Site Navigation
   }
   > li > a{
     border-width:1px;
+    //background-color: red;
   }
   @include medium-screen{
     margin-top: -60px;
