@@ -171,3 +171,23 @@ aside{
 .entry-content ul > li {
   list-style-type: inherit;
 }
+
+
+// Fix bootstrap carousel bug on homepage
+.front-page-2,
+.front-page-3,
+.front-page-4,
+.front-page-5,
+.front-page-6,
+.front-page-7 {
+  position: static;
+}
+
+.front-page-5{
+  .wpforms-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 660px;
+    text-align: left;
+  }
+}
