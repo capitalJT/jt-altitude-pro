@@ -256,3 +256,35 @@ ul.text-icons{
 .home.full-width-content .content{
   padding-bottom: 0;
 }
+
+// Fix bootstrap carousel bug on homepage
+.front-page-2,
+.front-page-3,
+.front-page-4,
+.front-page-5,
+.front-page-6,
+.front-page-7 {
+  position: static;
+}
+
+.front-page-5{
+  .wpforms-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 660px;
+    text-align: left;
+  }
+}
+
+.home{
+  .carousel img{
+    width: 150px;
+    border-radius: 100%;
+  }
+  .carousel-indicators{
+    margin-bottom: 0;
+  }
+  .carousel-inner{
+    padding-bottom: 20px;
+  }
+}
