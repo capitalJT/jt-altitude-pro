@@ -1,7 +1,6 @@
 %featured-img{
   width:100%;
   margin-bottom: 10px;
-  // border: solid thin #eee;
 }
 
 .blog{
@@ -48,12 +47,6 @@
       }
     }
     .entry-content{
-      //a:not(.more-link){
-      //  @extend %text-link;
-      //}
-      //a:not(.sd-button){
-      //  @extend %text-link;
-      //}
       img{
         border: solid thin #eee;
       }
@@ -66,7 +59,7 @@
   }
   .content{
     .entry-footer{
-      @extend %display-none;
+      display: none;
     }
   }
 }
@@ -74,7 +67,3 @@
 a.more-link{
   font-weight: bold;
 }
-
-// .single-post .content img {
-//   border: solid thin #eee;
-// }

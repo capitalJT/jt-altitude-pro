@@ -23,7 +23,7 @@ $small-font-size: 12px;
 }
 %h2-font-size{
   font-size: $h2-font-size;
-  color: $color-primary;
+  color: map-get($theme-colors, primary);
 }
 %h3-font-size{
   font-size: $h3-font-size;
@@ -77,14 +77,11 @@ h1,h2, h3, h4, h5, h6{
 }
 
 blockquote{
-  color:$color-brand;
+  color:map-get($theme-colors, primary);
   font-weight: bold;
   border: solid thin #eee;
-  padding:30px 20px 5px 40px ;
   margin-left:0;
   margin-right:0;
-  @extend %h5-font-size;
-  line-height: 1.5em;
 }
 
 .genesis-nav-menu > .menu-item > a {
@@ -93,13 +90,13 @@ blockquote{
 
 .site-header{
   &.dark{
-    background-color: #FFF;
+    background-color: $white;
     .title-area{
       padding-top:5px;
       padding-bottom:3px;
     }
     .site-title a{
-      color: $color-brand !important;
+      color: map-get($theme-colors, primary) !important;
     }
     .genesis-nav-menu{
       margin-top: 0;
@@ -117,13 +114,16 @@ blockquote{
   @extend %heading-font;
   @extend %h3-font-size;
   font-weight: 500;
-  @include max-800{
+  text-align: left;
+  display: inline-block;
+  color: red;
+  @include media-breakpoint-down(md){
     font-size: $h4-font-size;
   }
 }
 
-.section-title, {
-  color:$color-grey;
+.section-title{
+  color: $color-grey;
   @extend %heading-font;
   @extend %h3-font-size;
 }
@@ -134,11 +134,7 @@ blockquote{
   }
 }
 
-.site-title{
-  text-align: left;
-  display: inline-block;
-  color: red;
-}
+
 .site-description{
   color:white;
 }
@@ -166,15 +162,25 @@ blockquote{
   .entry-title{
     color: $light-grey;
     font-size: 36px;
-    @include medium-screen{
+
+    @include media-breakpoint-up(md){
       font-size: 60px;
     }
-    @include large-screen{
+    @include media-breakpoint-up(lg){
       font-size: 72px;
     }
+
   }
 }
 
 .text-link{
-  @extend %text-link;
+  color: #444;
+  text-decoration: none;
+  border-bottom: solid 1px map-get($theme-colors, primary);
+  padding-bottom: 2px;
+  font-weight: bold;
+  &:hover{
+    color: map-get($theme-colors, primary);
+    transition: all 0.3s ease-in-out;
+  }
 }

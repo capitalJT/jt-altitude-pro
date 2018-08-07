@@ -190,6 +190,7 @@ Site Navigation
     font-weight: 700;
     font-size: 18px;
     letter-spacing:0px;
+
     @include large-screen{
       padding-top: 10px;
       padding-bottom: 10px;
@@ -217,11 +218,7 @@ Site Navigation
       a {
         padding-top: 5px;
         padding-bottom: 5px;
-        border-color:white;
-        // border-color:rgba(0,0,0,0);
-        &:hover{
-          // border-color: $color-primary;
-        }
+        border-color: $white;
       }
     }
   }

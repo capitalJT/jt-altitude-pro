@@ -1,12 +1,94 @@
 $global-margin-sm: 1rem;
 $global-margin-md: 2rem;
 
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge((
+        "100": $gray-100,
+        "200": $gray-200,
+        "300": $gray-300,
+        "400": $gray-400,
+        "500": $gray-500,
+        "600": $gray-600,
+        "700": $gray-700,
+        "800": $gray-800,
+        "900": $gray-900
+), $grays);
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #E24D25 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge((
+        "blue":       $blue,
+        "indigo":     $indigo,
+        "purple":     $purple,
+        "pink":       $pink,
+        "red":        $red,
+        "orange":     $orange,
+        "yellow":     $yellow,
+        "green":      $green,
+        "teal":       $teal,
+        "cyan":       $cyan,
+        "white":      $white,
+        "gray":       $gray-600,
+        "gray-dark":  $gray-800
+), $colors);
+
+$primary:       $orange !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+        "primary":    $primary,
+        "secondary":  $secondary,
+        "success":    $success,
+        "info":       $info,
+        "warning":    $warning,
+        "danger":     $danger,
+        "light":      $light,
+        "dark":       $dark
+), $theme-colors);
+
 
 @import "vendor/bootstrap";
 
+
+
+
+// My Variables
+
+$color-grey: #666666;
+$light-grey: #A1A0A1;
+$dark-grey: #666666;
+$border-radius: 4px;
+
 @import "global/base";
-@import "global/placeholders";
-@import "mixins/settings";
 @import "mixins/media-queries";
 @import "global/typography";
 @import "icon-font";
@@ -18,7 +100,6 @@ $global-margin-md: 2rem;
 @import "partials/work-example";
 @import "partials/pagination";
 
-@import "templates/case-studies-template";
 @import "templates/work-template";
 
 @import "pages/home-page";
@@ -31,18 +112,15 @@ form{
 
 input,select{
   font-size: 16px;
-  height:50px;
   padding:10px;
 }
+
 input, select{
   margin-bottom:20px;
   box-sizing: border-box;
 }
 input{
   border-radius: $border-radius;
-}
-select{
-  line-height: 19px;
 }
 
 .site-header{
@@ -73,20 +151,6 @@ select{
     padding-top:10px;
     padding-bottom:10px;
   }
-  .site-title{}
-  .site-description{}
-
-  .left-half, .right-half{
-    width:50%;
-  }
-  .left-half{
-    float: left;
-    padding-right: 20px;
-  }
-  .right-half{
-    float: right;
-    padding-left: 20px;
-  }
 }
 
 button,
@@ -94,7 +158,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button, .widget .button{
-  @extend %button;
+  @extend .btn;
 }
 
 div#respond.comment-respond{
@@ -168,6 +232,24 @@ aside{
 }
 
 
+.entry-content ul{
+  margin-left: 0;
+}
+
 .entry-content ul > li {
   list-style-type: inherit;
+  margin-left: 30px;
+}
+
+// Change the color of the indicator
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23200' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23200' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators .active {
+  background-color: map-get($theme-colors, primary);
 }

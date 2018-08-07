@@ -166,7 +166,7 @@
       li{
         list-style-type: none;
         display: inline-block;
-        border: solid thin $color-primary;
+        border: solid thin map-get($theme-colors, primary);
         // background-color: $color-primary;
         font-family: 'Oswald', sans-serif;
         // background-color: #eee;
@@ -216,7 +216,7 @@
       padding: 0.5em;
       margin-left: 0.125em;
       margin-right: 0.125em;
-      color: $color-primary;
+      color: map-get($theme-colors, primary);
       font-size: 2em;
       @include transition(background-color 0.3s ease-in-out);
       &:hover{
@@ -237,7 +237,7 @@ ul.text-icons{
   margin-left: 0;
   li{
     list-style: none;
-    border: solid thin $color-primary;
+    border: solid thin map-get($theme-colors, primary);
     display: inline-block;
     border-radius: 100%;
     width: 5em;
@@ -281,10 +281,31 @@ ul.text-icons{
     width: 150px;
     border-radius: 100%;
   }
+  .carousel{
+    blockquote{
+      padding: 10px;
+      &:before{
+        //border: solid thin red;
+        display: inline-block;
+        height: 20px;
+        line-height: 1em;
+        left: inherit;
+        top: 0;
+        margin: 0;
+        display: block;
+      }
+      p{
+        //border: solid thin green;
+      }
+    }
+  }
   .carousel-indicators{
     margin-bottom: 0;
   }
   .carousel-inner{
     padding-bottom: 20px;
+  }
+  .wpforms-container .wpforms-field{
+    padding: 0;
   }
 }

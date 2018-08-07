@@ -1,10 +1,3 @@
-@import "reset";
-@import "variables";
-@import "utility-classes";
-
-// background: -webkit-linear-gradient(left,#fcfbf9 0,#fcfbf9 50%,#efefe6 50%,#efefe6 100%);
-// background: linear-gradient(to right,#fcfbf9 0,#fcfbf9 50%,#efefe6 50%,#efefe6 100%);
-
 .nav-primary .genesis-nav-menu{
   text-align: left;
 }
@@ -26,21 +19,16 @@ $placeholder-color: #666;
    color: $placeholder-color; 
 }
 
-.footer {
-  border-top: 1px solid #dedede;
-  padding-top: 10px;
-  color: #676767;
-}
 
 main article{
   header p.entry-meta{
-    @extend %display-none;
+    display: none;
   }
 }
 
 
 a{
-  color: $color-primary;
+  color: map-get($theme-colors, primary);
 }
 
 pre{

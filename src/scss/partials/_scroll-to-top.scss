@@ -9,14 +9,14 @@
   border-radius: $border-radius;
   text-align: center;
   // display: none;
-  @extend %transition;
+  transition: all 0.3s ease-in-out;
   &:hover{
     background-color: #ccc;
     cursor:pointer;
   }
   &:after{
     content:"↑";
-    color: $color-primary;
+    color: map-get($theme-colors, primary);
   }
 }
 

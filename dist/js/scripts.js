@@ -122,6 +122,14 @@
 		// - Rearrange sidebar
 		$(".dls-sidebar").insertBefore("#genesis-content");
 
+
+		// BS4 Carousel interval speed
+        $('.carousel').carousel({
+            interval: 1000 * 10
+        })
+
+		console.log("hi");
+
 	});
 })( document, jQuery );
 jQuery(function( $ ){
