@@ -22,7 +22,7 @@
       <div class="client-name">Client: <?php echo $client; ?></div>
       <div class="skills">Skills: <?php echo $skills; ?></div>
       <div class="ext-url">
-        <a class="button" href="<?php echo $ext_url; ?>" target="_blank"><?php echo $ext_url_text; ?></a>
+        <a class="btn btn-primary" href="<?php echo $ext_url; ?>" target="_blank"><?php echo $ext_url_text; ?></a>
       </div>
     </div>
     
