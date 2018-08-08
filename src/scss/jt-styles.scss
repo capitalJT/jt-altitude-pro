@@ -210,27 +210,6 @@ aside{
   }
 }
 
-.featured-projects, .carousel{
-  img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @include media-breakpoint-down(md){
-    margin-bottom: $global-margin-md;
-    img{
-      margin-bottom: $global-margin-sm;
-    }
-  }
-  @include media-breakpoint-up(md){
-    .row{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-}
-
 
 .entry-content ul{
   margin-left: 0;

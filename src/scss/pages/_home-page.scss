@@ -317,6 +317,30 @@ ul.text-icons{
   }
 }
 
+
+.featured-projects, .carousel{
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include media-breakpoint-down(md){
+    margin-bottom: $global-margin-md;
+    img{
+      margin-bottom: $global-margin-sm;
+    }
+  }
+  @include media-breakpoint-up(md){
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+
 // Change the color of the indicator
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23200' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
@@ -329,4 +353,13 @@ ul.text-icons{
 // This is used on the featured projects section and is being controlled by js
 .hideme {
   opacity:0;
+}
+
+.featured-projects .col-md-7 a{
+  position: relative;
+  display: block;
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 20px -15px rgba(0,0,0,0.5);
+  }
 }
