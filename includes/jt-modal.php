@@ -8,7 +8,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<img class="img-fluid d-block mx-auto" id="imagePreview" src="" />
+				<img class="img-fluid d-block mx-auto border" id="imagePreview" src="" />
 			</div>
 		</div>
 	</div>
