@@ -89,6 +89,19 @@ function altitude_footer_menu() {
 
 }
 
+
+
+// https://wordpress.stackexchange.com/questions/1403/organizing-code-in-your-wordpress-themes-functions-php-file
+function jtModal() {
+	// Here we load from our includes directory
+	// This considers parent and child themes as well
+	locate_template( array( 'includes/jt-modal.php' ), true, true );
+}
+add_action( 'after_setup_theme', 'jtModal' );
+
+
+
+
 //* Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
@@ -301,7 +314,7 @@ function featured_post_image() {
 // }
 
 function remove_p_on_pages() {
-	if ( is_page( array( 'home', 'work' ) ) ){
+	if ( is_page( array( 'home', 'work', 'modal-test' ) ) ){
 		remove_filter( 'the_content', 'wpautop' );
 		remove_filter( 'the_excerpt', 'wpautop' );
 	}
