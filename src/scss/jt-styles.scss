@@ -231,3 +231,9 @@ aside{
     border: solid thin #eee;
   }
 }
+
+img:focus {
+  outline-color: transparent;
+  outline-width: inherit;
+  outline-style: unset;
+}

@@ -93,11 +93,9 @@ function altitude_footer_menu() {
 
 // https://wordpress.stackexchange.com/questions/1403/organizing-code-in-your-wordpress-themes-functions-php-file
 function jtModal() {
-	// Here we load from our includes directory
-	// This considers parent and child themes as well
 	locate_template( array( 'includes/jt-modal.php' ), true, true );
 }
-add_action( 'after_setup_theme', 'jtModal' );
+add_action( 'genesis_after_footer', 'jtModal' );
 
 
 
