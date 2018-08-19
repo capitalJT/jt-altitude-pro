@@ -120,12 +120,19 @@ function featured_projects_loop(){
 
 	$featured_projects = new WP_Query($featured_projects_args);
 
-	if ($featured_projects -> have_posts()) {
+	if  ( ($featured_projects -> have_posts()) && is_front_page() ) {
+
+		echo '<div class="d-block clearboth text-center">';
+		echo '<h3 class="title">Featured Projects</h3>';
 		while($featured_projects -> have_posts()): $featured_projects ->the_post();
 			get_template_part( '/includes/featured_projects_homepage_items' );
 		endwhile;
+
+		echo '<a class="btn btn-primary mx-auto" href="' . get_permalink( get_page_by_path( 'featured-projects' ) ) . '"><div class="jt">View All Featured Projects</div></a>';
+		echo '</div>';
 	}
 	/* END - Featured Projects */
 }
+
 
 genesis();

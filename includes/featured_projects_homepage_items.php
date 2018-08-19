@@ -4,7 +4,7 @@
     $project_button_text = get_field('project_button_text');
 ?>
 
-<div class="feature-projects-homepage-item">
+<div class="feature-projects-homepage-item mb-5">
   
     <a href="<?php echo get_permalink(); ?>"><h1 class="article-title"><?php echo the_title();?></h1></a>
 
@@ -21,10 +21,10 @@
 	<?php endif; ?>
 
     <?php if ($project_url) : ?>
-        <a class="project-url" href="<?php echo $project_url;?>">  <?php echo $project_button_text;?></a>
+        <a class="project-url btn btn-primary" href="<?php echo $project_url;?>"><?php echo $project_button_text;?></a>
     <?php endif; ?>
 
 
-  <?php echo edit_post_link('(Edit)', '<span>', '</span>'); ?>
+    <?php echo edit_post_link('(Edit)', '<span class="btn btn-warning my-2">', '</span>'); ?>
 </div>
 

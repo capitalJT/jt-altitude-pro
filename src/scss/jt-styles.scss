@@ -176,13 +176,13 @@ div#respond.comment-respond{
   border: none !important;
 }
 
-.post-edit-link{
-  padding: 10px;
-  background-color: pink;
-  border: solid thin red;
-  border-radius: 4px;
-  display: inline-block;
-}
+//.post-edit-link{
+//  padding: 10px;
+//  background-color: pink;
+//  border: solid thin red;
+//  border-radius: 4px;
+//  display: inline-block;
+//}
 
 .post-278{
   text-align: center;
@@ -236,4 +236,8 @@ img:focus {
   outline-color: transparent;
   outline-width: inherit;
   outline-style: unset;
+}
+
+.clearboth{
+  clear: both;
 }
