@@ -105,4 +105,27 @@ function altitude_front_page_widgets() {
 
 }
 
+
+//* Add Featured Projects to home page
+add_action('genesis_after_content', 'featured_projects_loop');
+
+function featured_projects_loop(){
+	/* START - Featured Projects */
+	$featured_projects_args = array(
+		'post_type'  => 'featured-projects',
+		'showposts' => '3',
+		'orderby' => 'menu_order',
+		'order' => 'ASC',
+	);
+
+	$featured_projects = new WP_Query($featured_projects_args);
+
+	if ($featured_projects -> have_posts()) {
+		while($featured_projects -> have_posts()): $featured_projects ->the_post();
+			get_template_part( '/includes/featured_projects_homepage_items' );
+		endwhile;
+	}
+	/* END - Featured Projects */
+}
+
 genesis();

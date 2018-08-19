@@ -98,6 +98,13 @@ function jtModal() {
 add_action( 'genesis_after_footer', 'jtModal' );
 
 
+// My custom footer
+function jtCustomFooter(){
+    if( !is_front_page() && is_single ){
+	    locate_template( array( 'includes/jt-footer.php' ), true, true );
+    }
+}
+add_action( 'genesis_before_footer', 'jtCustomFooter' );
 
 
 //* Change the footer text
@@ -389,6 +396,7 @@ function sk_google_tag_manager1() { ?>
 	<!-- End Google Tag Manager -->
 <?php }
 
+
 // Add Google Tag Manager code immediately below opening <body> tag
 add_action( 'genesis_before', 'sk_google_tag_manager2' );
 function sk_google_tag_manager2() { ?>
@@ -397,3 +405,10 @@ function sk_google_tag_manager2() { ?>
 	                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 <?php }
+
+
+
+
+
+
+
