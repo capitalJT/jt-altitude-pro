@@ -18,32 +18,11 @@
     </div>
 
     <div class="taxonomies mb-4">
-      <div class="product-type mb-2">
-          <p><?php echo get_the_term_list( $post->ID, 'product-type', 'Type of product: ', ', ', '' ); ?></p>
-
-          <?php
-              $terms = get_terms('product-type');
-              if ( !empty( $terms ) && !is_wp_error( $terms ) ){
-
-//                  echo '<div class="d-block">Type of product:</div>';
-//                  echo '<ul>';
-//                  foreach ( $terms as $term ) {
-//                      echo '<li>' . $term->name . '</li>';
-//                  }
-//                  echo '</ul>';
-
-	              echo '<div class="d-inline-block">Type of product: </div>';
-	              echo '<div class="entry-terms d-inline-block ml-1">';
-	              foreach ( $terms as $term ) {
-		              $entry_terms .= $term->name . ', ';
-	              }
-	              $entry_terms = rtrim( $entry_terms, ', ' );
-	              echo $entry_terms . '</div>';
-              }
-          ?>
+      <div class="product-type">
+          <div><?php echo get_the_term_list( $post->ID, 'product-type', 'Type of product: ', ', ', '' ); ?></div>
       </div>
       <div class="mood">
-          <?php echo get_the_term_list( $post->ID, 'mood', 'The mood this puts me in: ', ', ', '' ); ?>
+          <div><?php echo get_the_term_list( $post->ID, 'mood', 'The mood this puts me in: ', ', ', '' ); ?></div>
       </div>
     </div>
     
