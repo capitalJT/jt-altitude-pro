@@ -4,7 +4,7 @@
     $project_button_text = get_field('project_button_text');
 ?>
 
-<article class="featured-project-list-item">
+<article class="featured-project-list-item border p-4 mb-4">
   
     <a href="<?php echo get_permalink(); ?>"><h1 class="article-title"><?php echo the_title();?></h1></a>
 
@@ -16,11 +16,15 @@
 
 
 	<?php if ($project_title) : ?>
-        <div class="project-title"><?php echo $project_title;?></div>
+        <div class="project-title h4"><?php echo $project_title;?></div>
 	<?php endif; ?>
 
+    <div class="project-content"><?php the_content(); ?></div>
+
 	<?php if ($project_url) : ?>
-        <a class="project-url" href="<?php echo $project_url;?>">  <?php echo $project_button_text;?></a>
+        <a class="project-url btn border" href="<?php echo $project_url;?>">
+            <?php echo $project_button_text;?>
+        </a>
 	<?php endif; ?>
 
   <?php echo edit_post_link('(Edit)', '<span>', '</span>'); ?>
