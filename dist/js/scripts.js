@@ -296,7 +296,189 @@ jQuery(function( $ ){
 	// 	}
 	// });
 
+	var sum;
+	function add(num1, num2){
+		var sum = num1 + num2;
+		return sum;
+	}
+	var result = add(12,23);
+    console.log('two numbers added together: ' + result);
+
+
+    var numbers = [1,2,3,4,5,4,3,2,1];
+    var mapResult = numbers.map(function(item, index, array){
+    	return item * 2;
+	});
+
+	console.log(mapResult);
+
+	numbers.forEach(function(item, index, array){
+        console.log(item * 2);
+        // console.log('<li>' + item + '<\/li>');
+
+		if ($('.js-playground').length){
+            $('.entry-content').append('<li>' + item + '<\/li>');
+		}
+	});
+
+
+
+
+    function jtCreateInput() {
+        var x = document.createElement("INPUT");
+        x.setAttribute("id", "jt-text-input");
+        x.setAttribute("type", "text");
+        // x.setAttribute("value", "Feed me");
+        x.setAttribute("placeholder", "Enter your value here");
+        x.setAttribute("style", "color:red; border: 1px solid blue; display: block;");
+
+        if ($('.js-playground').length){
+            $('.entry-content').append(x);
+		}
+    }
+
+    function addElement() {
+        // create a new div element
+        var newDiv = document.createElement("div");
+        newDiv.setAttribute('id', 'new-div');
+        newDiv.setAttribute('class', 'new-class');
+
+        // and give it some content
+        var newContent = document.createTextNode("Hi there and greetings!");
+
+        // add the text node to the newly created div
+        newDiv.appendChild(newContent);
+
+        // add the newly created element and its content into the DOM
+        // var currentDiv = document.getElementById("div1");
+        if ($('.js-playground').length) {
+            $('.entry-content').append(newDiv);
+        }
+    }
+
+    addElement();
+    jtCreateInput();
+
+
+    // What to do when enter key is pressed
+    $("#jt-text-input").on("keydown",function search(e) {
+        if (e.keyCode == 13) {
+        	var thisVal = $(this).val();
+            console.log( 'This value: ' + thisVal );
+
+            var newDiv = document.getElementById('new-div');
+            newDiv.innerHTML = thisVal;
+            newDiv.style.cssText = 'padding: 12px; border: solid thin ' + thisVal + ';';
+        }
+
+        console.log("What is this: " + $(this).css());
+    });
+
+
+	// Closures Example
+	function doSomeMath(a,b){
+		// var a = 12;
+		// var b = 32;
+		var c = 3;
+
+		function multiply(){
+			var result = a * b / c;
+			return result;
+		}
+
+		console.log("Some math was done");
+		return multiply;
+	}
+
+	var theResult = doSomeMath(12,3);
+
+	console.log( 'This is the result of the doSomeMath function: ' + theResult() );
+
+
+	function getWidth() {
+
+		var jtInput = document.getElementById('jt-text-input').offsetWidth;
+
+		console.log( "Result of the getWidth function: " + jtInput + "px");
+    }
+
+    getWidth();
+
+	if ( $('.page-id-19').length ){
+		console.log("Page ID correct");
+	}
+
+
+
+
+    // document.getElementById('jt-text-input').setAttribute("style", "color:red; border: 1px solid blue;");
+
+
 });
+
+
+
+var jt = "jabal is cool";
+
+
+var vidyardVideos = {
+    video1: {
+        uuid: "Rh2oJsa3HDj1hVPfKDCdeg",
+        hash: "#reports-demo",
+        name: "Reports Demo",
+        text: "<p>The best movie ever.<\/p>"
+    },
+    video2: {
+        uuid: "APxTNIXtBL6SoluRC_N2dQ",
+        hash: "#sheets-demo",
+        name: "Sheets Demo",
+        text: "<p>The second best movie ever.<\/p><p>The second best movie ever.</p>"
+    },
+    video3: {
+        uuid: "OxCDlNlSTZ2ZuT4xfUHKtQ",
+        hash: "#dashboards-demo",
+        name: "Dashboards Demo",
+        text: "<p>The third best movie ever.<\/p>"
+    },
+    video4: {
+        uuid: "5jgoBXkZCujmc_q02qj-eQ",
+        hash: "#financial-planning-demo-sales",
+        name: "Financial Planning Demo: Sales",
+        text: "<p>The fourth best movie ever.<\/p>"
+    },
+    video5: {
+        uuid: "X7Xhgmr_mXla9giD6Vlb5A",
+        hash: "#captital-management-demo",
+        name: "Capital Management Demo",
+        text: "<p>The fifth best movie ever.<\/p>"
+    },
+    video6: {
+        uuid: "48hjkrhSGAwiJ4c2_uA3oQ",
+        hash: "#profitability-analysis-demo",
+        name: "Profitability Analysis Demo",
+        text: "<p>The sixth best movie ever.<\/p>"
+    },
+    video7: {
+        uuid: "Q3hlMwq93Y157_RxYjtkcQ",
+        hash: "#financial-close-demo",
+        name: "Financial Close Demo",
+        text: "<p>The seventh best movie ever.<\/p>"
+    }
+};
+
+
+for(var key in vidyardVideos) {
+    if (vidyardVideos.hasOwnProperty(key)) {
+        var video = vidyardVideos[key];
+        console.log(key);
+        console.log(vidyardVideos[0]);
+        console.log(vidyardVideos[key].text);
+        console.log(video.uuid);
+        console.log(video.hash);
+
+        console.log(Object.getOwnPropertyNames(vidyardVideos));
+    }
+}
 // Theme Scripts
 jQuery(function( $ ){
 

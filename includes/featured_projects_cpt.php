@@ -8,11 +8,12 @@
   
     <a href="<?php echo get_permalink(); ?>"><h1 class="article-title"><?php echo the_title();?></h1></a>
 
-	<?php if ( has_post_thumbnail()): ?>
-        <div class="thumbnail">
-			<?php the_post_thumbnail('full'); ?>
-        </div>
+	<?php if ( has_post_thumbnail() ) : ?>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+            <img class="thumbnail" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_caption(); ?>" />
+        </a>
 	<?php endif; ?>
+
 
 	<?php if ($project_title) : ?>
         <div class="project-title"><?php echo $project_title;?></div>
