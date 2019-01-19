@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Single Case Study
+Template Name: Single Featured Project
 */
 
 remove_action('genesis_loop', 'genesis_do_loop');
