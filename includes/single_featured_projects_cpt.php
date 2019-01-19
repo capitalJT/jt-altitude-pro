@@ -14,7 +14,7 @@
 
     <div class="single-project-thumbnail">
       <?php the_post_thumbnail('large'); ?>
-      <div class="img-description mb-4"><?php the_post_thumbnail_caption(); ?></div>
+      <div class="img-description mb-4 small"><?php the_post_thumbnail_caption(); ?></div>
     </div>
 
     <div class="taxonomies mb-4">
@@ -34,3 +34,7 @@
 
   </article>
 <?php endwhile; ?>
+
+
+
+

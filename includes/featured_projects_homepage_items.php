@@ -6,7 +6,7 @@
 
 ?>
 
-<div class="container feature-projects-homepage-item mb-5">
+<div class="container featured-projects-homepage-item mb-2">
     <div class="row align-items-center">
 
 	    <?php if( get_field('homepage_toggle') ): ?>
@@ -19,7 +19,7 @@
 
             <div class="col-12 col-md-6">
 			    <?php if ( has_post_thumbnail() ) : ?>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                    <a class="has-hover" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                         <img class="thumbnail" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_caption(); ?>" />
                     </a>
 			    <?php endif; ?>
@@ -48,7 +48,7 @@
 
             <div class="col-12 col-md-6 order-md-last">
 			    <?php if ( has_post_thumbnail() ) : ?>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                    <a class="has-hover" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                         <img class="thumbnail" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_caption(); ?>" />
                     </a>
 			    <?php endif; ?>

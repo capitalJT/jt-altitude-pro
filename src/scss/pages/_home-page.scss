@@ -318,7 +318,7 @@ ul.text-icons{
 }
 
 
-.featured-projects, .carousel{
+.carousel{
   img{
     display: block;
     margin-left: auto;
@@ -353,23 +353,4 @@ ul.text-icons{
 // This is used on the featured projects section and is being controlled by js
 .hideme {
   opacity:0;
-}
-
-.featured-projects .col-md-7 a{
-  position: relative;
-  display: block;
-  &:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 20px 20px -15px rgba(0,0,0,0.5);
-  }
-}
-
-
-.feature-projects-homepage-item{
-  .thumbnail{
-    border: solid thick red;
-    //max-width: 640px;
-    display: block;
-    margin: 20px auto;
-  }
 }

@@ -1,0 +1,49 @@
+.featured-projects{
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include media-breakpoint-down(md){
+    margin-bottom: $global-margin-md;
+    img{
+      margin-bottom: $global-margin-sm;
+    }
+  }
+  @include media-breakpoint-up(md){
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+.featured-projects .col-md-7 a{
+  position: relative;
+  display: block;
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 20px -15px rgba(0,0,0,0.5);
+  }
+}
+
+/* TODO: Make this a util class */
+.has-hover{
+  position: relative;
+  display: block;
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 20px -15px rgba(0,0,0,0.5);
+  }
+}
+
+.featured-projects-homepage-item{
+  .thumbnail{
+    border: solid thick $primary;
+    //max-width: 640px;
+    display: block;
+    margin: 20px auto;
+  }
+}
