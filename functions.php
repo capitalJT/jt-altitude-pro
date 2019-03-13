@@ -414,7 +414,6 @@ function sk_google_tag_manager2() { ?>
 add_action( 'genesis_after_entry', 'eo_prev_next_post_nav' );
 
 function eo_prev_next_post_nav() {
-
 	if ( is_single() ) {
 
 		echo '<div class="prev-next-navigation">';
@@ -423,5 +422,32 @@ function eo_prev_next_post_nav() {
 		echo '</div><!-- .prev-next-navigation -->';
 
 	}
-
 }
+
+
+/* Customizing the Login Form
+* https://codex.wordpress.org/Customizing_the_Login_Form#Styling_Your_Login
+----------------------------------------------------------------------------------------*/
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/images/site-login-logo.png);
+            height:65px;
+            width:320px;
+            background-size: 320px 65px;
+            background-repeat: no-repeat;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Your Site Name and Info';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
