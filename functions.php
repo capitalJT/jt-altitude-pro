@@ -303,7 +303,13 @@ function gregr_favicon_filter( $favicon ) {
 /* Code to Display Featured Image on top of the post */
 add_action( 'genesis_entry_content', 'featured_post_image', 8 );
 function featured_post_image() {
-	the_post_thumbnail('post-image');
+
+	if (is_singular('post')) {
+
+		//your code here...
+		the_post_thumbnail('post-image');
+
+	}
 }
 
 
