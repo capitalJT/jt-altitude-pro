@@ -46,4 +46,27 @@
     display: block;
     margin: 20px auto;
   }
+  .has-text{
+    color: white;
+  }
+}
+
+
+.featured-projects-homepage-wrapper {
+  background-attachment: fixed;
+  background-color: #fff;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-image: url(//jabaltorres.test/wp-content/themes/jt-altitude-pro/dist/images/bg-3.jpg);
+}
+
+.featured-projects-inner-wrapper{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
+  display: table;
+  overflow: hidden;
+  table-layout: fixed;
+  width: 100%;
 }

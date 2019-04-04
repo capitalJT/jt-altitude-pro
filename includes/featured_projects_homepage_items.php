@@ -17,14 +17,14 @@
 		    /* The True / False field allows you to select a value that is either 1 or 0. */
 		    ?>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 has-img">
 			    <?php if ( has_post_thumbnail() ) : ?>
                     <a class="has-hover" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                         <img class="thumbnail" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_caption(); ?>" />
                     </a>
 			    <?php endif; ?>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 has-text">
 
                 <a href="<?php echo get_permalink(); ?>"><h1 class="article-title"><?php echo the_title();?></h1></a>
 
@@ -33,7 +33,7 @@
 			    <?php endif; ?>
 
 			    <?php if ( has_excerpt()): ?>
-                    <div class="project-excerpt"><?php echo the_excerpt();?></div>
+                    <div class="project-excerpt mb-4"><?php echo the_excerpt();?></div>
 			    <?php endif; ?>
 
 			    <?php if ($project_url) : ?>
@@ -46,14 +46,14 @@
 
 	    <? else: ?>
 
-            <div class="col-12 col-md-6 order-md-last">
+            <div class="col-12 col-md-6 has-image order-md-last">
 			    <?php if ( has_post_thumbnail() ) : ?>
                     <a class="has-hover" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                         <img class="thumbnail" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_caption(); ?>" />
                     </a>
 			    <?php endif; ?>
             </div>
-            <div class="col-12 col-md-6 order-md-first">
+            <div class="col-12 col-md-6 has-text order-md-first">
 
                 <a href="<?php echo get_permalink(); ?>"><h1 class="article-title"><?php echo the_title();?></h1></a>
 
@@ -62,7 +62,7 @@
 			    <?php endif; ?>
 
 			    <?php if ( has_excerpt()): ?>
-                    <div class="project-excerpt"><?php echo the_excerpt();?></div>
+                    <div class="project-excerpt mb-4"><?php echo the_excerpt();?></div>
 			    <?php endif; ?>
 
 			    <?php if ($project_url) : ?>

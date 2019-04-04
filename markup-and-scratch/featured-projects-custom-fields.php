@@ -11,7 +11,6 @@ if( function_exists('acf_add_local_field_group') ):
 				'label' => 'Project Title',
 				'name' => 'project_title',
 				'type' => 'text',
-				'instructions' => 'Add project title',
 				'required' => 1,
 				'conditional_logic' => 0,
 				'wrapper' => array(

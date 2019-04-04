@@ -14,15 +14,15 @@ add_action( 'genesis_meta', 'altitude_front_page_genesis_meta' );
  */
 function altitude_front_page_genesis_meta() {
 
-	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' ) || is_active_sidebar( 'front-page-5' ) || is_active_sidebar( 'front-page-6' ) || is_active_sidebar( 'front-page-7' ) ) {
+	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' ) ) {
 
 		//* Enqueue scripts
 		add_action( 'wp_enqueue_scripts', 'altitude_enqueue_altitude_script' );
 		function altitude_enqueue_altitude_script() {
 
 			// wp_enqueue_script( 'altitude-script', get_bloginfo( 'stylesheet_directory' ) . '/js/home.js', array( 'jquery' ), '1.0.0' );
-			wp_enqueue_script( 'localScroll', get_stylesheet_directory_uri() . '/dist/scripts/vendor/jquery.localScroll.min.js', array( 'scrollTo' ), '1.2.8b', true );
-			wp_enqueue_script( 'scrollTo', get_stylesheet_directory_uri() . '/dist/scripts/vendor/jquery.scrollTo.min.js', array( 'jquery' ), '1.4.5-beta', true );
+			wp_enqueue_script( 'localScroll', get_stylesheet_directory_uri() . '/dist/js/vendor/jquery.localScroll.min.js', array( 'scrollTo' ), '1.2.8b', true );
+			wp_enqueue_script( 'scrollTo', get_stylesheet_directory_uri() . '/dist/js/vendor/jquery.scrollTo.min.js', array( 'jquery' ), '1.4.5-beta', true );
 
 		}
 
@@ -65,6 +65,23 @@ function altitude_front_page_genesis_meta() {
 
 }
 
+function jt_reviews_widget() {
+	genesis_widget_area( 'front-page-4', array(
+		'before' => '<div id="front-page-4" class="front-page-4"><div class="solid-section"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-4' ) . '"><div class="wrap">',
+		'after'  => '</div></div></div></div>',
+	) );
+
+	echo '<div class="jt-form-wrapper">';
+		echo '<div class="container">';
+			echo '<div class="col-12">';
+				echo '<div class="w-75 mx-auto">';
+					echo do_shortcode("[wpforms id=\"568\" title=\"false\" description=\"false\"]");
+				echo '</div>';
+			echo '</div>';
+		echo '</div>';
+	echo '</div>';
+}
+
 //* Add markup for front page widgets
 function altitude_front_page_widgets() {
 
@@ -83,25 +100,9 @@ function altitude_front_page_widgets() {
 		'after'  => '</div></div></div></div>',
 	) );
 
-	genesis_widget_area( 'front-page-4', array(
-		'before' => '<div id="front-page-4" class="front-page-4"><div class="solid-section"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-4' ) . '"><div class="wrap">',
-		'after'  => '</div></div></div></div>',
-	) );
-
-	genesis_widget_area( 'front-page-5', array(
-		'before' => '<div id="front-page-5" class="front-page-5"><div class="image-section"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-5' ) . '"><div class="wrap">',
-		'after'  => '</div></div></div></div>',
-	) );
-
-	genesis_widget_area( 'front-page-6', array(
-		'before' => '<div id="front-page-6" class="front-page-6"><div class="solid-section"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-6' ) . '"><div class="wrap">',
-		'after'  => '</div></div></div></div>',
-	) );
-
-	genesis_widget_area( 'front-page-7', array(
-		'before' => '<div id="front-page-7" class="front-page-7"><div class="image-section"><div class="flexible-widgets widget-area' . altitude_widget_area_class( 'front-page-7' ) . '"><div class="wrap">',
-		'after'  => '</div></div></div></div>',
-	) );
+	// I add this widget below the footer because featured projects displays below the content
+	// TODO: Find a cleaner solution for this
+	add_action('genesis_before_footer', 'jt_reviews_widget');
 
 }
 

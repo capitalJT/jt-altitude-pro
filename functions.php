@@ -254,21 +254,7 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Front Page 4', 'altitude' ),
 	'description' => __( 'This is the front page 4 section.', 'altitude' ),
 ) );
-genesis_register_sidebar( array(
-	'id'          => 'front-page-5',
-	'name'        => __( 'Front Page 5', 'altitude' ),
-	'description' => __( 'This is the front page 5 section.', 'altitude' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'front-page-6',
-	'name'        => __( 'Front Page 6', 'altitude' ),
-	'description' => __( 'This is the front page 6 section.', 'altitude' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'front-page-7',
-	'name'        => __( 'Front Page 7', 'altitude' ),
-	'description' => __( 'This is the front page 7 section.', 'altitude' ),
-) );
+
 
 //* Load custom stylesheet 
 add_action( 'wp_enqueue_scripts', 'custom_load_custom_style_sheet' );
