@@ -242,3 +242,16 @@ img:focus {
 .clearboth{
   clear: both;
 }
+
+.archive.tag,
+.archive.category{
+  .featured-projects{
+    //border: solid thick red;
+    img{
+      float: none !important;
+    }
+    .entry-footer:before{
+      padding-top: 30px;
+    }
+  }
+}

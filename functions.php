@@ -450,3 +450,13 @@ function my_login_stylesheet() {
     wp_enqueue_script( 'custom-login', get_stylesheet_directory_uri() . '/style-login.js' );
 }
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
+
+
+// Add custom post type to main query
+add_action('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+    if($query->is_main_query()
+       && ( is_category() || is_tag() )) {
+        $query->set( 'post_type', array('post','featured-projects') );
+    }
+}

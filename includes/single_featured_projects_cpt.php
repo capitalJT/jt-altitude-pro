@@ -18,12 +18,14 @@
     </div>
 
     <div class="taxonomies mb-4">
-      <div class="product-type">
-          <div><?php echo get_the_term_list( $post->ID, 'product-type', 'Type of product: ', ', ', '' ); ?></div>
-      </div>
-      <div class="mood">
-          <div><?php echo get_the_term_list( $post->ID, 'mood', 'The mood this puts me in: ', ', ', '' ); ?></div>
-      </div>
+<!--      <div class="product-type">-->
+<!--          <div>--><?php //echo get_the_term_list( $post->ID, 'product-type', 'Type of product: ', ', ', '' ); ?><!--</div>-->
+<!--      </div>-->
+<!--      <div class="mood">-->
+<!--          <div>--><?php //echo get_the_term_list( $post->ID, 'jt-custom-tag', 'The mood this puts me in: ', ', ', '' ); ?><!--</div>-->
+<!--      </div>-->
+        <div class="categories">Categories: <?php the_category( ', ' ); ?></div>
+	    <?php the_tags( '<div class="tags">Tagged With: ', ', ', '</div>' ); ?>
     </div>
     
     <div class="single-project-content"><?php the_content(); ?></div>
