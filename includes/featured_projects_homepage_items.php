@@ -53,9 +53,9 @@
 
                 <a href="<?php echo get_permalink(); ?>"><h1 class="article-title"><?php echo the_title();?></h1></a>
 
-			    <?php if ($project_title): ?>
-                    <div class="project-title"><?php echo $project_title;?></div>
-			    <?php endif; ?>
+	            <?php if ($project_client): ?>
+                    <div class="project-client"><h4><?php echo $project_client; ?></h4></div>
+	            <?php endif; ?>
 
 			    <?php if ( has_excerpt()): ?>
                     <div class="project-excerpt mb-4"><?php echo the_excerpt();?></div>

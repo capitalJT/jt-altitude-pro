@@ -379,6 +379,16 @@ ul.text-icons{
       color: $dark;
     }
   }
+  @include media-breakpoint-up(md){
+    .form{
+      max-width: 75%;
+    }
+  }
+  @include media-breakpoint-up(md){
+    .form{
+      max-width: 50%;
+    }
+  }
 }
 
 
