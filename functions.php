@@ -32,6 +32,15 @@ function altitude_enqueue_scripts_styles() {
 
 
 
+// https://www.tipsandtricks-hq.com/a-simple-guide-to-adding-font-awesome-icons-to-your-wordpress-site-9617
+add_action( 'wp_enqueue_scripts', 'jt_add_custom_fa_css' );
+
+function jt_add_custom_fa_css() {
+    wp_enqueue_style( 'custom-fa', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css' );
+}
+
+
+
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 

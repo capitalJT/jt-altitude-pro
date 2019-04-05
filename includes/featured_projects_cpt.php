@@ -1,7 +1,7 @@
 <?php
-    $project_title = get_field('project_title');
-    $project_url = get_field('project_url');
-    $project_button_text = get_field('project_button_text');
+    $project_client = get_field('project_client');
+//    $project_url = get_field('project_url');
+//    $project_button_text = get_field('project_button_text');
 ?>
 
 <article class="featured-project-list-item border p-4 mb-4">
@@ -15,17 +15,17 @@
 	<?php endif; ?>
 
 
-	<?php if ($project_title) : ?>
-        <div class="project-title h4"><?php echo $project_title;?></div>
+	<?php if ($project_client) : ?>
+        <div class="project-title h4"><?php echo $project_client;?></div>
 	<?php endif; ?>
 
-    <div class="project-content"><?php the_content(); ?></div>
+    <div class="project-excerpt"><?php the_excerpt(); ?></div>
 
-	<?php if ($project_url) : ?>
-        <a class="project-url btn border" href="<?php echo $project_url;?>">
-            <?php echo $project_button_text;?>
-        </a>
-	<?php endif; ?>
+<!--	--><?php //if ($project_url) : ?>
+<!--        <a class="project-url btn border" href="--><?php //echo $project_url;?><!--">-->
+<!--            --><?php //echo $project_button_text;?>
+<!--        </a>-->
+<!--	--><?php //endif; ?>
 
   <?php echo edit_post_link('(Edit)', '<span>', '</span>'); ?>
 </article>

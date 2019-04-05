@@ -9,7 +9,7 @@ add_action('genesis_loop', 'singleFeaturedProject_loop');
 
 function singleFeaturedProject_loop() {
 
-    $featured_projects_args = array(
+	$featured_projects_args = array(
 		'post_type'  => 'featured-projects',
 		'orderby'=> 'menu_order',
 		'order', 'ASC',

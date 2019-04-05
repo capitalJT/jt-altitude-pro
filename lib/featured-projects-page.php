@@ -10,8 +10,8 @@ function featured_projects_loop(){
 	/* START - Featured Projects */
 	$featured_projects_args = array(
 		'post_type'  => 'featured-projects',
-		'orderby'=> 'menu_order',
-		'order', 'ASC',
+		'orderby' => 'menu_order',
+		'order' => 'DESC',
 	);
 
 	$featured_projects = new WP_Query($featured_projects_args);

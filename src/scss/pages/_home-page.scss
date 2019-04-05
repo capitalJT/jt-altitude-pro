@@ -354,3 +354,32 @@ ul.text-icons{
 .hideme {
   opacity:0;
 }
+
+
+.front-page-contact-form {
+  background-image: url(//jabaltorres.com/wp-content/themes/jt-altitude-pro/dist/images/bg-5.jpg);
+  background-attachment: fixed;
+  background-color: #fff;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .inner-wrapper{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
+    display: table;
+    overflow: hidden;
+    table-layout: fixed;
+    width: 100%;
+  }
+  div.wpforms-container-full .wpforms-form button[type=submit]{
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+    border-radius: 4px;
+    &:hover{
+      color: $dark;
+    }
+  }
+}
+
+
+
