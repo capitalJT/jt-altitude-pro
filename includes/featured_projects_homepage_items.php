@@ -36,13 +36,7 @@
                     <div class="project-excerpt mb-4"><?php echo the_excerpt();?></div>
 			    <?php endif; ?>
 
-<!--			    --><?php //if ($project_url) : ?>
-<!--                    <a class="project-url btn btn-primary" href="--><?php //echo $project_url;?><!--">--><?php //echo $project_button_text;?><!--</a>-->
-<!--			    --><?php //endif; ?>
-
                 <a class="btn btn-primary" href="<?php echo get_permalink(); ?>">Learn More</a>
-
-<!--			    --><?php //echo edit_post_link('(Edit)', '<span class="btn btn-warning my-2">', '</span>'); ?>
 
             </div>
 
@@ -67,11 +61,7 @@
                     <div class="project-excerpt mb-4"><?php echo the_excerpt();?></div>
 			    <?php endif; ?>
 
-			    <?php if ($project_url) : ?>
-                    <a class="project-url btn btn-primary" href="<?php echo $project_url;?>"><?php echo $project_button_text;?></a>
-			    <?php endif; ?>
-
-			    <?php echo edit_post_link('(Edit)', '<span class="btn btn-warning my-2">', '</span>'); ?>
+                <a class="btn btn-primary" href="<?php echo get_permalink(); ?>">Learn More</a>
 
             </div>
 
