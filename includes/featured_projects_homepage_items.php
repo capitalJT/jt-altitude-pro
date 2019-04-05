@@ -26,11 +26,7 @@
             </div>
             <div class="col-12 col-md-5 has-text">
 
-                <a href="<?php echo get_permalink(); ?>"><h3 class="article-title"><?php echo the_title();?></h3></a>
-
-			    <?php if ($project_client): ?>
-                    <div class="project-client"><h4><?php echo $project_client; ?></h4></div>
-			    <?php endif; ?>
+                <a href="<?php echo get_permalink(); ?>"><h3 class="article-title h1"><?php echo the_title();?></h3></a>
 
 			    <?php if ( has_excerpt()): ?>
                     <div class="project-excerpt mb-4"><?php echo the_excerpt();?></div>
@@ -51,11 +47,7 @@
             </div>
             <div class="col-12 col-md-5 has-text order-md-first">
 
-                <a href="<?php echo get_permalink(); ?>"><h1 class="article-title"><?php echo the_title();?></h1></a>
-
-	            <?php if ($project_client): ?>
-                    <div class="project-client"><h4><?php echo $project_client; ?></h4></div>
-	            <?php endif; ?>
+                <a href="<?php echo get_permalink(); ?>"><h3 class="article-title h1"><?php echo the_title();?></h3></a>
 
 			    <?php if ( has_excerpt()): ?>
                     <div class="project-excerpt mb-4"><?php echo the_excerpt();?></div>

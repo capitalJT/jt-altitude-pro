@@ -40,6 +40,9 @@
 }
 
 .featured-projects-homepage-item{
+  .article-title{
+    @extend %heading-font;
+  }
   .thumbnail{
     //border: solid thick $primary;
     //max-width: 640px;

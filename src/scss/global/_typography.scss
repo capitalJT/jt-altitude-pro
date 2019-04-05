@@ -116,7 +116,6 @@ blockquote{
   font-weight: 500;
   text-align: left;
   display: inline-block;
-  color: red;
   @include media-breakpoint-down(md){
     font-size: $h4-font-size;
   }
