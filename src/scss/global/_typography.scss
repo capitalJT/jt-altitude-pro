@@ -23,11 +23,11 @@ $small-font-size: 12px;
 }
 %h2-font-size{
   font-size: $h2-font-size;
-  color: map-get($theme-colors, primary);
+  //color: map-get($theme-colors, primary);
 }
 %h3-font-size{
   font-size: $h3-font-size;
-  color: $dark-grey;
+  //color: $dark-grey;
 }
 %h4-font-size{
   font-size: $h4-font-size;
@@ -42,33 +42,31 @@ $small-font-size: 12px;
   font-size: $small-font-size;
 }
 
-// Imported Google Fonts
-// font-family: 'Playfair Display', serif;
-// font-family: 'Oswald', sans-serif;
-// font-family: 'Roboto', sans-serif;
 
 %heading-font{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -1px;
 }
 
 %base-font{
   font-size: $body-font-size;
   line-height: 1.5em;
 }
+
 %subhead-1-font-size{
   font-size: 24px;
   line-height: 32px;
   text-align: center;
   color: #222;
 }
+
 %subhead-2-font-size{
   font-size: 21px;
   line-height: 30px;
   color: #222;
 }
 body {
-  // font-family: 'Dapifer Book';
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   @extend %base-font;
 }
 
@@ -157,7 +155,9 @@ blockquote{
 }
 
 //Page titles
-.page, .single-people .header-wrap, .post-type-archive-people .header-wrap{
+.page,
+.single-people .header-wrap,
+.post-type-archive-people .header-wrap{
   .entry-title{
     color: $light-grey;
     font-size: 36px;

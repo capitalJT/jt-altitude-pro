@@ -32,7 +32,7 @@ $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #E24D25 !default;
-$yellow:  #ffc107 !default;
+$yellow:  #FFC422;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
@@ -54,7 +54,7 @@ $colors: map-merge((
         "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $orange !default;
+$primary:       $yellow !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -103,6 +103,7 @@ $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 @import "partials/scroll-to-top";
 @import "partials/blogroll-page";
 @import "partials/work-example";
+@import "partials/entries";
 @import "partials/pagination";
 @import "partials/modal";
 @import "partials/featured-projects";
@@ -246,7 +247,6 @@ img:focus {
 .archive.tag,
 .archive.category{
   .featured-projects{
-    //border: solid thick red;
     img{
       float: none !important;
     }
@@ -254,4 +254,23 @@ img:focus {
       padding-top: 30px;
     }
   }
+}
+
+.sidebar-primary{
+  .widget{
+    ul li a {
+      color: $dark;
+      &:hover{
+        color: $primary;
+      }
+    }
+  }
+}
+
+.prev-next-navigation{
+  //border: solid thin red;
+  //a{
+  //  color: $dark;
+  //}
+
 }

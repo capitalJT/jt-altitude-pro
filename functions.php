@@ -22,12 +22,9 @@ define( 'CHILD_THEME_VERSION', '1.0.2' );
 //* Enqueue scripts and styles
 add_action( 'wp_enqueue_scripts', 'altitude_enqueue_scripts_styles' );
 function altitude_enqueue_scripts_styles() {
-
 	wp_enqueue_script( 'altitude-global', get_bloginfo( 'stylesheet_directory' ) . '/dist/js/scripts.js', array( 'jquery' ), '1.0.0' );
-
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=Playfair+Display|Oswald|Roboto:400,300', array(), CHILD_THEME_VERSION );
-
+	wp_enqueue_style( 'altitude-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans|Roboto', array(), CHILD_THEME_VERSION );
 }
 
 
@@ -269,7 +266,7 @@ genesis_register_sidebar( array(
 add_action( 'wp_enqueue_scripts', 'custom_load_custom_style_sheet' );
 function custom_load_custom_style_sheet() {
     wp_enqueue_script( 'bootstrap-scripts', get_bloginfo( 'stylesheet_directory' ) . '/dist/js/vendor/bootstrap.min.js', array( 'jquery' ), '1.0.0' );
-	wp_enqueue_style( 'custom-stylesheet', CHILD_URL . '/dist/css/jt-styles.css', array(), PARENT_THEME_VERSION );
+	wp_enqueue_style( 'custom-stylesheet', CHILD_URL . '/dist/css/jt-styles.css', array());
 }
 
 //* add favicon
@@ -417,7 +414,7 @@ add_action( 'genesis_after_entry', 'eo_prev_next_post_nav' );
 function eo_prev_next_post_nav() {
 	if ( is_single() ) {
 
-		echo '<div class="prev-next-navigation">';
+		echo '<div class="prev-next-navigation py-4 mb-4">';
 		    previous_post_link( '<div class="previous">Previous article: %link</div>', '%title' );
 		    next_post_link( '<div class="next">Next article: %link</div>', '%title' );
 		echo '</div><!-- .prev-next-navigation -->';

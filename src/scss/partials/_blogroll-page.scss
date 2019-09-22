@@ -8,7 +8,7 @@
     @extend %featured-img;
   }
   .entry-footer{
-    // border: solid thin #ccc;
+    border-top: solid thin #eee;
     padding:20px;
     &:before{
       display: none;
@@ -34,10 +34,11 @@
   }
 }
 
-.blog, .single-post {
+.blog,
+.single-post {
   .content{
     .entry-title{
-      @extend %h3-font-size;
+      //@extend %h3-font-size;
       line-height: 1em;
       a{
         color: $light-grey;
@@ -66,4 +67,16 @@
 
 a.more-link{
   font-weight: bold;
+}
+
+//.before-blog.widget-area{
+//  padding: 40px;
+//  border: solid thin $secondary;
+//  margin-bottom: 30px;
+//}
+
+.blog article{
+  background-color: $gray-100;
+  padding: 30px;
+  border-radius: 8px;
 }
