@@ -466,3 +466,35 @@ function query_post_type($query) {
         $query->set( 'post_type', array('post','featured-projects') );
     }
 }
+
+
+
+// Shortcode examples
+function be_button_shortcode( $atts, $content = null ) {
+    extract(shortcode_atts(array(
+        'color' => 'blue',
+        'url' => '#'
+    ), $atts));
+
+    $button = '<a class="button color-' . esc_attr( $color ) . '" href="' . esc_url( $url ) . '">' . esc_attr( $content ) . '</a>';
+    return $button;
+}
+add_shortcode( 'button', 'be_button_shortcode' );
+
+
+function jt_cta_shortcode( $atts, $content = 'Click Here' ) {
+    extract(shortcode_atts(array(
+        'color' => 'blue',
+        'url' => '#'
+    ), $atts));
+
+    $button = '<a class="button color-' . esc_attr( $color ) . '" href="' . esc_url( $url ) . '">' . esc_attr( $content ) . '</a>';
+    return $button;
+}
+add_shortcode( 'button', 'jt_cta_shortcode' );
+
+
+function ThankYouShortcode() {
+    return '<p class="bg-primary">Thank You For Reading My Blog Post!</p>';
+}
+add_shortcode('thankyou', 'ThankYouShortcode');

@@ -322,8 +322,6 @@ jQuery(function( $ ){
 	});
 
 
-
-
     function jtCreateInput() {
         var x = document.createElement("INPUT");
         x.setAttribute("id", "jt-text-input");
@@ -475,10 +473,11 @@ for(var key in vidyardVideos) {
         console.log(vidyardVideos[key].text);
         console.log(video.uuid);
         console.log(video.hash);
-
         console.log(Object.getOwnPropertyNames(vidyardVideos));
     }
 }
+
+console.log('blahz blizzies');
 // Theme Scripts
 jQuery(function( $ ){
 
