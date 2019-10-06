@@ -237,14 +237,8 @@ jQuery(function( $ ){
 		console.log("Page ID correct");
 	}
 
-
-
-
     // document.getElementById('jt-text-input').setAttribute("style", "color:red; border: 1px solid blue;");
-
-
 });
-
 
 
 var jt = "jabal is cool";
@@ -308,4 +302,5 @@ for(var key in vidyardVideos) {
     }
 }
 
-console.log('blahz blizzies');
+
+console.log('blahzay blahzay');
