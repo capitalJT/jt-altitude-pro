@@ -42,7 +42,7 @@ function jt_add_custom_fa_css() {
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 
 //* Add viewport meta tag for mobile browsers
-add_theme_support( 'genesis-responsive-viewport' );
+add_theme_support( 'genesis-responsive- viewport' );
 
 //* Add new image sizes
 add_image_size( 'featured-page', 1140, 400, TRUE );
@@ -278,12 +278,12 @@ function custom_load_custom_style_sheet() {
 // Change favicon location and add touch icons
 add_filter( 'genesis_pre_load_favicon', 'gregr_favicon_filter' );
 function gregr_favicon_filter( $favicon ) {
-  echo '<link rel="Shortcut Icon" href="'. CHILD_URL .'/images/favicon.ico" type="image/x-icon" />' . "\n";
-  echo '<link rel="Shortcut Icon" type="image/png" href="'. CHILD_URL .'/images/favicon.png" type="image/x-icon" sizes="50x50"/>' . "\n";
-  echo '<link rel="apple-touch-icon-precomposed" sizes="144x144" href="'. CHILD_URL .'/images/apple-touch-icon-144x144-precomposed.png" />'."\n";
-  echo '<link rel="apple-touch-icon-precomposed" sizes="114x114" href="'. CHILD_URL .'/images/apple-touch-icon-114x114-precomposed.png" />'."\n";
-  echo '<link rel="apple-touch-icon-precomposed" sizes="72x72" href="'. CHILD_URL .'/images/apple-touch-icon-72x72-precomposed.png" />'."\n";
-  echo '<link rel="apple-touch-icon-precomposed" href="'. CHILD_URL .'/images/apple-touch-icon-precomposed.png" />'."\n";
+  echo '<link rel="Shortcut Icon" href="'. CHILD_URL .'/dist/images/favicon.ico" type="image/x-icon" />' . "\n";
+  echo '<link rel="Shortcut Icon" type="image/png" href="'. CHILD_URL .'/dist/images/favicon.png" type="image/x-icon" sizes="50x50"/>' . "\n";
+  echo '<link rel="apple-touch-icon-precomposed" sizes="144x144" href="'. CHILD_URL .'/dist/images/apple-touch-icon-144x144-precomposed.png" />'."\n";
+  echo '<link rel="apple-touch-icon-precomposed" sizes="114x114" href="'. CHILD_URL .'/dist/images/apple-touch-icon-114x114-precomposed.png" />'."\n";
+  echo '<link rel="apple-touch-icon-precomposed" sizes="72x72" href="'. CHILD_URL .'/dist/images/apple-touch-icon-72x72-precomposed.png" />'."\n";
+  echo '<link rel="apple-touch-icon-precomposed" href="'. CHILD_URL .'/dist/images/apple-touch-icon-precomposed.png" />'."\n";
 }
 
 /*This is for the social icons*/

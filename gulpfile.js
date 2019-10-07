@@ -38,7 +38,8 @@ var paths = {
     },
     scripts:{
         src: "src/js/*.js",
-        dest: "dist/js"
+        dest: "dist/js",
+        hintfile: "src/js/.jshintrc"
     },
     maps:{
         dest: "../../maps"
@@ -107,7 +108,7 @@ function imageminify() {
 function lint() {
     return (
         gulp.src(paths.scripts.src)
-            .pipe(jshint("js/.jshintrc"))
+            .pipe(jshint(paths.scripts.hintfile))
             .pipe(jshint.reporter("jshint-stylish"))
     );
 

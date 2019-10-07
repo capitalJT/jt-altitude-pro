@@ -393,14 +393,12 @@ jQuery(function( $ ){
 	console.log( 'This is the result of the doSomeMath function: ' + theResult() );
 
 
-	function getWidth() {
-
-		var jtInput = document.getElementById('jt-text-input').offsetWidth;
-
-		console.log( "Result of the getWidth function: " + jtInput + "px");
-    }
-
-    getWidth();
+	// function getWidth() {
+	// 	var jtInput = document.getElementById('jt-text-input').offsetWidth;
+	// 	console.log( "Result of the getWidth function: " + jtInput + "px");
+    // }
+	//
+    // getWidth();
 
 	if ( $('.page-id-19').length ){
 		console.log("Page ID correct");
@@ -472,7 +470,7 @@ for(var key in vidyardVideos) {
 }
 
 
-console.log('blahzay blahzay');
+console.log('blahzay blahay');
 // Theme Scripts
 jQuery(function( $ ){
 
