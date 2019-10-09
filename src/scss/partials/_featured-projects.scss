@@ -33,6 +33,7 @@
 .has-hover{
   position: relative;
   display: block;
+  transition: $global-ease;
   &:hover{
     transform: translateY(-5px);
     box-shadow: 0 20px 20px -15px rgba(0,0,0,0.5);
@@ -53,7 +54,6 @@
     color: white;
   }
 }
-
 
 .featured-projects-homepage-wrapper {
   background-attachment: fixed;

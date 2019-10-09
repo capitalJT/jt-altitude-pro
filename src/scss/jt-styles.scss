@@ -90,7 +90,7 @@ $border-radius: 4px;
 
 
 $global-speed: 0.3s;
-$global-ease: ease;
+$global-ease: all 0.2s ease-in-out;
 $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 
 @import "global/base";
