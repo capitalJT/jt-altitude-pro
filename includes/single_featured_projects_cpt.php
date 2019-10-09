@@ -17,7 +17,7 @@
             <div class="img-description mb-4 small"><?php the_post_thumbnail_caption(); ?></div>
         </div>
 
-        <div class="border border-light p-4 mb-4">
+        <div class="single-project-meta bg-light p-4 mb-4">
             <div class="client h3">Client: <?php echo $project_client; ?></div>
             <div class="categories">Categories: <?php the_category( ', ' ); ?></div>
             <?php the_tags( '<div class="tags">Tagged With: ', ', ', '</div>' ); ?>

@@ -16,7 +16,7 @@
 
 
 	<?php if ($project_client) : ?>
-        <div class="project-title h4"><?php echo $project_client;?></div>
+        <div class="project-title h4">Client: <?php echo $project_client;?></div>
 	<?php endif; ?>
 
     <div class="project-excerpt"><?php the_excerpt(); ?></div>
