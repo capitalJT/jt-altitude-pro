@@ -43,6 +43,8 @@
 .featured-projects-homepage-item{
   .article-title{
     @extend %heading-font;
+    color: $white;
+
   }
   .thumbnail{
     //border: solid thick $primary;

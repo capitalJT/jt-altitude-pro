@@ -74,14 +74,15 @@ function jt_reviews_widget() {
 	echo '<div class="front-page-contact-form text-white">';
 		echo '<div class="inner-wrapper">';
 			echo '<div class="container">';
-				echo '<div class="col-12 py-4">';
+				echo '<div class="col-12 py-5">';
 					echo '<div class="form mx-auto">';
-						echo '<h3 class="text-center">Contact Me</h3>';
+						echo '<h4 class="text-center text-uppercase">Contact Me</h4>';
 						echo '<p class="text-center">Please use the form below to contact me for whatever you need:
 Creating a new website, updating your old site, auditing your brand, employment opportunities, etc.</p>';
 							if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) {
 								// code for localhost here
-								echo do_shortcode("[wpforms id=\"568\" title=\"false\" description=\"false\"]");
+								 echo do_shortcode("[wpforms id=\"302\" title=\"false\" description=\"false\"]");
+
 							} else {
 								echo do_shortcode("[wpforms id=\"302\" title=\"false\" description=\"false\"]");
 							}

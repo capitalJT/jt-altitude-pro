@@ -189,17 +189,6 @@
       }
     }
   }
-  #work{
-     header{
-      color: white;
-     }
-     ul{
-      margin: 0;
-      li{
-        list-style-type: none;
-      }
-     }
-  }
   #contact{
     background-color: #fff;
     ul{
@@ -355,7 +344,22 @@ ul.text-icons{
   opacity:0;
 }
 
-
+.featured-projects-homepage-wrapper,
+.front-page-contact-form{
+  h4{
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin: 0 auto 30px;
+    max-width: 1200px;
+  }
+}
+.hbspt-form label{
+  color: red !important;
+}
 .front-page-contact-form {
   background-image: url(//jabaltorres.com/wp-content/themes/jt-altitude-pro/dist/images/bg-5.jpg);
   background-attachment: fixed;
