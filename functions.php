@@ -322,7 +322,23 @@ function remove_p_on_pages() {
 		remove_filter( 'the_excerpt', 'wpautop' );
 	}
 }
+
 add_action( 'wp_head', 'remove_p_on_pages' );
+
+
+/**
+ * Snippet Name: Remove wpautop only for custom post types
+ * Snippet URL: http://www.wpcustoms.net/snippets/remove-wpautop-custom-post-types/
+ */
+ function wpc_remove_autop_for_posttype( $content )
+ {
+	 // edit the post type here
+	 'featured-projects' === get_post_type() && remove_filter( 'the_content', 'wpautop' );
+	 return $content;
+ }
+add_filter( 'the_content', 'wpc_remove_autop_for_posttype', 0 );
+
+
 
 
 // Add widget before blog roll
