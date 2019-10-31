@@ -10,7 +10,7 @@
 
 	<?php if ( has_post_thumbnail() ) : ?>
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="fp-thumbnail">
-            <img class="thumbnail mb-2" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_caption(); ?>" />
+            <img class="thumbnail border mb-2" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_caption(); ?>" />
         </a>
 	<?php endif; ?>
 
