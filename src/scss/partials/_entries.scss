@@ -56,12 +56,13 @@ p.entry-meta {
 }
 
 .entry-header::after {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $primary;
   content: "";
   display: block;
   margin: 0 auto 30px;
   padding-bottom: 20px;
-  width: 25%;
+  //width: 25%;
+  width: 200px;
 }
 
 .image-section .entry-header::after {

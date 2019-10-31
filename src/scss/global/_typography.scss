@@ -157,10 +157,14 @@ blockquote{
 //Page titles
 .page,
 .single-people .header-wrap,
+.single-featured-projects,
 .post-type-archive-people .header-wrap{
   .entry-title{
-    color: $light-grey;
+    color: $dark-grey;
     font-size: 36px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include media-breakpoint-up(md){
       font-size: 60px;

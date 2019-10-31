@@ -12,10 +12,13 @@
 <?php while ( have_posts() ) : the_post(); ?>
     <article class="single-project">
 
-        <div class="single-project-thumbnail container p-0">
-            <div class="row">
-                <div class="col-12">
-	                <?php the_post_thumbnail('large'); ?>
+        <div class="single-project-thumbnail container p-0 mb-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="border">
+	                    <?php the_post_thumbnail('large'); ?>
+                    </div>
+
 	                <?php $caption = get_post(get_post_thumbnail_id())->post_excerpt; ?>
 	                <?php if($caption): ?>
                         <div class="img-description mb-4 small">
@@ -27,9 +30,9 @@
             </div>
         </div>
 
-        <div class="single-project-meta bg-light container  p-4 mb-4">
-            <div class="row">
-                <div class="col-12">
+        <div class="single-project-meta bg-light container p-4 mb-5">
+            <div class="row justify-content-md-center">
+                <div class="col-10">
                     <div class="client h3">Client: <?php echo $project_client; ?></div>
                     <div class="categories">Categories: <?php the_category( ', ' ); ?></div>
 	                <?php the_tags( '<div class="tags">Tagged With: ', ', ', '</div>' ); ?>
