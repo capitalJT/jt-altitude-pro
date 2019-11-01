@@ -15,13 +15,7 @@
       margin-top: 0;
     }
   }
-  @include large-screen-max{
-    .home-page-h1, .dm-campaign-monitor-form, .client-section{
-      max-width: 960px;
-      margin-left:auto;
-      margin-right:auto;
-    }
-  }
+  @include large-screen-max{}
   .entry{
     margin-bottom: 0px;
   }
@@ -112,23 +106,17 @@
       color: white;
       header{
         margin-bottom: 0;
-        border-bottom: solid thin rgba(255,255,255,0.25);
+        //border-bottom: solid thin rgba(255,255,255,0.25);
       }
       article{
         padding-top:0;
       }
-      .name, .description{
-        // margin: 0 0 0.5em;
-      }
-      .name{
-        text-transform: uppercase;
-      }
+
       .description{
-        //text-transform: uppercase;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.25em;
-        line-height: 1.5;
-        margin-bottom: 1.45em;
+        //font-family: 'Roboto', sans-serif;
+        //font-size: 1.25em;
+        //line-height: 1.5;
+        //margin-bottom: 1.45em;
       }
     }
   }
@@ -395,5 +383,12 @@ ul.text-icons{
   }
 }
 
-
-
+.skills{
+  .img-container{
+    height: 100px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
