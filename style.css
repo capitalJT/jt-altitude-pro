@@ -250,12 +250,12 @@ h2 {
 	font-size: 32px;
 }
 
-.image-section h2,
-.solid-section h2 {
-	font-size: 80px;
-	font-weight: 200;
-	line-height: 1;
-}
+/*.image-section h2,*/
+/*.solid-section h2 {*/
+/*	font-size: 80px;*/
+/*	font-weight: 200;*/
+/*	line-height: 1;*/
+/*}*/
 
 .front-page-2.solid-section h2 {
 	font-size: 48px;
@@ -1122,9 +1122,9 @@ Content Area
 	position: relative;
 }
 
-.front-page-1 .image-section {
-	padding-top: 75px;
-}
+/*.front-page-1 .image-section {*/
+/*	padding-top: 75px;*/
+/*}*/
 
 .secondary-nav .front-page-1 .image-section {
 	padding-top: 150px;
@@ -1590,10 +1590,10 @@ Media Queries
 		font-size: 60px;
 	}
 	
-	.front-page-1 .image-section,
-	.secondary-nav .front-page-1 .image-section {
-		padding-top: 0;
-	}
+	/*.front-page-1 .image-section,*/
+	/*.secondary-nav .front-page-1 .image-section {*/
+	/*	padding-top: 0;*/
+	/*}*/
 
 }
 
