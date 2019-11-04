@@ -167,6 +167,7 @@ Site Navigation
   width:32px;
   height:32px;
   padding-top: 3px;
+  border-radius: 4px;
 }
 
 .responsive-menu-icon::before {
@@ -266,5 +267,11 @@ Site Navigation
   .genesis-nav-menu a,
   .site-header.dark .genesis-nav-menu a {
     padding: 10px;
+  }
+}
+
+#menu-primary-navigation{
+  @include max-800{
+    padding: 0;
   }
 }
