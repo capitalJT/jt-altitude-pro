@@ -113,6 +113,7 @@ $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 @import "pages/home-page";
 @import "pages/case-studies";
 @import "pages/work";
+@import "pages/about";
 
 form{
   width:100%;
@@ -176,18 +177,6 @@ div#respond.comment-respond{
 .more-link{
   display: block;
   border: none !important;
-}
-
-//.post-edit-link{
-//  padding: 10px;
-//  background-color: pink;
-//  border: solid thin red;
-//  border-radius: 4px;
-//  display: inline-block;
-//}
-
-.post-278{
-  text-align: center;
 }
 
 .sd-social-icon .sd-content ul li[class*=share-] a.sd-button{
@@ -272,4 +261,3 @@ img:focus {
   width: 100%;
   height: auto;
 }
-

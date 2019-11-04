@@ -1,29 +1,36 @@
-.about{
-	text-align: center;
-}
-
-ul.text-icons{
-  margin-left: 0;
-  li{
-    list-style: none;
-    border: solid thin $color-primary;
-    display: inline-block;
-    border-radius: 100%;
-    width: 5em;
-    height: 5em;
-    line-height: 5em;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
-    margin: 10px;
-  }
-  span{
-    border-bottom: solid thin #eee;
+.page-id-278{
+  .site-inner{
+    max-width: 100%;
   }
 }
 
-.col-wrapper{
-  display: flex;
-  ul{
-    text-align: left;
+.page-id-278.full-width-content{
+  .content{
+    padding: 0;
   }
+
+  span.line {
+    width: 70px;
+    height: 5px;
+  }
+  .person-info{
+    span.line{
+      background-color: $dark;
+    }
+  }
+  .my-journey{
+    span.line{
+      background-color: $primary;
+    }
+  }
+  .person-info h3,
+  .my-journey h3{
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}
+.post-278.entry{
+  margin-bottom: 0;
 }

@@ -1585,10 +1585,10 @@ Media Queries
 		width: 100%;
 	}
 	
-	.image-section h2,
-	.solid-section h2 {
-		font-size: 60px;
-	}
+	/*.image-section h2,*/
+	/*.solid-section h2 {*/
+	/*	font-size: 60px;*/
+	/*}*/
 	
 	/*.front-page-1 .image-section,*/
 	/*.secondary-nav .front-page-1 .image-section {*/
