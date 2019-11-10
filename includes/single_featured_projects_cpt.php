@@ -6,7 +6,6 @@
 
 <header class="entry-header">
     <h1 class="entry-title" itemprop="headline"><?php echo the_title();?></h1>
-
 </header>
 
 <?php while ( have_posts() ) : the_post(); ?>
@@ -21,7 +20,7 @@
 
 	                <?php $caption = get_post(get_post_thumbnail_id())->post_excerpt; ?>
 	                <?php if($caption): ?>
-                        <div class="img-description mb-4 small">
+                        <div class="img-description small">
 			                <?php echo $caption; ?>
                         </div>
 	                <?php endif; ?>
