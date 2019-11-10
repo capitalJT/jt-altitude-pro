@@ -7,7 +7,7 @@
 ?>
 
 <header class="entry-header">
-  <h1 class="entry-title" itemprop="headline"><?php echo the_title();?></h1> 
+  <h1 class="entry-title" itemprop="headline"><?php echo the_title(); ?></h1>
 </header>
 
 <?php while ( have_posts() ) : the_post(); ?>
@@ -26,7 +26,7 @@
       </div>
     </div>
     
-    <div class="single-work-content"><?php the_content(); ?>  </div>
+    <div class="single-work-content"><?php the_content(); ?></div>
     
     <?php echo edit_post_link('(Edit)', '<span>', '</span>'); ?>
   </article>
