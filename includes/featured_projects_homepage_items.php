@@ -8,7 +8,6 @@
 
 <div class="container featured-projects-homepage-item mb-4">
     <div class="row align-items-center">
-
 	    <?php if( get_field('homepage_toggle') ): ?>
 
 		    <?php
@@ -26,7 +25,7 @@
             </div>
             <div class="col-12 col-md-5 has-text">
 
-                <a href="<?php echo get_permalink(); ?>"><h3 class="article-title h1"><?php echo the_title();?></h3></a>
+                <a href="<?php echo get_permalink(); ?>"><h3 class="article-title"><?php echo the_title();?></h3></a>
 
 			    <?php if ( has_excerpt()): ?>
                     <div class="project-excerpt mb-4"><?php echo the_excerpt();?></div>
@@ -47,7 +46,7 @@
             </div>
             <div class="col-12 col-md-5 has-text order-md-first">
 
-                <a href="<?php echo get_permalink(); ?>"><h3 class="article-title h1"><?php echo the_title();?></h3></a>
+                <a href="<?php echo get_permalink(); ?>"><h3 class="article-title"><?php echo the_title();?></h3></a>
 
 			    <?php if ( has_excerpt()): ?>
                     <div class="project-excerpt mb-4"><?php echo the_excerpt();?></div>
@@ -59,6 +58,5 @@
 
 	    <?php endif; ?>
     </div>
-
 </div>
 

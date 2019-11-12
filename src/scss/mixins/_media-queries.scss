@@ -45,7 +45,6 @@
     @content;
   }
 }
-// I added these just in case
 @mixin large-screen-only{
   @media only screen and (min-width: 1200px) and (max-width: 2700px) {
     @content;
