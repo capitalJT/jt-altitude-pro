@@ -4,28 +4,29 @@ jQuery(function( $ ){
 		$( '.site-header' ).addClass( 'dark' );			
 	}
 
-
 	$(".site-container").append('<div class="scroll-to-top"></div>');
 
+	if ($(document).height() > $(window).height()) {
+		$('.scroll-to-top').addClass('d-block');
+	}
 
 	$(".scroll-to-top").click(function(){
 	  var body = $("html, body");
 	  body.animate({scrollTop:0}, '500', 'swing');
 	});
 
-
 	// Add opacity class to site header
 	$( document ).on('scroll', function(){
 
 		if ( $( document ).scrollTop() > 0 ){
 			$( '.site-header' ).addClass( 'dark' );			
-			$('.scroll-to-top').addClass('scroll-to-top-show');
+			$('.scroll-to-top').addClass('scroll-to-top-show d-block');
 			$('.scroll-to-top').removeClass('scroll-to-top-hide');			
 
 		} else {
 			$( '.site-header' ).removeClass( 'dark' );
 			$('.scroll-to-top').addClass('scroll-to-top-hide');
-			$('.scroll-to-top').removeClass('scroll-to-top-show');				
+			$('.scroll-to-top').removeClass('scroll-to-top-show d-block');
 		}
 
 	});
