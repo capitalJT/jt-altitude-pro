@@ -12,6 +12,9 @@
       font-weight: normal;
       line-height: 1.5;
     }
+    a:hover{
+      color: $primary;
+    }
   }
   @include max-800{
     .site-inner{
