@@ -317,7 +317,7 @@ function featured_post_image() {
 // }
 
 function remove_p_on_pages() {
-	if ( is_page( array( 'home', 'work', 'modal-test' ) ) ){
+	if ( is_page( array( 'home', 'work', 'about-me', 'process', 'modal-test' ) ) ){
 		remove_filter( 'the_content', 'wpautop' );
 		remove_filter( 'the_excerpt', 'wpautop' );
 	}
