@@ -214,7 +214,7 @@
 }
 
 .front-page-contact-form {
-  background-image: url(//jabaltorres.com/wp-content/themes/jt-altitude-pro/dist/images/bg-5.jpg);
+  background-image: url(/wp-content/themes/jt-altitude-pro/dist/images/bg-5.jpg);
   background-attachment: fixed;
   background-color: #fff;
   background-position: 50% 0;
@@ -236,10 +236,9 @@
       color: $dark;
     }
   }
-  @include media-breakpoint-up(md){
-    .form{
-      max-width: 75%;
-    }
+  .form{
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.75);
   }
   @include media-breakpoint-up(md){
     .form{
