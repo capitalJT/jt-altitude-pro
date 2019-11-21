@@ -383,21 +383,6 @@ function custom_dashboard_help() {
     echo '<p>Welcome to my custom genesis theme! Need help? Contact the developer <a href="mailto:info@jabaltorres.com">here</a>.</p>';
 }
 
-
-// digital-menu widget
-genesis_register_widget_area( array(
-    'id'          => 'dls-menu',
-    'name'        => __( 'DLS Menu', 'Altitude Pro Theme' ),
-    'description' => __( 'This is the DLS menu', 'Altitude Pro Theme' ),
-) );
-// digital-sidebar widget
-genesis_register_widget_area( array(
-    'id'          => 'dls-sidebar',
-    'name'        => __( 'DLS Side Bar', 'Altitude Pro Theme' ),
-    'description' => __( 'This widget area appears next to the content in the DLS Page Template', 'Altitude Pro Theme' ),
-) );
-
-
 // Add Google Tag Manager code in <head>
 add_action( 'wp_head', 'sk_google_tag_manager1' );
 function sk_google_tag_manager1() { ?>

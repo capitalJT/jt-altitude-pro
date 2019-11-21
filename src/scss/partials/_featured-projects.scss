@@ -58,7 +58,6 @@
 }
 
 .featured-projects-homepage-wrapper {
-  background-attachment: fixed;
   background-color: #fff;
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -66,6 +65,9 @@
   -moz-background-size: cover;
   background-size: cover;
   background-image: url(/wp-content/themes/jt-altitude-pro/dist/images/bg-3.jpg);
+  @include media-breakpoint-up(md) {
+    background-attachment: fixed;
+  }
 }
 
 .featured-projects-inner-wrapper{
