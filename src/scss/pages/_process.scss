@@ -1,0 +1,30 @@
+// Process page
+.page-id-1001,
+.page-id-964{
+  .site-inner{
+    max-width: 100%;
+  }
+}
+.page-id-1001.full-width-content,
+.page-id-964.full-width-content{
+  .content {
+    padding: 0;
+  }
+  .entry{
+    margin-bottom: 0;
+  }
+  span.line {
+    width: 70px;
+    height: 5px;
+    background-color: $dark;
+  }
+  .number{
+    border: solid 4px $primary;
+    width: 60px;
+    height: 60px;
+    line-height: 56px;
+    margin: 0 auto 20px;
+    border-radius: 100%;
+    @extend %heading-font;
+  }
+}

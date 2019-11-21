@@ -98,8 +98,11 @@ $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 @import "global/typography";
 @import "icon-font";
 @import "partials/navigation";
+
+@import "components/inputs";
+
 // @import "partials/footer-widgets";
-@import "partials/site-footer";
+@import "layout/site-footer";
 @import "partials/scroll-to-top";
 @import "partials/blogroll-page";
 @import "partials/work-example";
@@ -114,23 +117,10 @@ $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 @import "pages/case-studies";
 @import "pages/work";
 @import "pages/about";
+@import "pages/contact";
+@import "pages/process";
 
-form{
-  width:100%;
-}
 
-input,select{
-  font-size: 16px;
-  padding:10px;
-}
-
-input, select{
-  margin-bottom:20px;
-  box-sizing: border-box;
-}
-input{
-  border-radius: $border-radius;
-}
 
 .site-header{
   &.dark{
@@ -260,49 +250,4 @@ img:focus {
 .single-project-thumbnail img {
   width: 100%;
   height: auto;
-}
-
-// Process page
-.page-id-1001,
-.page-id-964{
-  .site-inner{
-    max-width: 100%;
-  }
-}
-.page-id-1001.full-width-content,
-.page-id-964.full-width-content{
-  .content {
-    padding: 0;
-  }
-  .entry{
-    margin-bottom: 0;
-  }
-  span.line {
-    width: 70px;
-    height: 5px;
-    background-color: $dark;
-  }
-  .number{
-    border: solid 4px $primary;
-    width: 60px;
-    height: 60px;
-    line-height: 56px;
-    margin: 0 auto 20px;
-    border-radius: 100%;
-    @extend %heading-font;
-  }
-}
-
-.contact-page {
-  .social-icons{
-    img{
-      width: 60px;
-    }
-  }
-
-  .wpforms-container .wpforms-field {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
 }
