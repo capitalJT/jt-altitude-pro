@@ -1,7 +1,7 @@
 .site-footer{
-  background-color: #000;
+  background-color: $black;
   text-align: left;
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-body;
   p{
     text-transform: none;
     color:#999;
