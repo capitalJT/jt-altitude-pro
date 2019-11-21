@@ -215,11 +215,11 @@
 
 .front-page-contact-form {
   background-image: url(/wp-content/themes/jt-altitude-pro/dist/images/bg-5.jpg);
-  background-attachment: fixed;
   background-color: #fff;
-  background-position: 50% 0;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100%;
   .inner-wrapper{
     background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
     display: table;
@@ -241,6 +241,7 @@
     background-color: rgba(0, 0, 0, 0.75);
   }
   @include media-breakpoint-up(md){
+    background-attachment: fixed;
     .form{
       max-width: 50%;
     }
