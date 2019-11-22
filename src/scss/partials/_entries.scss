@@ -62,6 +62,7 @@ p.entry-meta {
   margin: 0 auto 30px;
   padding-bottom: 10px;
   width: 200px;
+  @include animation('borderWidth 1s');
 }
 
 .image-section .entry-header::after {
@@ -69,7 +70,7 @@ p.entry-meta {
 }
 
 .entry-footer::before {
-  border-top: 1px solid #000;
+  border-top: 1px solid $black;
   content: "";
   display: block;
   margin: 30px auto 0;
@@ -100,7 +101,7 @@ p.entry-meta {
 --------------------------------------------- */
 
 .after-entry {
-  border-top: 1px solid #000;
+  border-top: 1px solid $black;
   padding: 40px 0;
 }
 

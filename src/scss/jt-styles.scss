@@ -54,8 +54,8 @@ $colors: map-merge((
         "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $orange !default;
-$secondary:     $gray-600 !default;
+$primary:       $yellow !default;
+$secondary:     $gray-800 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -79,8 +79,6 @@ $theme-colors: map-merge((
 @import "vendor/bootstrap";
 
 
-
-
 // My Variables
 
 $color-grey: #666666;
@@ -90,7 +88,7 @@ $border-radius: 4px;
 
 
 $global-speed: 0.3s;
-$global-ease: all 0.2s ease-in-out;
+$global-ease: all 0.3s ease-in-out;
 $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 
 @import "global/base";
@@ -100,12 +98,14 @@ $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 
 @import "global/typography";
 @import "icon-font";
-@import "partials/navigation";
+
 
 @import "components/inputs";
 
 // @import "partials/footer-widgets";
+@import "layout/navigation";
 @import "layout/site-footer";
+
 @import "partials/scroll-to-top";
 @import "partials/blogroll-page";
 @import "partials/work-example";
@@ -266,4 +266,21 @@ img:focus {
 .single-project-thumbnail img {
   width: 100%;
   height: auto;
+}
+
+.featured-project-list-item{
+  h1{
+    color: $secondary;
+  }
+}
+.featured-project-list-item a{
+  //@extend .jt-text-link;
+  color: $primary;
+  //&:hover{
+  //  color: $primary;
+  //}
+}
+
+.nav-link.active{
+  font-weight: 700;
 }

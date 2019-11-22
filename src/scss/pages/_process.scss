@@ -17,6 +17,7 @@
     width: 70px;
     height: 5px;
     background-color: $dark;
+    transition: $global-ease;
   }
   .number{
     border: solid 4px $primary;
@@ -26,6 +27,17 @@
     margin: 0 auto 20px;
     border-radius: 100%;
     @extend %heading-font;
+  }
+
+  .col-12:hover{
+    span.line{
+      width: 125px;
+    }
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link{
+    color: $secondary;
   }
 
   .entry-header,

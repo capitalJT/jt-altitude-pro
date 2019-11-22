@@ -402,6 +402,30 @@ function eo_prev_next_post_nav() {
 }
 
 
+
+add_action( 'genesis_entry_footer', 'wpsites_single_cpt_navigation' );
+function wpsites_single_cpt_navigation() {
+
+	if ( ! is_singular( 'featured-projects' ) )
+		return;
+
+	genesis_markup( array(
+		'html5'   => '<div %s>',
+		'xhtml'   => '<div class="navigation">',
+		'context' => 'adjacent-entry-pagination',
+	) );
+
+	echo '<div class="pagination-previous alignleft">';
+	previous_post_link();
+	echo '</div>';
+
+	echo '<div class="pagination-next alignright">';
+	next_post_link();
+	echo '</div>';
+
+	echo '</div>';
+
+}
 /* Customizing the Login Form
 * https://codex.wordpress.org/Customizing_the_Login_Form#Styling_Your_Login
 ----------------------------------------------------------------------------------------*/

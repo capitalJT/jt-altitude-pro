@@ -31,6 +31,12 @@
   to { opacity: 1; }
 }
 
+@include keyframes(borderWidth) {
+  from { width: 120px; }
+  to { width: 200px; }
+}
+
+
 
 
 // TODO: Make transitions mixin
@@ -51,3 +57,11 @@
 //    color: black;
 //  }
 //}
+
+.jt-text-link{
+  box-shadow: inset 0 -0px 0 0 $yellow;
+  display: inline-block;
+  &:hover{
+    box-shadow: inset 0 -40px 0 0 $yellow;
+  }
+}
