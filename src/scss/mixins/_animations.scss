@@ -30,3 +30,24 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+
+
+// TODO: Make transitions mixin
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Transition Usage
+//a {
+//  color: gray;
+//  @include transition(color .3s ease);
+//  &:hover {
+//    color: black;
+//  }
+//}

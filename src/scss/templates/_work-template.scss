@@ -79,4 +79,8 @@
   &.full-width-content .content{
     padding: 0;
   }
+
+  main.content{
+    @include animation('fadein 1s');
+  }
 }
