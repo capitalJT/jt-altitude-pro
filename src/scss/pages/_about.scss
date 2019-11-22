@@ -30,6 +30,16 @@
     //letter-spacing: 3px;
     text-transform: uppercase;
   }
+
+  // adding a bit of animation
+  .entry-header,
+  .about,
+  .person-info,
+  .my-journey,
+  .cta{
+    @include animation('fadein 1s');
+  }
+
 }
 .post-278.entry{
   margin-bottom: 0;

@@ -94,7 +94,10 @@ $global-ease: all 0.2s ease-in-out;
 $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 
 @import "global/base";
+
 @import "mixins/media-queries";
+@import "mixins/animations";
+
 @import "global/typography";
 @import "icon-font";
 @import "partials/navigation";
@@ -115,7 +118,7 @@ $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 
 @import "pages/home-page";
 @import "pages/case-studies";
-@import "pages/work";
+//@import "pages/work";
 @import "pages/about";
 @import "pages/contact";
 @import "pages/process";
@@ -168,6 +171,19 @@ div#respond.comment-respond{
   display: block;
   border: none !important;
 }
+
+/* TODO: Make this a util class */
+.has-hover{
+  position: relative;
+  display: block;
+  transition: $global-ease;
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 20px -15px rgba(0,0,0,0.5);
+  }
+}
+
+
 
 .sd-social-icon .sd-content ul li[class*=share-] a.sd-button{
   padding: 7px;
