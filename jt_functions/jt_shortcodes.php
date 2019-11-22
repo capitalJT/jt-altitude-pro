@@ -18,13 +18,24 @@ add_shortcode( 'button', 'jt_cta_shortcode' );
 
 
 /*
- * CTA - Thankyou
- * shortcode: [thankyou]
+ * Featured Project CTA Shortcode
+ * Shortcode: [featured_project_CTAshortcode]
  */
-function ThankYouShortcode() {
-	return '<p class="bg-primary p-4">Thank You For Reading My Blog Post!</p>';
+function featured_project_CTA_shortcode() {
+
+	$cta_download_html = '<div class="container-fluid bg-secondary p-5">';
+		$cta_download_html .= '<div class="row">';
+			$cta_download_html .= '<div class="col-12 text-center">';
+				$cta_download_html .= '<h3 class="text-white">Want to learn more about my process?</h3>';
+				$cta_download_html .= '<p class="h4 text-white mb-4">Contact me for a free consultation</p>';
+				$cta_download_html .= '<a href="/contact/" class="btn btn-primary">Contact Me</a>';
+			$cta_download_html .= '</div>';
+		$cta_download_html .= '</div>';
+	$cta_download_html .= '</div>';
+
+	return $cta_download_html;
 }
-add_shortcode('thankyou', 'ThankYouShortcode');
+add_shortcode('featured_project_CTAshortcode', 'featured_project_CTA_shortcode');
 
 
 

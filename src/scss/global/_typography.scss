@@ -1,9 +1,9 @@
-$h1-font-size: 72px;
-$h2-font-size: 60px;
-$h3-font-size: 48px;
-$h4-font-size: 36px;
+$h1-font-size: 60px;
+$h2-font-size: 50px;
+$h3-font-size: 40px;
+$h4-font-size: 34px;
 $h5-font-size: 24px;
-$h6-font-size: 22px;
+$h6-font-size: 18px;
 $body-font-size: 16px;
 $small-font-size: 12px;
 
@@ -13,7 +13,7 @@ $font-body: 'Lato', sans-serif;
 
 %h1-font-size{
   font-size: $h1-font-size;
-  color: $dark-grey;
+  color: $secondary;
 }
 %h2-font-size{
   font-size: $h2-font-size;
@@ -39,7 +39,6 @@ $font-body: 'Lato', sans-serif;
 
 %heading-font{
   font-family: $font-heading;
-  //letter-spacing: -1px;
   font-weight: bold;
 }
 
@@ -90,14 +89,14 @@ blockquote{
       padding-bottom:3px;
     }
     .site-title a{
-      color: map-get($theme-colors, primary) !important;
+      color: map-get($theme-colors, secondary) !important;
     }
     .genesis-nav-menu{
       margin-top: 0;
       a {
         color:#000;
         &:hover{
-          border-color: $black;
+          border-color: $primary;
         }
       }
     } 
@@ -106,7 +105,7 @@ blockquote{
 
 .site-title{
   @extend %heading-font;
-  @extend %h3-font-size;
+  @extend %h2-font-size;
   text-align: left;
   display: inline-block;
   @include media-breakpoint-down(md){
@@ -115,14 +114,14 @@ blockquote{
 }
 
 .section-title{
-  color: $color-grey;
+  color: $secondary;
   @extend %heading-font;
   @extend %h3-font-size;
 }
 
 .post-type-archive-people{
   h1.entry-title{
-    color: $color-grey;
+    color: $secondary;
   }
 }
 
@@ -140,7 +139,7 @@ blockquote{
   @extend %subhead-1-font-size;
   display: block;
   &:after{
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $secondary;
     content: "";
     display: block;
     margin: 0 auto 60px;
@@ -155,7 +154,7 @@ blockquote{
 .single-featured-projects,
 .post-type-archive-people .header-wrap{
   .entry-title{
-    color: $dark-grey;
+    color: $secondary;
     font-size: 36px;
     max-width: 1140px;
     margin-left: auto;
@@ -179,6 +178,43 @@ blockquote{
   font-weight: bold;
   &:hover{
     color: map-get($theme-colors, primary);
-    transition: all 0.3s ease-in-out;
+    transition: $global-ease;
   }
 }
+
+
+/* Titles - Pasted from Styles.css
+--------------------------------------------- */
+
+.archive-title {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.sidebar .entry-title {
+  font-size: 24px;
+  text-align: left;
+}
+
+.entry-title a {
+  color: $secondary;
+}
+
+.entry-title a:hover {
+  color: $primary;
+}
+
+.widget-full .widget-title {
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+

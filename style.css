@@ -751,34 +751,6 @@ Common Classes
 	width: 1px;
 }
 
-/* Titles
---------------------------------------------- */
-
-.archive-title {
-	font-size: 24px;
-	line-height: 1;
-	margin-bottom: 20px;
-}
-
-/*.entry-title {}*/
-
-.sidebar .entry-title {
-	font-size: 24px;
-	text-align: left;
-}
-
-.entry-title a {
-	color: #000;
-}
-
-.entry-title a:hover {
-	color: #22a1c4;
-}
-
-.widget-full .widget-title {
-	margin-bottom: 40px;
-}
-
 /* WordPress
 --------------------------------------------- */
 

@@ -12,6 +12,31 @@
   span.line {
     width: 70px;
     height: 5px;
+    transition: $global-ease;
+  }
+
+  .col-12:hover{
+    span.line{
+      width: 125px;
+    }
+  }
+
+  .about{
+    img.rounded-circle.p-4{
+      transition: all 300ms ease-in-out;
+      border: solid 4px $white;
+    }
+    &:hover{
+      img.rounded-circle.p-4{
+        border-color: $light;
+        box-shadow: inset 0 0 0 25px $light;
+      }
+    }
+    @include max-800{
+      img{
+        max-width: 75% !important;
+      }
+    }
   }
   .person-info{
     span.line{
@@ -27,7 +52,6 @@
   .my-journey h3{
     font-size: 16px;
     font-weight: 800;
-    //letter-spacing: 3px;
     text-transform: uppercase;
   }
 
@@ -39,8 +63,8 @@
   .cta{
     @include animation('fadein 1s');
   }
-
 }
+
 .post-278.entry{
   margin-bottom: 0;
 }
