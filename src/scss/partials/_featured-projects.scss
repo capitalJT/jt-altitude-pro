@@ -29,17 +29,6 @@
   }
 }
 
-/* TODO: Make this a util class */
-.has-hover{
-  position: relative;
-  display: block;
-  transition: $global-ease;
-  &:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 20px 20px -15px rgba(0,0,0,0.5);
-  }
-}
-
 .featured-projects-homepage-item{
   .article-title{
     @extend %heading-font;
@@ -76,4 +65,11 @@
   overflow: hidden;
   table-layout: fixed;
   width: 100%;
+}
+
+.page-template-featured-projects-page{
+  .entry-header,
+  .content-sidebar-wrap{
+    @include animation('fadein 1s');
+  }
 }

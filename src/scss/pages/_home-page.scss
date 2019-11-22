@@ -262,3 +262,9 @@
     justify-content: center;
   }
 }
+
+.home{
+  .site-container{
+    @include animation('fadein 2s');
+  }
+}

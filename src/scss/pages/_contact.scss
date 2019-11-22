@@ -11,3 +11,10 @@
     margin-bottom: 0;
   }
 }
+
+.page-id-19{
+  .entry-header,
+  .entry-content{
+    @include animation('fadein 1s');
+  }
+}
