@@ -209,13 +209,13 @@ Site Navigation
     margin-top: -60px;
   }
   @include min-1023{
-    margin-top: -55px;
+    margin-top: -50px;
   }
 }
 .site-header{
   &.dark{
     .genesis-nav-menu{
-      margin-top: -45px;
+      margin-top: -40px;
       a {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -240,10 +240,11 @@ Site Navigation
   .genesis-nav-menu .menu-item {
     display: inline-block;
   }
-  #menu-primary-nav{
+  #menu-primary-navigation{
     //border: solid thin red;
-    width: 600px;
-    text-align: right;
+    //width: 600px;
+    //text-align: right;
+    margin-bottom: 0;
   }
   .nav-primary .genesis-nav-menu {
     float: right;

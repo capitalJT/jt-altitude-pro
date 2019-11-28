@@ -1,10 +1,17 @@
-$h1-font-size: 60px;
-$h2-font-size: 50px;
-$h3-font-size: 40px;
-$h4-font-size: 34px;
-$h5-font-size: 24px;
-$h6-font-size: 18px;
-$body-font-size: 16px;
+//$h1-font-size: 60px;
+$h1-font-size: 2.5rem;
+//$h2-font-size: 50px;
+$h2-font-size: 2rem;
+//$h3-font-size: 40px;
+$h3-font-size: 1.75rem;
+//$h4-font-size: 34px;
+$h4-font-size: 1.5rem;
+//$h5-font-size: 24px;
+$h5-font-size: 1.25rem;
+//$h6-font-size: 18px;
+$h6-font-size: 1rem;
+//$body-font-size: 16px;
+$body-font-size: 1rem;
 $small-font-size: 12px;
 
 
@@ -39,7 +46,7 @@ $font-body: 'Lato', sans-serif;
 
 %heading-font{
   font-family: $font-heading;
-  font-weight: bold;
+  //font-weight: bold;
 }
 
 %base-font{
@@ -105,7 +112,7 @@ blockquote{
 
 .site-title{
   @extend %heading-font;
-  @extend %h2-font-size;
+  @extend %h1-font-size;
   text-align: left;
   display: inline-block;
   @include media-breakpoint-down(md){

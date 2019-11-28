@@ -271,6 +271,18 @@ img:focus {
 .featured-project-list-item{
   h1{
     color: $secondary;
+    font-size: $h4-font-size;
+  }
+  .project-title.h4{
+    font-size: $h5-font-size;
+  }
+  @include medium-screen{
+    h1{
+      font-size: $h3-font-size;
+    }
+    project-title.h4{
+      font-size: $h4-font-size;
+    }
   }
 }
 .featured-project-list-item a{
@@ -283,4 +295,16 @@ img:focus {
 
 .nav-link.active{
   font-weight: 700;
+}
+
+.postid-839{
+  .carousel-caption{
+    background-color: rgba(0,0,0,0.85);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.project-excerpt p{
+  margin-bottom: 0;
 }
