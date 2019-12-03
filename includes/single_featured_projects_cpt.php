@@ -13,7 +13,7 @@
 
         <div class="single-project-thumbnail container p-0 mb-4">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
+                <div class="col-12 col-md-9">
                     <div class="border">
 	                    <?php the_post_thumbnail('large'); ?>
                     </div>
