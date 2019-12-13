@@ -40,7 +40,7 @@
     "gulp-uglify": "^3.0.2",
     "jshint": "^2.10.3",
     "jshint-stylish": "^2.2.1",
-    "npm": "^6.13.2"
+    "npm": "^6.13.4"
   },
   "dependencies": {
     "jquery": "^3.4.1",
